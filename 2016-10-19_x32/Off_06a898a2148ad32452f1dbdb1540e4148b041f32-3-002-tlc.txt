@@ -1,0 +1,143 @@
+JUnit version 4.12
+.Test started at Thu Oct 20 19:02:41 UTC 2016
+Insertions: 34,359,738,368 (approx: 262,144 GiB)
+Thread count: 2
+Maximum FPSet table count is: 68,719,476,736 (approx: 524,288 GiB)
+FPSet lock count is: 0
+FPSet bucket count is: 68719476736
+Testing tlc2.tool.fp.OffHeapDiskFPSet
+1476990315307 s; 356,707,266 insertions/min; 0.01 load factor
+1476990375306 s; 356,709,144 insertions/min; 0.01 load factor
+1476990435307 s; 384,742,484 insertions/min; 0.02 load factor
+1476990555306 s; 1,683,203,351 insertions/min; 0.03 load factor
+1476990615306 s; 423,428,176 insertions/min; 0.03 load factor
+1476990675306 s; 418,183,848 insertions/min; 0.04 load factor
+1476990735306 s; 389,074,190 insertions/min; 0.05 load factor
+1476990795307 s; 384,752,958 insertions/min; 0.05 load factor
+1476990915306 s; 1,660,313,629 insertions/min; 0.06 load factor
+1476990975306 s; 414,069,613 insertions/min; 0.07 load factor
+1476991035307 s; 415,117,135 insertions/min; 0.08 load factor
+1476991095307 s; 408,059,380 insertions/min; 0.08 load factor
+1476991215306 s; 1,635,410,689 insertions/min; 0.09 load factor
+1476991275306 s; 411,318,818 insertions/min; 0.1 load factor
+1476991335306 s; 412,102,572 insertions/min; 0.11 load factor
+1476991395306 s; 409,197,710 insertions/min; 0.11 load factor
+1476991455306 s; 409,523,984 insertions/min; 0.12 load factor
+1476991515307 s; 412,176,599 insertions/min; 0.12 load factor
+1476991635307 s; 1,647,427,273 insertions/min; 0.14 load factor
+1476991695306 s; 405,207,684 insertions/min; 0.14 load factor
+1476991755306 s; 405,410,876 insertions/min; 0.15 load factor
+1476991815306 s; 410,035,517 insertions/min; 0.15 load factor
+1476991875306 s; 411,271,906 insertions/min; 0.16 load factor
+1476991935307 s; 409,261,661 insertions/min; 0.17 load factor
+1476992055307 s; 1,620,755,364 insertions/min; 0.18 load factor
+1476992175307 s; 1,614,755,116 insertions/min; 0.19 load factor
+1476992295306 s; 1,574,220,509 insertions/min; 0.2 load factor
+1476992355306 s; 403,909,969 insertions/min; 0.21 load factor
+1476992415306 s; 389,906,277 insertions/min; 0.21 load factor
+1476992475307 s; 397,003,049 insertions/min; 0.22 load factor
+1476992595306 s; 1,601,554,895 insertions/min; 0.23 load factor
+1476992655306 s; 405,152,360 insertions/min; 0.24 load factor
+1476992715306 s; 404,496,715 insertions/min; 0.24 load factor
+1476992775306 s; 398,998,976 insertions/min; 0.25 load factor
+1476992835306 s; 381,393,407 insertions/min; 0.25 load factor
+1476992895307 s; 394,173,219 insertions/min; 0.26 load factor
+1476993015306 s; 1,563,670,795 insertions/min; 0.27 load factor
+1476993075306 s; 398,213,153 insertions/min; 0.28 load factor
+1476993135306 s; 386,444,375 insertions/min; 0.28 load factor
+1476993195306 s; 384,027,091 insertions/min; 0.29 load factor
+1476993255306 s; 390,318,271 insertions/min; 0.29 load factor
+1476993315307 s; 390,535,358 insertions/min; 0.3 load factor
+1476993435307 s; 1,572,805,757 insertions/min; 0.31 load factor
+1476993495306 s; 384,182,730 insertions/min; 0.31 load factor
+1476993555306 s; 378,668,144 insertions/min; 0.32 load factor
+1476993615306 s; 382,391,407 insertions/min; 0.33 load factor
+1476993675307 s; 392,079,756 insertions/min; 0.33 load factor
+1476993795306 s; 1,562,212,339 insertions/min; 0.34 load factor
+1476993855306 s; 397,997,235 insertions/min; 0.35 load factor
+1476993915306 s; 400,525,049 insertions/min; 0.35 load factor
+1476993975306 s; 396,053,059 insertions/min; 0.36 load factor
+1476994035306 s; 396,240,437 insertions/min; 0.37 load factor
+1476994095306 s; 398,752,796 insertions/min; 0.37 load factor
+1476994155306 s; 386,710,137 insertions/min; 0.38 load factor
+1476994215306 s; 385,179,732 insertions/min; 0.38 load factor
+1476994275307 s; 397,692,584 insertions/min; 0.39 load factor
+1476994395306 s; 1,569,229,860 insertions/min; 0.4 load factor
+1476994455306 s; 388,074,245 insertions/min; 0.41 load factor
+1476994515307 s; 405,975,200 insertions/min; 0.41 load factor
+1476994635307 s; 1,585,971,262 insertions/min; 0.42 load factor
+1476994755307 s; 1,604,266,690 insertions/min; 0.44 load factor
+1476994875307 s; 1,603,910,502 insertions/min; 0.45 load factor
+1476994995307 s; 1,537,828,178 insertions/min; 0.46 load factor
+1476995115307 s; 1,505,688,546 insertions/min; 0.47 load factor
+1476995235306 s; 1,519,065,949 insertions/min; 0.48 load factor
+1476995295307 s; 373,155,114 insertions/min; 0.49 load factor
+1476995355306 s; 365,178,995 insertions/min; 0.49 load factor
+1476995415306 s; 370,639,550 insertions/min; 0.5 load factor
+1476995475307 s; 290,908,570 insertions/min; 0.5 load factor
+Producer: 0, puts: 17179869184, puts/collisions: none
+Producer: 1, puts: 17284556317, puts/collisions: none
+Total puts: 34464425501, total collisions: 0, total load factor: 0.502, duration: 5239890 ms, reprobe: 89.
+1476995495202 s; Total 394,620,000 insertions/min; 0.5 load factor
+Test finished at Thu Oct 20 20:31:35 UTC 2016
+E.Test started at Thu Oct 20 20:31:35 UTC 2016
+Insertions: 34,359,738,368 (approx: 262,144 GiB)
+Thread count: 2
+Test finished at Thu Oct 20 20:31:35 UTC 2016
+.Test started at Thu Oct 20 20:31:35 UTC 2016
+Insertions: 34,359,738,368 (approx: 262,144 GiB)
+Thread count: 2
+Test finished at Thu Oct 20 20:31:35 UTC 2016
+.Test started at Thu Oct 20 20:31:35 UTC 2016
+Insertions: 34,359,738,368 (approx: 262,144 GiB)
+Thread count: 2
+Test finished at Thu Oct 20 20:31:35 UTC 2016
+
+Time: 5,334.019
+There was 1 failure:
+1) testMaxFPSetSizeRnd(tlc2.tool.fp.MultiThreadedOffHeapDiskFPSetTest)
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at tlc2.tool.fp.MultiThreadedFPSetTest.doTest(MultiThreadedFPSetTest.java:172)
+	at tlc2.tool.fp.MultiThreadedFPSetTest.testMaxFPSetSizeRnd(MultiThreadedFPSetTest.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
+
+FAILURES!!!
+Tests run: 4,  Failures: 1
+
+page_defrag = [always] madvise never
+scaling_governor = powersave
+kernel.numa_balancing = 1
+Running test: FingerPrintGenerator

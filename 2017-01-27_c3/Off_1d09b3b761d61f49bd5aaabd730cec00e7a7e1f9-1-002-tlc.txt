@@ -1,0 +1,27 @@
+JUnit version 4.12
+.Test started at Fri Jan 27 08:12:01 UTC 2017
+Insertions: 34,359,738,368 (approx: 262,144 GiB)
+Thread count: 2
+Running test: FingerPrintGenerator
+Maximum FPSet table count is: 7,516,192,768 (approx: 57,344 GiB)
+FPSet lock count is: 0
+FPSet bucket count is: 7516192768
+Testing tlc2.tool.fp.OffHeapDiskFPSet
+1485504732445 s (epoch); 255 insertions/min; 0 load factor
+1485504792445 s (epoch); 513,458,980 insertions/min; 0.07 load factor
+1485504852445 s (epoch); 500,928,013 insertions/min; 0.13 load factor
+1485504912445 s (epoch); 498,496,383 insertions/min; 0.2 load factor
+1485504972445 s (epoch); 492,185,388 insertions/min; 0.27 load factor
+1485505032446 s (epoch); 479,922,883 insertions/min; 0.33 load factor
+1485505092445 s (epoch); 465,286,139 insertions/min; 0.39 load factor
+1485505152445 s (epoch); 459,292,835 insertions/min; 0.45 load factor
+1485505212446 s (epoch); 448,931,187 insertions/min; 0.51 load factor
+1485505272445 s (epoch); 444,596,291 insertions/min; 0.57 load factor
+1485505332445 s (epoch); 422,678,951 insertions/min; 0.63 load factor
+1485505392445 s (epoch); 405,129,244 insertions/min; 0.68 load factor
+1485505452445 s (epoch); 376,625,374 insertions/min; 0.73 load factor
+1485505512445 s (epoch); 348,055,290 insertions/min; 0.78 load factor
+1485505572445 s (epoch); 300,047,199 insertions/min; 0.82 load factor
+Started eviction of disk DiskFPSet0 the 1. time at 1,485,505,620,374 after 6,362,389,080 insertions, load factor 0.846 and reprobe of 1,024.
+page_defrag = always madvise [never]
+scaling_governor = 

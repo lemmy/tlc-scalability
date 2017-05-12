@@ -1,0 +1,45 @@
+JUnit version 4.12
+.Test started at Mon Jan 30 18:05:04 UTC 2017
+Insertions: 2,000,000,000 (approx: 15,258 GiB)
+Thread count: 1
+Running test: FingerPrintGenerator
+Maximum FPSet table count is: 2,147,483,648 (approx: 16,384 GiB)
+FPSet lock count is: 1
+FPSet bucket count is: 134217728
+Testing tlc2.tool.fp.MSBDiskFPSet
+1485799504715 s (epoch); 83 insertions/min; 0 load factor
+1485799564715 s (epoch); 206,370,456 insertions/min; 0.1 load factor
+1485799624716 s (epoch); 176,314,276 insertions/min; 0.18 load factor
+1485799684715 s (epoch); 188,877,541 insertions/min; 0.27 load factor
+1485799744715 s (epoch); 187,513,219 insertions/min; 0.35 load factor
+1485799804716 s (epoch); 185,128,785 insertions/min; 0.44 load factor
+1485799864715 s (epoch); 182,266,777 insertions/min; 0.52 load factor
+1485799924715 s (epoch); 179,190,873 insertions/min; 0.61 load factor
+1485799984716 s (epoch); 175,995,611 insertions/min; 0.69 load factor
+1485800044715 s (epoch); 172,791,926 insertions/min; 0.77 load factor
+1485800104715 s (epoch); 147,024,972 insertions/min; 0.84 load factor
+1485800164715 s (epoch); 135,578,435 insertions/min; 0.9 load factor
+Producer: 0, puts: 2000000000, puts/collisions: none
+Total puts: 2000000000, total collisions: 0, total load factor: 0.931, duration: 687921 ms.
+1485800192638 s; 174,420,000 insertions/min; 0.93 load factor
+Test finished at Mon Jan 30 18:16:32 UTC 2017
+.Test started at Mon Jan 30 18:16:32 UTC 2017
+Insertions: 2,000,000,000 (approx: 15,258 GiB)
+Thread count: 1
+Test finished at Mon Jan 30 18:16:32 UTC 2017
+.Test started at Mon Jan 30 18:16:32 UTC 2017
+Insertions: 2,000,000,000 (approx: 15,258 GiB)
+Thread count: 1
+Test finished at Mon Jan 30 18:16:32 UTC 2017
+.Test started at Mon Jan 30 18:16:32 UTC 2017
+Insertions: 2,000,000,000 (approx: 15,258 GiB)
+Thread count: 1
+Test finished at Mon Jan 30 18:16:32 UTC 2017
+
+Time: 688.336
+
+OK (4 tests)
+
+page_defrag = always madvise [never]
+scaling_governor = 
+kernel.numa_balancing = 0

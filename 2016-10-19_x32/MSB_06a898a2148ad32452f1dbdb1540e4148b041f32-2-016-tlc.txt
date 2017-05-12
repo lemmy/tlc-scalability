@@ -1,0 +1,95 @@
+JUnit version 4.12
+.Test started at Thu Oct 20 01:49:13 UTC 2016
+Insertions: 8,589,934,592 (approx: 65,536 GiB)
+Thread count: 16
+Maximum FPSet table count is: 17,179,869,184 (approx: 131,072 GiB)
+FPSet lock count is: 4096
+FPSet bucket count is: 1073741824
+Testing tlc2.tool.fp.MSBDiskFPSet
+1476928217162 s; 748,381,315 insertions/min; 0.04 load factor
+1476928337160 s; 2,310,075,931 insertions/min; 0.11 load factor
+1476928397160 s; 993,296,672 insertions/min; 0.17 load factor
+1476928457160 s; 1,001,706,970 insertions/min; 0.23 load factor
+1476928517161 s; 1,039,879,617 insertions/min; 0.29 load factor
+1476928637160 s; 4,193,218,788 insertions/min; 0.41 load factor
+1476928697161 s; 1,029,067,262 insertions/min; 0.47 load factor
+Producer: 0, puts: 538094267, puts/collisions: none
+Producer: 1, puts: 536870912, puts/collisions: none
+Producer: 2, puts: 536870912, puts/collisions: none
+Producer: 3, puts: 536870912, puts/collisions: none
+Producer: 4, puts: 538418169, puts/collisions: none
+Producer: 5, puts: 536870912, puts/collisions: none
+Producer: 6, puts: 540615657, puts/collisions: none
+Producer: 7, puts: 536870912, puts/collisions: none
+Producer: 8, puts: 539596428, puts/collisions: none
+Producer: 9, puts: 538737614, puts/collisions: none
+Producer: 10, puts: 536870912, puts/collisions: none
+Producer: 11, puts: 536870912, puts/collisions: none
+Producer: 12, puts: 540862978, puts/collisions: none
+Producer: 13, puts: 541398445, puts/collisions: none
+Producer: 14, puts: 536870912, puts/collisions: none
+Producer: 15, puts: 541577505, puts/collisions: none
+Total puts: 8614268359, total collisions: 0, total load factor: 0.501, duration: 575308 ms, reprobe: 10216422680.
+1476928732478 s; Total 898,380,000 insertions/min; 0.5 load factor
+Test finished at Thu Oct 20 01:58:52 UTC 2016
+E.Test started at Thu Oct 20 01:58:52 UTC 2016
+Insertions: 8,589,934,592 (approx: 65,536 GiB)
+Thread count: 16
+Test finished at Thu Oct 20 01:58:52 UTC 2016
+.Test started at Thu Oct 20 01:58:52 UTC 2016
+Insertions: 8,589,934,592 (approx: 65,536 GiB)
+Thread count: 16
+Test finished at Thu Oct 20 01:58:52 UTC 2016
+.Test started at Thu Oct 20 01:58:52 UTC 2016
+Insertions: 8,589,934,592 (approx: 65,536 GiB)
+Thread count: 16
+Test finished at Thu Oct 20 01:58:52 UTC 2016
+
+Time: 578.717
+There was 1 failure:
+1) testMaxFPSetSizeRnd(tlc2.tool.fp.MultiThreadedMSBDiskFPSetTest)
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at tlc2.tool.fp.MultiThreadedFPSetTest.doTest(MultiThreadedFPSetTest.java:172)
+	at tlc2.tool.fp.MultiThreadedFPSetTest.testMaxFPSetSizeRnd(MultiThreadedFPSetTest.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
+
+FAILURES!!!
+Tests run: 4,  Failures: 1
+
+page_defrag = [always] madvise never
+scaling_governor = powersave
+kernel.numa_balancing = 1
+Running test: FingerPrintGenerator

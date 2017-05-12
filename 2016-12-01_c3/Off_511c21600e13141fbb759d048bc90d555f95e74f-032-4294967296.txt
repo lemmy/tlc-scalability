@@ -1,0 +1,36 @@
+Command exited with non-zero status 130
+2173.00user 56.78system 2:08.64elapsed 1733%CPU (0avgtext+0avgdata 52711932maxresident)k
+1552inputs+10525632outputs (3major+147822minor)pagefaults 0swaps
+Command exited with non-zero status 1
+1311.36user 47.89system 0:45.30elapsed 2999%CPU (0avgtext+0avgdata 52643472maxresident)k
+0inputs+3184outputs (0major+104936minor)pagefaults 0swaps
+Command exited with non-zero status 1
+2396.59user 47.70system 1:30.41elapsed 2703%CPU (0avgtext+0avgdata 52641876maxresident)k
+0inputs+4376outputs (0major+153122minor)pagefaults 0swaps
+Command exited with non-zero status 1
+2376.98user 44.81system 1:22.78elapsed 2925%CPU (0avgtext+0avgdata 52656856maxresident)k
+0inputs+4352outputs (0major+145082minor)pagefaults 0swaps
+Command exited with non-zero status 1
+1753.48user 46.02system 1:10.19elapsed 2563%CPU (0avgtext+0avgdata 52590736maxresident)k
+0inputs+3944outputs (0major+152290minor)pagefaults 0swaps
+Command exited with non-zero status 1
+1935.60user 47.37system 1:07.74elapsed 2926%CPU (0avgtext+0avgdata 52641856maxresident)k
+0inputs+3816outputs (0major+123313minor)pagefaults 0swaps
+Command exited with non-zero status 1
+1145.86user 45.93system 0:39.96elapsed 2981%CPU (0avgtext+0avgdata 52578100maxresident)k
+0inputs+3016outputs (0major+95890minor)pagefaults 0swaps
+Command exited with non-zero status 1
+1143.65user 47.59system 0:39.98elapsed 2979%CPU (0avgtext+0avgdata 52579304maxresident)k
+0inputs+3064outputs (0major+97362minor)pagefaults 0swaps
+Command exited with non-zero status 1
+1157.17user 44.28system 0:40.17elapsed 2990%CPU (0avgtext+0avgdata 52585620maxresident)k
+0inputs+3056outputs (0major+99127minor)pagefaults 0swaps
+Command exited with non-zero status 1
+1193.61user 47.43system 0:42.48elapsed 2920%CPU (0avgtext+0avgdata 52588196maxresident)k
+0inputs+3104outputs (0major+97638minor)pagefaults 0swaps
+Command exited with non-zero status 1
+1150.83user 48.72system 0:40.36elapsed 2971%CPU (0avgtext+0avgdata 52582164maxresident)k
+0inputs+3064outputs (0major+97186minor)pagefaults 0swaps
+Command exited with non-zero status 1
+1156.18user 41.80system 0:40.21elapsed 2978%CPU (0avgtext+0avgdata 52579032maxresident)k
+0inputs+3032outputs (0major+98217minor)pagefaults 0swaps

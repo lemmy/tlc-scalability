@@ -1,0 +1,23 @@
+JUnit version 4.12
+.Test started at Fri Jan 27 09:34:17 UTC 2017
+Insertions: 8,589,934,592 (approx: 65,536 GiB)
+Thread count: 1
+Running test: FingerPrintGenerator
+Maximum FPSet table count is: 2,147,483,648 (approx: 16,384 GiB)
+FPSet lock count is: 256
+FPSet bucket count is: 134217728
+Testing tlc2.tool.fp.MSBDiskFPSet
+1485509657611 s (epoch); 83 insertions/min; 0 load factor
+1485509717611 s (epoch); 196,196,227 insertions/min; 0.09 load factor
+1485509777610 s (epoch); 187,047,590 insertions/min; 0.18 load factor
+1485509837610 s (epoch); 182,867,550 insertions/min; 0.26 load factor
+1485509897610 s (epoch); 180,489,256 insertions/min; 0.35 load factor
+1485509957610 s (epoch); 177,618,625 insertions/min; 0.43 load factor
+1485510017610 s (epoch); 175,051,787 insertions/min; 0.51 load factor
+1485510077610 s (epoch); 172,594,132 insertions/min; 0.59 load factor
+1485510137610 s (epoch); 169,277,697 insertions/min; 0.67 load factor
+1485510197611 s (epoch); 165,891,154 insertions/min; 0.75 load factor
+1485510261069 s (epoch); 157,288,411 insertions/min; 0.82 load factor
+1485510317610 s (epoch); 129,176,817 insertions/min; 0.88 load factor
+1485510377610 s (epoch); 135,759,496 insertions/min; 0.94 load factor
+Started eviction of disk DiskFPSet0 the 1. time at 1,485,510,430,312 after 2,147,483,648 insertions, load factor 1 and tbl load of 134,217,710.

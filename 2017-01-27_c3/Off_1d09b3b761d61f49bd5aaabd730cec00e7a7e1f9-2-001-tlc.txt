@@ -1,0 +1,44 @@
+JUnit version 4.12
+.Test started at Fri Jan 27 08:39:22 UTC 2017
+Insertions: 34,359,738,368 (approx: 262,144 GiB)
+Thread count: 1
+Running test: FingerPrintGenerator
+Maximum FPSet table count is: 7,516,192,768 (approx: 57,344 GiB)
+FPSet lock count is: 0
+FPSet bucket count is: 7516192768
+Testing tlc2.tool.fp.OffHeapDiskFPSet
+1485506386426 s (epoch); 242 insertions/min; 0 load factor
+1485506446426 s (epoch); 233,315,002 insertions/min; 0.03 load factor
+1485506506426 s (epoch); 233,037,123 insertions/min; 0.06 load factor
+1485506566426 s (epoch); 231,768,750 insertions/min; 0.09 load factor
+1485506626426 s (epoch); 229,701,272 insertions/min; 0.12 load factor
+1485506686427 s (epoch); 228,497,914 insertions/min; 0.15 load factor
+1485506746426 s (epoch); 226,782,605 insertions/min; 0.18 load factor
+1485506806426 s (epoch); 224,740,197 insertions/min; 0.21 load factor
+1485506866427 s (epoch); 223,149,010 insertions/min; 0.24 load factor
+1485506926426 s (epoch); 220,925,251 insertions/min; 0.27 load factor
+1485506986426 s (epoch); 219,012,062 insertions/min; 0.3 load factor
+1485507046426 s (epoch); 216,872,652 insertions/min; 0.33 load factor
+1485507106426 s (epoch); 214,849,017 insertions/min; 0.36 load factor
+1485507166426 s (epoch); 213,031,431 insertions/min; 0.39 load factor
+1485507226426 s (epoch); 210,973,623 insertions/min; 0.42 load factor
+1485507286426 s (epoch); 209,438,479 insertions/min; 0.44 load factor
+1485507346426 s (epoch); 207,741,078 insertions/min; 0.47 load factor
+1485507406426 s (epoch); 206,022,273 insertions/min; 0.5 load factor
+1485507466426 s (epoch); 204,350,774 insertions/min; 0.53 load factor
+1485507526426 s (epoch); 202,817,183 insertions/min; 0.55 load factor
+1485507586426 s (epoch); 201,302,562 insertions/min; 0.58 load factor
+1485507646426 s (epoch); 199,025,948 insertions/min; 0.61 load factor
+1485507706426 s (epoch); 195,646,157 insertions/min; 0.63 load factor
+1485507766426 s (epoch); 191,467,793 insertions/min; 0.66 load factor
+1485507826426 s (epoch); 186,331,493 insertions/min; 0.68 load factor
+1485507886426 s (epoch); 180,598,831 insertions/min; 0.71 load factor
+1485507946426 s (epoch); 174,423,530 insertions/min; 0.73 load factor
+1485508006426 s (epoch); 167,324,522 insertions/min; 0.75 load factor
+1485508066426 s (epoch); 159,385,760 insertions/min; 0.77 load factor
+1485508126426 s (epoch); 150,513,315 insertions/min; 0.79 load factor
+1485508186426 s (epoch); 141,083,271 insertions/min; 0.81 load factor
+1485508246426 s (epoch); 130,965,418 insertions/min; 0.83 load factor
+Started eviction of disk DiskFPSet0 the 1. time at 1,485,508,281,192 after 6,306,126,614 insertions, load factor 0.839 and reprobe of 1,024.
+page_defrag = always madvise [never]
+scaling_governor = 

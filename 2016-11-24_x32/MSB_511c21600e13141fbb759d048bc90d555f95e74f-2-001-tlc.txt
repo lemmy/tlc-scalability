@@ -1,0 +1,31 @@
+JUnit version 4.12
+.Test started at Fri Nov 25 08:51:33 UTC 2016
+Insertions: 8,589,934,592 (approx: 65,536 GiB)
+Thread count: 1
+Running test: FingerPrintGenerator
+Maximum FPSet table count is: 17,179,869,184 (approx: 131,072 GiB)
+FPSet lock count is: 256
+FPSet bucket count is: 1073741824
+Testing tlc2.tool.fp.MSBDiskFPSet
+Nov 25, 2016 8:51:42 AM se.hirt.jmx2jfr.SubscriptionCommand setUpEvents
+WARNING: Added attribute to the fail list. Will retry later.
+javax.management.InstanceNotFoundException: tlc2.tool:type=ModelChecker
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1095)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBeanInfo(DefaultMBeanServerInterceptor.java:1375)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.getMBeanInfo(JmxMBeanServer.java:920)
+	at se.hirt.jmx2jfr.EventDescriptor.create(EventDescriptor.java:86)
+	at se.hirt.jmx2jfr.SubscriptionCommand.setUpEvents(SubscriptionCommand.java:73)
+	at se.hirt.jmx2jfr.SubscriptionCommand.run(SubscriptionCommand.java:87)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+1480063956563 s; 117,809,473 insertions/min; 0.01 load factor
+1480064016563 s; 115,833,993 insertions/min; 0.01 load factor
+1480064076563 s; 113,183,052 insertions/min; 0.02 load factor
+1480064136563 s; 111,068,421 insertions/min; 0.03 load factor
+1480064196563 s; 108,983,237 insertions/min; 0.03 load factor

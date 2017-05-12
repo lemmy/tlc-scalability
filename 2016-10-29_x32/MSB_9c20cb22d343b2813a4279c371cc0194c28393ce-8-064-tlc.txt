@@ -1,0 +1,48 @@
+JUnit version 4.12
+.Test started at Fri Oct 28 22:08:26 UTC 2016
+Insertions: 17,179,869,184 (approx: 131,072 GiB)
+Thread count: 64
+Maximum FPSet table count is: 34,359,738,368 (approx: 262,144 GiB)
+FPSet lock count is: 16384
+FPSet bucket count is: 2147483639
+Testing tlc2.tool.fp.MSBDiskFPSet
+1477692572622 s; 402,015,329 insertions/min; 0.01 load factor
+1477692632622 s; 815,947,645 insertions/min; 0.04 load factor
+1477692752621 s; 4,731,773,576 insertions/min; 0.1 load factor
+1477692812621 s; 1,076,035,166 insertions/min; 0.14 load factor
+1477692872622 s; 807,759,522 insertions/min; 0.16 load factor
+1477692932622 s; 972,354,817 insertions/min; 0.19 load factor
+1477693052622 s; 4,233,715,910 insertions/min; 0.25 load factor
+1477693207315 s; 3,525,606,543 insertions/min; 0.29 load factor
+1477693292622 s; 1,328,582,387 insertions/min; 0.32 load factor
+1477693412622 s; 2,549,047,708 insertions/min; 0.35 load factor
+1477693532621 s; 2,540,192,097 insertions/min; 0.39 load factor
+1477693592623 s; 633,026,435 insertions/min; 0.41 load factor
+1477693673813 s; 225,249,271 insertions/min; 0.41 load factor
+1477693772621 s; 1,756,013,791 insertions/min; 0.44 load factor
+1477693832622 s; 632,027,982 insertions/min; 0.46 load factor
+1477693952621 s; 2,514,232,719 insertions/min; 0.5 load factor
+Total puts: 17179869184, total collisions: 0, total load factor: 0.5, duration: 1444305 ms.
+1477693956929 s; 713,640,000 insertions/min; 0.5 load factor
+Test finished at Fri Oct 28 22:32:36 UTC 2016
+.Test started at Fri Oct 28 22:32:36 UTC 2016
+Insertions: 17,179,869,184 (approx: 131,072 GiB)
+Thread count: 64
+Test finished at Fri Oct 28 22:32:36 UTC 2016
+.Test started at Fri Oct 28 22:32:36 UTC 2016
+Insertions: 17,179,869,184 (approx: 131,072 GiB)
+Thread count: 64
+Test finished at Fri Oct 28 22:32:36 UTC 2016
+.Test started at Fri Oct 28 22:32:36 UTC 2016
+Insertions: 17,179,869,184 (approx: 131,072 GiB)
+Thread count: 64
+Test finished at Fri Oct 28 22:32:36 UTC 2016
+
+Time: 1,450.286
+
+OK (4 tests)
+
+Running test: FingerPrintGenerator
+page_defrag = always madvise [never]
+scaling_governor = powersave
+kernel.numa_balancing = 1

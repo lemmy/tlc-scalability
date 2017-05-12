@@ -1,0 +1,155 @@
+JUnit version 4.12
+.Test started at Thu Oct 20 00:07:54 UTC 2016
+Insertions: 34,359,738,368 (approx: 262,144 GiB)
+Thread count: 80
+Maximum FPSet table count is: 68,719,476,736 (approx: 524,288 GiB)
+FPSet lock count is: 0
+FPSet bucket count is: 68719476736
+Testing tlc2.tool.fp.OffHeapDiskFPSet
+1476922141415 s; 9,222,893,835 insertions/min; 0.13 load factor
+1476922201414 s; 9,034,641,637 insertions/min; 0.27 load factor
+1476922261415 s; 8,501,699,972 insertions/min; 0.39 load factor
+Producer: 0, puts: 429649337, puts/collisions: none
+Producer: 1, puts: 429752329, puts/collisions: none
+Producer: 2, puts: 429767794, puts/collisions: none
+Producer: 3, puts: 429686529, puts/collisions: none
+Producer: 4, puts: 429773721, puts/collisions: none
+Producer: 5, puts: 429754998, puts/collisions: none
+Producer: 6, puts: 429496729, puts/collisions: none
+Producer: 7, puts: 429767373, puts/collisions: none
+Producer: 8, puts: 429702623, puts/collisions: none
+Producer: 9, puts: 429690972, puts/collisions: none
+Producer: 10, puts: 429704827, puts/collisions: none
+Producer: 11, puts: 429724025, puts/collisions: none
+Producer: 12, puts: 429745120, puts/collisions: none
+Producer: 13, puts: 429771640, puts/collisions: none
+Producer: 14, puts: 429716021, puts/collisions: none
+Producer: 15, puts: 429725784, puts/collisions: none
+Producer: 16, puts: 429720315, puts/collisions: none
+Producer: 17, puts: 429728000, puts/collisions: none
+Producer: 18, puts: 429756124, puts/collisions: none
+Producer: 19, puts: 429688867, puts/collisions: none
+Producer: 20, puts: 429691332, puts/collisions: none
+Producer: 21, puts: 429682274, puts/collisions: none
+Producer: 22, puts: 429567359, puts/collisions: none
+Producer: 23, puts: 429691852, puts/collisions: none
+Producer: 24, puts: 429712570, puts/collisions: none
+Producer: 25, puts: 429786619, puts/collisions: none
+Producer: 26, puts: 429703707, puts/collisions: none
+Producer: 27, puts: 429771714, puts/collisions: none
+Producer: 28, puts: 429728614, puts/collisions: none
+Producer: 29, puts: 429800639, puts/collisions: none
+Producer: 30, puts: 429761356, puts/collisions: none
+Producer: 31, puts: 429655023, puts/collisions: none
+Producer: 32, puts: 429668130, puts/collisions: none
+Producer: 33, puts: 429670182, puts/collisions: none
+Producer: 34, puts: 429718268, puts/collisions: none
+Producer: 35, puts: 429788541, puts/collisions: none
+Producer: 36, puts: 429626319, puts/collisions: none
+Producer: 37, puts: 429759623, puts/collisions: none
+Producer: 38, puts: 429649838, puts/collisions: none
+Producer: 39, puts: 429751573, puts/collisions: none
+Producer: 40, puts: 429646330, puts/collisions: none
+Producer: 41, puts: 429496729, puts/collisions: none
+Producer: 42, puts: 429711138, puts/collisions: none
+Producer: 43, puts: 429663266, puts/collisions: none
+Producer: 44, puts: 429496729, puts/collisions: none
+Producer: 45, puts: 429760948, puts/collisions: none
+Producer: 46, puts: 429681854, puts/collisions: none
+Producer: 47, puts: 429754035, puts/collisions: none
+Producer: 48, puts: 429658357, puts/collisions: none
+Producer: 49, puts: 429667076, puts/collisions: none
+Producer: 50, puts: 429624688, puts/collisions: none
+Producer: 51, puts: 429755569, puts/collisions: none
+Producer: 52, puts: 429761186, puts/collisions: none
+Producer: 53, puts: 429654956, puts/collisions: none
+Producer: 54, puts: 429713496, puts/collisions: none
+Producer: 55, puts: 429664187, puts/collisions: none
+Producer: 56, puts: 429644398, puts/collisions: none
+Producer: 57, puts: 429890112, puts/collisions: none
+Producer: 58, puts: 429496729, puts/collisions: none
+Producer: 59, puts: 429496729, puts/collisions: none
+Producer: 60, puts: 429692886, puts/collisions: none
+Producer: 61, puts: 429695156, puts/collisions: none
+Producer: 62, puts: 429668732, puts/collisions: none
+Producer: 63, puts: 429496729, puts/collisions: none
+Producer: 64, puts: 429496729, puts/collisions: none
+Producer: 65, puts: 429781016, puts/collisions: none
+Producer: 66, puts: 429627030, puts/collisions: none
+Producer: 67, puts: 429496729, puts/collisions: none
+Producer: 68, puts: 429725036, puts/collisions: none
+Producer: 69, puts: 429807956, puts/collisions: none
+Producer: 70, puts: 429669910, puts/collisions: none
+Producer: 71, puts: 429496729, puts/collisions: none
+Producer: 72, puts: 429682228, puts/collisions: none
+Producer: 73, puts: 429731480, puts/collisions: none
+Producer: 74, puts: 429663322, puts/collisions: none
+Producer: 75, puts: 429718054, puts/collisions: none
+Producer: 76, puts: 429728472, puts/collisions: none
+Producer: 77, puts: 429696477, puts/collisions: none
+Producer: 78, puts: 429709795, puts/collisions: none
+Producer: 79, puts: 429686395, puts/collisions: none
+Total puts: 34375018034, total collisions: 0, total load factor: 0.5, duration: 223830 ms, reprobe: 80.
+1476922305261 s; Total 9,214,560,000 insertions/min; 0.5 load factor
+Test finished at Thu Oct 20 00:11:45 UTC 2016
+E.Test started at Thu Oct 20 00:11:45 UTC 2016
+Insertions: 34,359,738,368 (approx: 262,144 GiB)
+Thread count: 80
+Test finished at Thu Oct 20 00:11:45 UTC 2016
+.Test started at Thu Oct 20 00:11:45 UTC 2016
+Insertions: 34,359,738,368 (approx: 262,144 GiB)
+Thread count: 80
+Test finished at Thu Oct 20 00:11:45 UTC 2016
+.Test started at Thu Oct 20 00:11:45 UTC 2016
+Insertions: 34,359,738,368 (approx: 262,144 GiB)
+Thread count: 80
+Test finished at Thu Oct 20 00:11:45 UTC 2016
+
+Time: 230.477
+There was 1 failure:
+1) testMaxFPSetSizeRnd(tlc2.tool.fp.MultiThreadedOffHeapDiskFPSetTest)
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at tlc2.tool.fp.MultiThreadedFPSetTest.doTest(MultiThreadedFPSetTest.java:172)
+	at tlc2.tool.fp.MultiThreadedFPSetTest.testMaxFPSetSizeRnd(MultiThreadedFPSetTest.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
+
+FAILURES!!!
+Tests run: 4,  Failures: 1
+
+page_defrag = [always] madvise never
+scaling_governor = powersave
+kernel.numa_balancing = 1
+Running test: FingerPrintGenerator

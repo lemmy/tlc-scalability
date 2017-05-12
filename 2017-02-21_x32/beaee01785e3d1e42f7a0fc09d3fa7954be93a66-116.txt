@@ -1,0 +1,9 @@
+Command exited with non-zero status 130
+19406.16user 1635.49system 3:22.57elapsed 10386%CPU (0avgtext+0avgdata 423422048maxresident)k
+0inputs+13952outputs (0major+4378337minor)pagefaults 0swaps
+30594.92user 2440.91system 5:12.66elapsed 10565%CPU (0avgtext+0avgdata 502646120maxresident)k
+0inputs+13568outputs (0major+6486116minor)pagefaults 0swaps
+30667.80user 2378.38system 5:13.33elapsed 10546%CPU (0avgtext+0avgdata 499163508maxresident)k
+0inputs+13736outputs (0major+6390305minor)pagefaults 0swaps
+30554.17user 2421.92system 5:13.20elapsed 10528%CPU (0avgtext+0avgdata 507616232maxresident)k
+0inputs+13536outputs (0major+6845057minor)pagefaults 0swaps

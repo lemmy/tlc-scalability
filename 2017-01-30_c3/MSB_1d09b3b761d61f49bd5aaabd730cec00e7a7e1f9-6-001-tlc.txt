@@ -1,0 +1,46 @@
+JUnit version 4.12
+.Test started at Mon Jan 30 15:53:28 UTC 2017
+Insertions: 2,000,000,000 (approx: 15,258 GiB)
+Thread count: 1
+Running test: FingerPrintGenerator
+Maximum FPSet table count is: 2,147,483,648 (approx: 16,384 GiB)
+FPSet lock count is: 1
+FPSet bucket count is: 134217728
+Testing tlc2.tool.fp.MSBDiskFPSet
+1485791609240 s (epoch); 109 insertions/min; 0 load factor
+1485791669241 s (epoch); 196,780,730 insertions/min; 0.09 load factor
+1485791729240 s (epoch); 175,832,585 insertions/min; 0.17 load factor
+1485791789240 s (epoch); 170,884,247 insertions/min; 0.25 load factor
+1485791849240 s (epoch); 169,189,566 insertions/min; 0.33 load factor
+1485791909240 s (epoch); 166,954,800 insertions/min; 0.41 load factor
+1485791969240 s (epoch); 164,918,657 insertions/min; 0.49 load factor
+1485792029240 s (epoch); 162,720,542 insertions/min; 0.56 load factor
+1485792089240 s (epoch); 159,547,796 insertions/min; 0.64 load factor
+1485792149240 s (epoch); 155,914,702 insertions/min; 0.71 load factor
+1485792209240 s (epoch); 153,676,790 insertions/min; 0.78 load factor
+1485792269240 s (epoch); 132,421,971 insertions/min; 0.84 load factor
+1485792329240 s (epoch); 130,482,580 insertions/min; 0.9 load factor
+Producer: 0, puts: 2000000000, puts/collisions: none
+Total puts: 2000000000, total collisions: 0, total load factor: 0.931, duration: 748270 ms.
+1485792357511 s; 160,320,000 insertions/min; 0.93 load factor
+Test finished at Mon Jan 30 16:05:57 UTC 2017
+.Test started at Mon Jan 30 16:05:57 UTC 2017
+Insertions: 2,000,000,000 (approx: 15,258 GiB)
+Thread count: 1
+Test finished at Mon Jan 30 16:05:57 UTC 2017
+.Test started at Mon Jan 30 16:05:57 UTC 2017
+Insertions: 2,000,000,000 (approx: 15,258 GiB)
+Thread count: 1
+Test finished at Mon Jan 30 16:05:57 UTC 2017
+.Test started at Mon Jan 30 16:05:57 UTC 2017
+Insertions: 2,000,000,000 (approx: 15,258 GiB)
+Thread count: 1
+Test finished at Mon Jan 30 16:05:57 UTC 2017
+
+Time: 748.711
+
+OK (4 tests)
+
+page_defrag = always madvise [never]
+scaling_governor = 
+kernel.numa_balancing = 0

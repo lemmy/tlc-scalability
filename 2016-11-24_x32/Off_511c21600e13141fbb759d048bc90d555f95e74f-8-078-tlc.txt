@@ -1,0 +1,168 @@
+JUnit version 4.12
+.Test started at Fri Nov 25 14:17:34 UTC 2016
+Insertions: 34,359,738,368 (approx: 262,144 GiB)
+Thread count: 78
+Running test: FingerPrintGenerator
+Maximum FPSet table count is: 68,719,476,736 (approx: 524,288 GiB)
+FPSet lock count is: 0
+FPSet bucket count is: 68719476736
+Testing tlc2.tool.fp.OffHeapDiskFPSet
+Nov 25, 2016 2:17:44 PM se.hirt.jmx2jfr.SubscriptionCommand setUpEvents
+WARNING: Added attribute to the fail list. Will retry later.
+javax.management.InstanceNotFoundException: tlc2.tool:type=ModelChecker
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1095)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBeanInfo(DefaultMBeanServerInterceptor.java:1375)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.getMBeanInfo(JmxMBeanServer.java:920)
+	at se.hirt.jmx2jfr.EventDescriptor.create(EventDescriptor.java:86)
+	at se.hirt.jmx2jfr.SubscriptionCommand.setUpEvents(SubscriptionCommand.java:73)
+	at se.hirt.jmx2jfr.SubscriptionCommand.run(SubscriptionCommand.java:87)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+1480083520911 s; 14,995,785,974 insertions/min; 0.22 load factor
+Producer: 0, puts: 440731326, puts/collisions: none
+Producer: 1, puts: 440894225, puts/collisions: none
+Producer: 2, puts: 440935741, puts/collisions: none
+Producer: 3, puts: 440881809, puts/collisions: none
+Producer: 4, puts: 440796602, puts/collisions: none
+Producer: 5, puts: 440776355, puts/collisions: none
+Producer: 6, puts: 440924182, puts/collisions: none
+Producer: 7, puts: 440928403, puts/collisions: none
+Producer: 8, puts: 440897698, puts/collisions: none
+Producer: 9, puts: 440509466, puts/collisions: none
+Producer: 10, puts: 440904970, puts/collisions: none
+Producer: 11, puts: 440887355, puts/collisions: none
+Producer: 12, puts: 440948530, puts/collisions: none
+Producer: 13, puts: 440776300, puts/collisions: none
+Producer: 14, puts: 440893636, puts/collisions: none
+Producer: 15, puts: 440631370, puts/collisions: none
+Producer: 16, puts: 440877812, puts/collisions: none
+Producer: 17, puts: 440753461, puts/collisions: none
+Producer: 18, puts: 441171332, puts/collisions: none
+Producer: 19, puts: 440723013, puts/collisions: none
+Producer: 20, puts: 440630275, puts/collisions: none
+Producer: 21, puts: 440887484, puts/collisions: none
+Producer: 22, puts: 440663643, puts/collisions: none
+Producer: 23, puts: 440509466, puts/collisions: none
+Producer: 24, puts: 440840227, puts/collisions: none
+Producer: 25, puts: 441012690, puts/collisions: none
+Producer: 26, puts: 440932591, puts/collisions: none
+Producer: 27, puts: 440802296, puts/collisions: none
+Producer: 28, puts: 440636057, puts/collisions: none
+Producer: 29, puts: 440863099, puts/collisions: none
+Producer: 30, puts: 440639206, puts/collisions: none
+Producer: 31, puts: 440693427, puts/collisions: none
+Producer: 32, puts: 440858302, puts/collisions: none
+Producer: 33, puts: 440842558, puts/collisions: none
+Producer: 34, puts: 440683658, puts/collisions: none
+Producer: 35, puts: 440922349, puts/collisions: none
+Producer: 36, puts: 440599307, puts/collisions: none
+Producer: 37, puts: 440842169, puts/collisions: none
+Producer: 38, puts: 440817341, puts/collisions: none
+Producer: 39, puts: 440698791, puts/collisions: none
+Producer: 40, puts: 440913181, puts/collisions: none
+Producer: 41, puts: 440747008, puts/collisions: none
+Producer: 42, puts: 440658769, puts/collisions: none
+Producer: 43, puts: 440577398, puts/collisions: none
+Producer: 44, puts: 440939695, puts/collisions: none
+Producer: 45, puts: 440942076, puts/collisions: none
+Producer: 46, puts: 440787964, puts/collisions: none
+Producer: 47, puts: 440899294, puts/collisions: none
+Producer: 48, puts: 440915382, puts/collisions: none
+Producer: 49, puts: 440971750, puts/collisions: none
+Producer: 50, puts: 440906084, puts/collisions: none
+Producer: 51, puts: 440770627, puts/collisions: none
+Producer: 52, puts: 441016298, puts/collisions: none
+Producer: 53, puts: 440917635, puts/collisions: none
+Producer: 54, puts: 441116383, puts/collisions: none
+Producer: 55, puts: 440509466, puts/collisions: none
+Producer: 56, puts: 440895262, puts/collisions: none
+Producer: 57, puts: 440509466, puts/collisions: none
+Producer: 58, puts: 440938757, puts/collisions: none
+Producer: 59, puts: 440867303, puts/collisions: none
+Producer: 60, puts: 440529884, puts/collisions: none
+Producer: 61, puts: 440509466, puts/collisions: none
+Producer: 62, puts: 440617149, puts/collisions: none
+Producer: 63, puts: 440509466, puts/collisions: none
+Producer: 64, puts: 440831741, puts/collisions: none
+Producer: 65, puts: 440896089, puts/collisions: none
+Producer: 66, puts: 440837603, puts/collisions: none
+Producer: 67, puts: 440763485, puts/collisions: none
+Producer: 68, puts: 440787172, puts/collisions: none
+Producer: 69, puts: 440863543, puts/collisions: none
+Producer: 70, puts: 440509466, puts/collisions: none
+Producer: 71, puts: 440820886, puts/collisions: none
+Producer: 72, puts: 440843794, puts/collisions: none
+Producer: 73, puts: 440915633, puts/collisions: none
+Producer: 74, puts: 440911646, puts/collisions: none
+Producer: 75, puts: 440785321, puts/collisions: none
+Producer: 76, puts: 440875566, puts/collisions: none
+Producer: 77, puts: 440509466, puts/collisions: none
+Total puts: 34382335696, total collisions: 0, total load factor: 0.5, duration: 155831 ms.
+1480083616752 s; 13,238,280,000 insertions/min; 0.5 load factor
+Test finished at Fri Nov 25 14:20:16 UTC 2016
+E.Test started at Fri Nov 25 14:20:16 UTC 2016
+Insertions: 34,359,738,368 (approx: 262,144 GiB)
+Thread count: 78
+Test finished at Fri Nov 25 14:20:16 UTC 2016
+.Test started at Fri Nov 25 14:20:16 UTC 2016
+Insertions: 34,359,738,368 (approx: 262,144 GiB)
+Thread count: 78
+Test finished at Fri Nov 25 14:20:16 UTC 2016
+.Test started at Fri Nov 25 14:20:16 UTC 2016
+Insertions: 34,359,738,368 (approx: 262,144 GiB)
+Thread count: 78
+Test finished at Fri Nov 25 14:20:16 UTC 2016
+
+Time: 162.009
+There was 1 failure:
+1) testMaxFPSetSizeRnd(tlc2.tool.fp.MultiThreadedOffHeapDiskFPSetTest)
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at tlc2.tool.fp.MultiThreadedFPSetTest.doTest(MultiThreadedFPSetTest.java:172)
+	at tlc2.tool.fp.MultiThreadedFPSetTest.testMaxFPSetSizeRnd(MultiThreadedFPSetTest.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
+
+FAILURES!!!
+Tests run: 4,  Failures: 1
+
+page_defrag = always madvise [never]
+scaling_governor = performance
+kernel.numa_balancing = 0

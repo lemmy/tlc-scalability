@@ -1,0 +1,42 @@
+JUnit version 4.12
+.Test started at Sun Oct 23 20:16:45 UTC 2016
+Insertions: 34,359,738,368 (approx: 262,144 GiB)
+Thread count: 16
+Maximum FPSet table count is: 68,719,476,736 (approx: 524,288 GiB)
+FPSet lock count is: 0
+FPSet bucket count is: 68719476736
+Testing tlc2.tool.fp.OffHeapDiskFPSet
+1477253882355 s; 3,499,941,480 insertions/min; 0.05 load factor
+1477253942355 s; 3,488,991,737 insertions/min; 0.1 load factor
+1477254062354 s; 13,594,493,441 insertions/min; 0.2 load factor
+1477254122354 s; 3,299,712,553 insertions/min; 0.25 load factor
+1477254182354 s; 3,229,925,352 insertions/min; 0.3 load factor
+1477254242354 s; 3,133,501,156 insertions/min; 0.34 load factor
+1477254302354 s; 3,033,037,988 insertions/min; 0.39 load factor
+1477254362354 s; 2,961,243,600 insertions/min; 0.43 load factor
+1477254422354 s; 2,888,592,150 insertions/min; 0.47 load factor
+1477254482354 s; 2,024,035,870 insertions/min; 0.5 load factor
+Total puts: 34359738368, total collisions: 0, total load factor: 0.5, duration: 661285 ms.
+1477254483643 s; 3,117,540,000 insertions/min; 0.5 load factor
+Test finished at Sun Oct 23 20:28:03 UTC 2016
+.Test started at Sun Oct 23 20:28:03 UTC 2016
+Insertions: 34,359,738,368 (approx: 262,144 GiB)
+Thread count: 16
+Test finished at Sun Oct 23 20:28:03 UTC 2016
+.Test started at Sun Oct 23 20:28:03 UTC 2016
+Insertions: 34,359,738,368 (approx: 262,144 GiB)
+Thread count: 16
+Test finished at Sun Oct 23 20:28:03 UTC 2016
+.Test started at Sun Oct 23 20:28:03 UTC 2016
+Insertions: 34,359,738,368 (approx: 262,144 GiB)
+Thread count: 16
+Test finished at Sun Oct 23 20:28:03 UTC 2016
+
+Time: 678.335
+
+OK (4 tests)
+
+Running test: FingerPrintGenerator
+page_defrag = always madvise [never]
+scaling_governor = powersave
+kernel.numa_balancing = 1

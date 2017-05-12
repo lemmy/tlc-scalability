@@ -1,0 +1,46 @@
+JUnit version 4.12
+.Test started at Mon Jan 30 14:36:02 UTC 2017
+Insertions: 2,000,000,000 (approx: 15,258 GiB)
+Thread count: 1
+Running test: FingerPrintGenerator
+Maximum FPSet table count is: 2,147,483,648 (approx: 16,384 GiB)
+FPSet lock count is: 1
+FPSet bucket count is: 134217728
+Testing tlc2.tool.fp.MSBDiskFPSet
+1485786963172 s (epoch); 117 insertions/min; 0 load factor
+1485787023171 s (epoch); 185,018,469 insertions/min; 0.09 load factor
+1485787083171 s (epoch); 193,737,424 insertions/min; 0.18 load factor
+1485787143171 s (epoch); 150,361,216 insertions/min; 0.25 load factor
+1485787203171 s (epoch); 148,149,223 insertions/min; 0.32 load factor
+1485787263172 s (epoch); 146,560,650 insertions/min; 0.38 load factor
+1485787323171 s (epoch); 144,854,672 insertions/min; 0.45 load factor
+1485787383171 s (epoch); 143,250,763 insertions/min; 0.52 load factor
+1485787443172 s (epoch); 153,624,549 insertions/min; 0.59 load factor
+1485787503171 s (epoch); 173,423,356 insertions/min; 0.67 load factor
+1485787563171 s (epoch); 170,336,359 insertions/min; 0.75 load factor
+1485787623172 s (epoch); 155,152,506 insertions/min; 0.82 load factor
+1485787683171 s (epoch); 124,158,936 insertions/min; 0.88 load factor
+Producer: 0, puts: 2000000000, puts/collisions: none
+Total puts: 2000000000, total collisions: 0, total load factor: 0.931, duration: 773973 ms.
+1485787737146 s; 155,040,000 insertions/min; 0.93 load factor
+Test finished at Mon Jan 30 14:48:57 UTC 2017
+.Test started at Mon Jan 30 14:48:57 UTC 2017
+Insertions: 2,000,000,000 (approx: 15,258 GiB)
+Thread count: 1
+Test finished at Mon Jan 30 14:48:57 UTC 2017
+.Test started at Mon Jan 30 14:48:57 UTC 2017
+Insertions: 2,000,000,000 (approx: 15,258 GiB)
+Thread count: 1
+Test finished at Mon Jan 30 14:48:57 UTC 2017
+.Test started at Mon Jan 30 14:48:57 UTC 2017
+Insertions: 2,000,000,000 (approx: 15,258 GiB)
+Thread count: 1
+Test finished at Mon Jan 30 14:48:57 UTC 2017
+
+Time: 774.375
+
+OK (4 tests)
+
+page_defrag = always madvise [never]
+scaling_governor = 
+kernel.numa_balancing = 0

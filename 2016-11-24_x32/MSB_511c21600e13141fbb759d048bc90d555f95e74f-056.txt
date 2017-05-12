@@ -1,0 +1,3 @@
+Command exited with non-zero status 1
+32602.75user 2102.69system 10:46.41elapsed 5368%CPU (0avgtext+0avgdata 223892456maxresident)k
+0inputs+21064outputs (0major+3385712minor)pagefaults 0swaps

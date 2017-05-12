@@ -1,0 +1,33 @@
+Command exited with non-zero status 1
+3238.62user 49.89system 2:01.80elapsed 2699%CPU (0avgtext+0avgdata 52654684maxresident)k
+0inputs+5272outputs (0major+191756minor)pagefaults 0swaps
+Command exited with non-zero status 1
+4420.07user 50.09system 3:00.47elapsed 2476%CPU (0avgtext+0avgdata 52634556maxresident)k
+0inputs+7040outputs (0major+263798minor)pagefaults 0swaps
+Command exited with non-zero status 1
+4953.62user 52.27system 3:31.75elapsed 2363%CPU (0avgtext+0avgdata 52658684maxresident)k
+0inputs+7832outputs (0major+299431minor)pagefaults 0swaps
+Command exited with non-zero status 1
+2608.12user 48.76system 1:31.85elapsed 2892%CPU (0avgtext+0avgdata 52631208maxresident)k
+0inputs+4560outputs (0major+155497minor)pagefaults 0swaps
+Command exited with non-zero status 1
+3142.74user 49.55system 3:27.17elapsed 1540%CPU (0avgtext+0avgdata 52654556maxresident)k
+0inputs+6704outputs (0major+285095minor)pagefaults 0swaps
+Command exited with non-zero status 1
+2069.46user 43.83system 1:12.16elapsed 2928%CPU (0avgtext+0avgdata 52579212maxresident)k
+0inputs+4000outputs (0major+130884minor)pagefaults 0swaps
+Command exited with non-zero status 1
+2066.20user 47.28system 1:14.51elapsed 2836%CPU (0avgtext+0avgdata 52574572maxresident)k
+0inputs+4032outputs (0major+136920minor)pagefaults 0swaps
+Command exited with non-zero status 1
+2083.10user 49.64system 1:12.72elapsed 2932%CPU (0avgtext+0avgdata 52583504maxresident)k
+0inputs+4024outputs (0major+178805minor)pagefaults 0swaps
+Command exited with non-zero status 1
+2095.42user 44.50system 1:16.72elapsed 2789%CPU (0avgtext+0avgdata 52575528maxresident)k
+0inputs+4072outputs (0major+140841minor)pagefaults 0swaps
+Command exited with non-zero status 1
+2164.72user 47.38system 1:18.94elapsed 2801%CPU (0avgtext+0avgdata 52578176maxresident)k
+0inputs+4144outputs (0major+141353minor)pagefaults 0swaps
+Command exited with non-zero status 1
+2114.11user 46.50system 1:17.50elapsed 2787%CPU (0avgtext+0avgdata 52577472maxresident)k
+0inputs+4056outputs (0major+140216minor)pagefaults 0swaps

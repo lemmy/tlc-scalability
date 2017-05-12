@@ -1,0 +1,49 @@
+JUnit version 4.12
+.Test started at Fri Oct 28 08:01:37 UTC 2016
+Insertions: 17,179,869,184 (approx: 131,072 GiB)
+Thread count: 64
+Maximum FPSet table count is: 34,359,738,368 (approx: 262,144 GiB)
+FPSet lock count is: 16384
+FPSet bucket count is: 2147483639
+Testing tlc2.tool.fp.MSBDiskFPSet
+1477641764407 s; 416,673,754 insertions/min; 0.01 load factor
+1477641824412 s; 829,706,383 insertions/min; 0.04 load factor
+1477641944406 s; 4,855,445,563 insertions/min; 0.11 load factor
+1477642004407 s; 1,228,305,398 insertions/min; 0.14 load factor
+1477642064407 s; 1,187,162,634 insertions/min; 0.18 load factor
+1477642184407 s; 4,378,577,315 insertions/min; 0.24 load factor
+1477642244407 s; 949,260,321 insertions/min; 0.27 load factor
+1477642357904 s; 1,267,575,625 insertions/min; 0.29 load factor
+1477642424407 s; 789,016,021 insertions/min; 0.31 load factor
+1477642544406 s; 2,515,923,731 insertions/min; 0.35 load factor
+1477642604407 s; 615,875,734 insertions/min; 0.36 load factor
+1477642724406 s; 2,481,378,853 insertions/min; 0.4 load factor
+1477642839758 s; 959,667,072 insertions/min; 0.41 load factor
+1477642904406 s; 628,561,180 insertions/min; 0.43 load factor
+1477642964406 s; 545,921,194 insertions/min; 0.45 load factor
+1477643024407 s; 538,428,712 insertions/min; 0.46 load factor
+1477643144406 s; 2,145,085,678 insertions/min; 0.49 load factor
+Total puts: 17179869184, total collisions: 0, total load factor: 0.5, duration: 1467545 ms.
+1477643171953 s; 702,360,000 insertions/min; 0.5 load factor
+Test finished at Fri Oct 28 08:26:11 UTC 2016
+.Test started at Fri Oct 28 08:26:11 UTC 2016
+Insertions: 17,179,869,184 (approx: 131,072 GiB)
+Thread count: 64
+Test finished at Fri Oct 28 08:26:11 UTC 2016
+.Test started at Fri Oct 28 08:26:11 UTC 2016
+Insertions: 17,179,869,184 (approx: 131,072 GiB)
+Thread count: 64
+Test finished at Fri Oct 28 08:26:11 UTC 2016
+.Test started at Fri Oct 28 08:26:11 UTC 2016
+Insertions: 17,179,869,184 (approx: 131,072 GiB)
+Thread count: 64
+Test finished at Fri Oct 28 08:26:11 UTC 2016
+
+Time: 1,474.142
+
+OK (4 tests)
+
+Running test: FingerPrintGenerator
+page_defrag = always madvise [never]
+scaling_governor = powersave
+kernel.numa_balancing = 1

@@ -1,0 +1,327 @@
+cpu00: largest shared memory segment: 1816448 MB
+pan: using 2 cores
+cpu00 Depth=      50 States= 1.09e+06 Transitions= 3.96e+06 Memory=     0.098	SharedMLeft= 881542 t=   13.7 R=  8e+04
+cpu01 Depth=      50 States= 1.04e+06 Transitions= 3.94e+06 Memory=     0.098	SharedMLeft= 881550 t=   13.7 R=  8e+04
+cpu00 Depth=      55 States= 2.01e+06 Transitions= 7.62e+06 Memory=     0.098	SharedMLeft= 881507 t=   22.1 R=  9e+04
+cpu01 Depth=      56 States= 2.23e+06 Transitions= 8.53e+06 Memory=     0.098	SharedMLeft= 881501 t=   24.1 R=  9e+04
+cpu00 Depth=      59 States= 3.24e+06 Transitions= 1.22e+07 Memory=     0.098	SharedMLeft= 881451 t=   30.8 R=  1e+05
+cpu01 Depth=      59 States= 3.22e+06 Transitions= 1.22e+07 Memory=     0.098	SharedMLeft= 881456 t=   30.8 R=  1e+05
+cpu00 Depth=      61 States= 4.12e+06 Transitions= 1.56e+07 Memory=     0.098	SharedMLeft= 881411 t=     36 R=  1e+05
+cpu01 Depth=      61 States= 4.11e+06 Transitions= 1.57e+07 Memory=     0.098	SharedMLeft= 881415 t=     36 R=  1e+05
+cpu00 Depth=      63 States= 5.18e+06 Transitions= 1.98e+07 Memory=     0.098	SharedMLeft= 881368 t=   41.7 R=  1e+05
+cpu01 Depth=      63 States= 5.21e+06 Transitions= 1.99e+07 Memory=     0.098	SharedMLeft= 881366 t=   41.7 R=  1e+05
+cpu00 Depth=      65 States=  6.4e+06 Transitions= 2.48e+07 Memory=     0.098	SharedMLeft= 881325 t=   47.7 R=  1e+05
+cpu01 Depth=      65 States= 6.54e+06 Transitions=  2.5e+07 Memory=     0.098	SharedMLeft= 881311 t=   47.7 R=  1e+05
+cpu00 Depth=      66 States= 7.11e+06 Transitions= 2.76e+07 Memory=     0.098	SharedMLeft= 881300 t=   50.7 R=  1e+05
+cpu01 Depth=      66 States= 7.24e+06 Transitions= 2.78e+07 Memory=     0.098	SharedMLeft= 881283 t=   50.7 R=  1e+05
+cpu01 Depth=      67 States= 8.03e+06 Transitions= 3.08e+07 Memory=     0.098	SharedMLeft= 881253 t=   53.8 R=  1e+05
+cpu00 Depth=      68 States= 8.61e+06 Transitions= 3.39e+07 Memory=     0.098	SharedMLeft= 881252 t=   56.9 R=  2e+05
+cpu00 Depth=      69 States= 9.48e+06 Transitions= 3.74e+07 Memory=     0.098	SharedMLeft= 881222 t=   60.2 R=  2e+05
+cpu01 Depth=      69 States= 9.81e+06 Transitions= 3.76e+07 Memory=     0.098	SharedMLeft= 881176 t=   60.2 R=  2e+05
+cpu00 Depth=      70 States= 1.04e+07 Transitions= 4.12e+07 Memory=     0.098	SharedMLeft= 881195 t=   63.6 R=  2e+05
+cpu01 Depth=      70 States= 1.09e+07 Transitions= 4.14e+07 Memory=     0.098	SharedMLeft= 881125 t=   63.6 R=  2e+05
+cpu00 Depth=      71 States= 1.14e+07 Transitions= 4.55e+07 Memory=     0.098	SharedMLeft= 881159 t=   67.2 R=  2e+05
+cpu01 Depth=      71 States=  1.2e+07 Transitions= 4.56e+07 Memory=     0.098	SharedMLeft= 881070 t=   67.2 R=  2e+05
+cpu00 Depth=      72 States= 1.26e+07 Transitions= 5.02e+07 Memory=     0.098	SharedMLeft= 881118 t=   71.1 R=  2e+05
+cpu01 Depth=      72 States= 1.32e+07 Transitions= 5.03e+07 Memory=     0.098	SharedMLeft= 881011 t=   71.1 R=  2e+05
+cpu00 Depth=      73 States= 1.39e+07 Transitions= 5.55e+07 Memory=     0.098	SharedMLeft= 881071 t=   75.2 R=  2e+05
+cpu01 Depth=      73 States= 1.46e+07 Transitions= 5.55e+07 Memory=     0.098	SharedMLeft= 880945 t=   75.2 R=  2e+05
+cpu00 Depth=      74 States= 1.53e+07 Transitions= 6.12e+07 Memory=     0.098	SharedMLeft= 881018 t=   79.6 R=  2e+05
+cpu01 Depth=      74 States= 1.61e+07 Transitions= 6.12e+07 Memory=     0.098	SharedMLeft= 880877 t=   79.6 R=  2e+05
+cpu00 Depth=      75 States= 1.69e+07 Transitions= 6.76e+07 Memory=     0.098	SharedMLeft= 880962 t=   84.4 R=  2e+05
+cpu01 Depth=      75 States= 1.78e+07 Transitions= 6.76e+07 Memory=     0.098	SharedMLeft= 880803 t=   84.4 R=  2e+05
+cpu00 Depth=      76 States= 1.86e+07 Transitions= 7.45e+07 Memory=     0.098	SharedMLeft= 880901 t=   89.4 R=  2e+05
+cpu01 Depth=      76 States= 1.96e+07 Transitions= 7.45e+07 Memory=     0.098	SharedMLeft= 880728 t=   89.4 R=  2e+05
+cpu00 Depth=      77 States= 2.04e+07 Transitions=  8.2e+07 Memory=     0.098	SharedMLeft= 880834 t=   94.8 R=  2e+05
+cpu01 Depth=      77 States= 2.15e+07 Transitions=  8.2e+07 Memory=     0.098	SharedMLeft= 880656 t=   94.8 R=  2e+05
+cpu00 Depth=      78 States= 2.23e+07 Transitions=    9e+07 Memory=     0.098	SharedMLeft= 880782 t=    101 R=  2e+05
+cpu01 Depth=      78 States= 2.35e+07 Transitions=    9e+07 Memory=     0.098	SharedMLeft= 880567 t=    101 R=  2e+05
+cpu00 Depth=      79 States= 2.43e+07 Transitions= 9.86e+07 Memory=     0.098	SharedMLeft= 880723 t=    107 R=  2e+05
+cpu01 Depth=      79 States= 2.57e+07 Transitions= 9.85e+07 Memory=     0.098	SharedMLeft= 880478 t=    107 R=  2e+05
+cpu00 Depth=      80 States= 2.65e+07 Transitions= 1.08e+08 Memory=     0.098	SharedMLeft= 880662 t=    113 R=  2e+05
+cpu01 Depth=      80 States=  2.8e+07 Transitions= 1.07e+08 Memory=     0.098	SharedMLeft= 880389 t=    113 R=  2e+05
+cpu00 Depth=      81 States= 2.87e+07 Transitions= 1.17e+08 Memory=     0.098	SharedMLeft= 880601 t=    120 R=  2e+05
+cpu01 Depth=      81 States= 3.04e+07 Transitions= 1.17e+08 Memory=     0.098	SharedMLeft= 880290 t=    120 R=  3e+05
+cpu00 Depth=      82 States= 3.12e+07 Transitions= 1.27e+08 Memory=     0.098	SharedMLeft= 880522 t=    127 R=  2e+05
+cpu01 Depth=      82 States=  3.3e+07 Transitions= 1.27e+08 Memory=     0.098	SharedMLeft= 880192 t=    127 R=  3e+05
+cpu00 Depth=      83 States= 3.37e+07 Transitions= 1.38e+08 Memory=     0.098	SharedMLeft= 880451 t=    135 R=  3e+05
+cpu01 Depth=      83 States= 3.59e+07 Transitions= 1.38e+08 Memory=     0.098	SharedMLeft= 880071 t=    135 R=  3e+05
+cpu00 Depth=      84 States= 3.65e+07 Transitions=  1.5e+08 Memory=     0.098	SharedMLeft= 880375 t=    143 R=  3e+05
+cpu01 Depth=      84 States= 3.89e+07 Transitions=  1.5e+08 Memory=     0.098	SharedMLeft= 879930 t=    143 R=  3e+05
+cpu00 Depth=      85 States= 3.95e+07 Transitions= 1.62e+08 Memory=     0.098	SharedMLeft= 880281 t=    152 R=  3e+05
+cpu01 Depth=      85 States= 4.22e+07 Transitions= 1.62e+08 Memory=     0.098	SharedMLeft= 879786 t=    152 R=  3e+05
+cpu00 Depth=      86 States= 4.28e+07 Transitions= 1.76e+08 Memory=     0.098	SharedMLeft= 880176 t=    162 R=  3e+05
+cpu01 Depth=      86 States= 4.58e+07 Transitions= 1.76e+08 Memory=     0.098	SharedMLeft= 879633 t=    162 R=  3e+05
+cpu00 Depth=      87 States= 4.63e+07 Transitions= 1.91e+08 Memory=     0.098	SharedMLeft= 880066 t=    172 R=  3e+05
+cpu01 Depth=      87 States= 4.97e+07 Transitions= 1.91e+08 Memory=     0.098	SharedMLeft= 879463 t=    172 R=  3e+05
+cpu00 Depth=      88 States= 5.01e+07 Transitions= 2.07e+08 Memory=     0.098	SharedMLeft= 879959 t=    184 R=  3e+05
+cpu01 Depth=      88 States= 5.39e+07 Transitions= 2.07e+08 Memory=     0.098	SharedMLeft= 879270 t=    184 R=  3e+05
+cpu00 Depth=      89 States= 5.42e+07 Transitions= 2.24e+08 Memory=     0.098	SharedMLeft= 879836 t=    196 R=  3e+05
+cpu01 Depth=      89 States= 5.84e+07 Transitions= 2.24e+08 Memory=     0.098	SharedMLeft= 879078 t=    196 R=  3e+05
+cpu00 Depth=      90 States= 5.85e+07 Transitions= 2.43e+08 Memory=     0.098	SharedMLeft= 879719 t=    209 R=  3e+05
+cpu01 Depth=      90 States= 6.31e+07 Transitions= 2.43e+08 Memory=     0.098	SharedMLeft= 878879 t=    209 R=  3e+05
+cpu00 Depth=      91 States= 6.31e+07 Transitions= 2.62e+08 Memory=     0.098	SharedMLeft= 879587 t=    224 R=  3e+05
+cpu01 Depth=      91 States= 6.81e+07 Transitions= 2.62e+08 Memory=     0.098	SharedMLeft= 878685 t=    224 R=  3e+05
+cpu00 Depth=      92 States= 6.78e+07 Transitions= 2.83e+08 Memory=     0.098	SharedMLeft= 879479 t=    238 R=  3e+05
+cpu01 Depth=      92 States= 7.33e+07 Transitions= 2.83e+08 Memory=     0.098	SharedMLeft= 878474 t=    238 R=  3e+05
+cpu00 Depth=      93 States= 7.27e+07 Transitions= 3.04e+08 Memory=     0.098	SharedMLeft= 879361 t=    254 R=  3e+05
+cpu01 Depth=      93 States= 7.88e+07 Transitions= 3.05e+08 Memory=     0.098	SharedMLeft= 878258 t=    254 R=  3e+05
+cpu00 Depth=      94 States= 7.78e+07 Transitions= 3.27e+08 Memory=     0.098	SharedMLeft= 879245 t=    270 R=  3e+05
+cpu01 Depth=      94 States= 8.45e+07 Transitions= 3.27e+08 Memory=     0.098	SharedMLeft= 878022 t=    270 R=  3e+05
+cpu00 Depth=      95 States= 8.31e+07 Transitions= 3.51e+08 Memory=     0.098	SharedMLeft= 879123 t=    287 R=  3e+05
+cpu01 Depth=      95 States= 9.06e+07 Transitions=  3.5e+08 Memory=     0.098	SharedMLeft= 877772 t=    287 R=  3e+05
+cpu00 Depth=      96 States= 8.87e+07 Transitions= 3.75e+08 Memory=     0.098	SharedMLeft= 878995 t=    305 R=  3e+05
+cpu01 Depth=      96 States= 9.69e+07 Transitions= 3.75e+08 Memory=     0.098	SharedMLeft= 877501 t=    305 R=  3e+05
+cpu00 Depth=      97 States= 9.46e+07 Transitions= 4.01e+08 Memory=     0.098	SharedMLeft= 878861 t=    324 R=  3e+05
+cpu01 Depth=      97 States= 1.04e+08 Transitions= 4.01e+08 Memory=     0.098	SharedMLeft= 877215 t=    324 R=  3e+05
+cpu00 Depth=      98 States= 1.01e+08 Transitions= 4.29e+08 Memory=     0.098	SharedMLeft= 878718 t=    345 R=  3e+05
+cpu01 Depth=      98 States= 1.11e+08 Transitions= 4.28e+08 Memory=     0.098	SharedMLeft= 876901 t=    345 R=  3e+05
+cpu00 Depth=      99 States= 1.07e+08 Transitions= 4.58e+08 Memory=     0.098	SharedMLeft= 878566 t=    366 R=  3e+05
+cpu01 Depth=      99 States= 1.19e+08 Transitions= 4.58e+08 Memory=     0.098	SharedMLeft= 876564 t=    366 R=  3e+05
+cpu00 Depth=     100 States= 1.14e+08 Transitions= 4.89e+08 Memory=     0.098	SharedMLeft= 878405 t=    389 R=  3e+05
+cpu01 Depth=     100 States= 1.27e+08 Transitions= 4.89e+08 Memory=     0.098	SharedMLeft= 876207 t=    389 R=  3e+05
+cpu00 Depth=     101 States= 1.22e+08 Transitions= 5.22e+08 Memory=     0.098	SharedMLeft= 878234 t=    414 R=  3e+05
+cpu01 Depth=     101 States= 1.35e+08 Transitions= 5.22e+08 Memory=     0.098	SharedMLeft= 875823 t=    414 R=  3e+05
+cpu00 Depth=     102 States=  1.3e+08 Transitions= 5.57e+08 Memory=     0.098	SharedMLeft= 878053 t=    440 R=  3e+05
+cpu01 Depth=     102 States= 1.44e+08 Transitions= 5.57e+08 Memory=     0.098	SharedMLeft= 875419 t=    440 R=  3e+05
+cpu00 Depth=     103 States= 1.38e+08 Transitions= 5.95e+08 Memory=     0.098	SharedMLeft= 877865 t=    468 R=  3e+05
+cpu01 Depth=     103 States= 1.54e+08 Transitions= 5.94e+08 Memory=     0.098	SharedMLeft= 874997 t=    468 R=  3e+05
+cpu00 Depth=     104 States= 1.47e+08 Transitions= 6.33e+08 Memory=     0.098	SharedMLeft= 877669 t=    497 R=  3e+05
+cpu01 Depth=     104 States= 1.64e+08 Transitions= 6.33e+08 Memory=     0.098	SharedMLeft= 874576 t=    497 R=  3e+05
+cpu00 Depth=     105 States= 1.55e+08 Transitions= 6.74e+08 Memory=     0.098	SharedMLeft= 877466 t=    527 R=  3e+05
+cpu01 Depth=     105 States= 1.74e+08 Transitions= 6.73e+08 Memory=     0.098	SharedMLeft= 874152 t=    527 R=  3e+05
+cpu00 Depth=     106 States= 1.65e+08 Transitions= 7.16e+08 Memory=     0.098	SharedMLeft= 877252 t=    558 R=  3e+05
+cpu01 Depth=     106 States= 1.85e+08 Transitions= 7.15e+08 Memory=     0.098	SharedMLeft= 873721 t=    558 R=  3e+05
+cpu00 Depth=     107 States= 1.74e+08 Transitions= 7.58e+08 Memory=     0.098	SharedMLeft= 877031 t=    590 R=  3e+05
+cpu01 Depth=     107 States= 1.96e+08 Transitions= 7.58e+08 Memory=     0.098	SharedMLeft= 873287 t=    590 R=  3e+05
+cpu00 Depth=     108 States= 1.83e+08 Transitions= 8.03e+08 Memory=     0.098	SharedMLeft= 876804 t=    623 R=  3e+05
+cpu01 Depth=     108 States= 2.07e+08 Transitions= 8.02e+08 Memory=     0.098	SharedMLeft= 872840 t=    623 R=  3e+05
+cpu00 Depth=     109 States= 1.93e+08 Transitions= 8.48e+08 Memory=     0.098	SharedMLeft= 876569 t=    658 R=  3e+05
+cpu01 Depth=     109 States= 2.18e+08 Transitions= 8.47e+08 Memory=     0.098	SharedMLeft= 872382 t=    658 R=  3e+05
+cpu00 Depth=     110 States= 2.04e+08 Transitions= 8.95e+08 Memory=     0.098	SharedMLeft= 876327 t=    693 R=  3e+05
+cpu01 Depth=     110 States=  2.3e+08 Transitions= 8.94e+08 Memory=     0.098	SharedMLeft= 871905 t=    693 R=  3e+05
+cpu00 Depth=     111 States= 2.14e+08 Transitions= 9.43e+08 Memory=     0.098	SharedMLeft= 876077 t=    730 R=  3e+05
+cpu01 Depth=     111 States= 2.43e+08 Transitions= 9.43e+08 Memory=     0.098	SharedMLeft= 871408 t=    730 R=  3e+05
+cpu00 Depth=     112 States= 2.25e+08 Transitions= 9.94e+08 Memory=     0.098	SharedMLeft= 875816 t=    769 R=  3e+05
+cpu01 Depth=     112 States= 2.56e+08 Transitions= 9.93e+08 Memory=     0.098	SharedMLeft= 870880 t=    769 R=  3e+05
+cpu00 Depth=     113 States= 2.37e+08 Transitions= 1.05e+09 Memory=     0.098	SharedMLeft= 875545 t=    809 R=  3e+05
+cpu01 Depth=     113 States= 2.69e+08 Transitions= 1.05e+09 Memory=     0.098	SharedMLeft= 870330 t=    809 R=  3e+05
+cpu00 Depth=     114 States= 2.49e+08 Transitions=  1.1e+09 Memory=     0.098	SharedMLeft= 875262 t=    851 R=  3e+05
+cpu01 Depth=     114 States= 2.83e+08 Transitions=  1.1e+09 Memory=     0.098	SharedMLeft= 869759 t=    851 R=  3e+05
+cpu00 Depth=     115 States= 2.62e+08 Transitions= 1.16e+09 Memory=     0.098	SharedMLeft= 874968 t=    895 R=  3e+05
+cpu01 Depth=     115 States= 2.97e+08 Transitions= 1.16e+09 Memory=     0.098	SharedMLeft= 869166 t=    895 R=  3e+05
+cpu00 Depth=     116 States= 2.75e+08 Transitions= 1.22e+09 Memory=     0.098	SharedMLeft= 874662 t=    940 R=  3e+05
+cpu01 Depth=     116 States= 3.13e+08 Transitions= 1.22e+09 Memory=     0.098	SharedMLeft= 868561 t=    940 R=  3e+05
+cpu00 Depth=     117 States= 2.88e+08 Transitions= 1.28e+09 Memory=     0.098	SharedMLeft= 874347 t=    987 R=  3e+05
+cpu01 Depth=     117 States= 3.28e+08 Transitions= 1.28e+09 Memory=     0.098	SharedMLeft= 867947 t=    987 R=  3e+05
+cpu00 Depth=     118 States= 3.02e+08 Transitions= 1.34e+09 Memory=     0.098	SharedMLeft= 874024 t= 1.04e+03 R=  3e+05
+cpu01 Depth=     118 States= 3.44e+08 Transitions= 1.34e+09 Memory=     0.098	SharedMLeft= 867340 t= 1.04e+03 R=  3e+05
+cpu00 Depth=     119 States= 3.15e+08 Transitions= 1.41e+09 Memory=     0.098	SharedMLeft= 873696 t= 1.08e+03 R=  3e+05
+cpu01 Depth=     119 States=  3.6e+08 Transitions= 1.41e+09 Memory=     0.098	SharedMLeft= 866754 t= 1.08e+03 R=  3e+05
+cpu00 Depth=     120 States= 3.29e+08 Transitions= 1.47e+09 Memory=     0.098	SharedMLeft= 873364 t= 1.14e+03 R=  3e+05
+cpu01 Depth=     120 States= 3.76e+08 Transitions= 1.47e+09 Memory=     0.098	SharedMLeft= 866177 t= 1.14e+03 R=  3e+05
+cpu00 Depth=     121 States= 3.43e+08 Transitions= 1.54e+09 Memory=     0.098	SharedMLeft= 873031 t= 1.19e+03 R=  3e+05
+cpu01 Depth=     121 States= 3.92e+08 Transitions= 1.54e+09 Memory=     0.098	SharedMLeft= 865595 t= 1.19e+03 R=  3e+05
+cpu00 Depth=     122 States= 3.57e+08 Transitions=  1.6e+09 Memory=     0.098	SharedMLeft= 872694 t= 1.24e+03 R=  3e+05
+cpu01 Depth=     122 States= 4.08e+08 Transitions=  1.6e+09 Memory=     0.098	SharedMLeft= 865019 t= 1.24e+03 R=  3e+05
+cpu00 Depth=     123 States= 3.71e+08 Transitions= 1.67e+09 Memory=     0.098	SharedMLeft= 872354 t= 1.29e+03 R=  3e+05
+cpu01 Depth=     123 States= 4.25e+08 Transitions= 1.67e+09 Memory=     0.098	SharedMLeft= 864435 t= 1.29e+03 R=  3e+05
+cpu00 Depth=     124 States= 3.86e+08 Transitions= 1.74e+09 Memory=     0.098	SharedMLeft= 872010 t= 1.34e+03 R=  3e+05
+cpu01 Depth=     124 States= 4.41e+08 Transitions= 1.74e+09 Memory=     0.098	SharedMLeft= 863829 t= 1.34e+03 R=  3e+05
+cpu00 Depth=     125 States=    4e+08 Transitions= 1.81e+09 Memory=     0.098	SharedMLeft= 871662 t= 1.39e+03 R=  3e+05
+cpu01 Depth=     125 States= 4.58e+08 Transitions= 1.81e+09 Memory=     0.098	SharedMLeft= 863215 t= 1.39e+03 R=  3e+05
+cpu00 Depth=     126 States= 4.15e+08 Transitions= 1.88e+09 Memory=     0.098	SharedMLeft= 871309 t= 1.45e+03 R=  3e+05
+cpu01 Depth=     126 States= 4.75e+08 Transitions= 1.88e+09 Memory=     0.098	SharedMLeft= 862594 t= 1.45e+03 R=  3e+05
+cpu00 Depth=     127 States=  4.3e+08 Transitions= 1.95e+09 Memory=     0.098	SharedMLeft= 870950 t= 1.5e+03 R=  3e+05
+cpu01 Depth=     127 States= 4.93e+08 Transitions= 1.95e+09 Memory=     0.098	SharedMLeft= 861952 t= 1.5e+03 R=  3e+05
+cpu00 Depth=     128 States= 4.46e+08 Transitions= 2.02e+09 Memory=     0.098	SharedMLeft= 870584 t= 1.56e+03 R=  3e+05
+cpu01 Depth=     128 States=  5.1e+08 Transitions= 2.02e+09 Memory=     0.098	SharedMLeft= 861298 t= 1.56e+03 R=  3e+05
+cpu00 Depth=     129 States= 4.61e+08 Transitions= 2.09e+09 Memory=     0.098	SharedMLeft= 870210 t= 1.62e+03 R=  3e+05
+cpu01 Depth=     129 States= 5.29e+08 Transitions= 2.09e+09 Memory=     0.098	SharedMLeft= 860634 t= 1.62e+03 R=  3e+05
+cpu00 Depth=     130 States= 4.77e+08 Transitions= 2.17e+09 Memory=     0.098	SharedMLeft= 869829 t= 1.68e+03 R=  3e+05
+cpu01 Depth=     130 States= 5.47e+08 Transitions= 2.17e+09 Memory=     0.098	SharedMLeft= 859964 t= 1.68e+03 R=  3e+05
+cpu00 Depth=     131 States= 4.94e+08 Transitions= 2.24e+09 Memory=     0.098	SharedMLeft= 869443 t= 1.74e+03 R=  3e+05
+cpu01 Depth=     131 States= 5.66e+08 Transitions= 2.24e+09 Memory=     0.098	SharedMLeft= 859294 t= 1.74e+03 R=  3e+05
+cpu00 Depth=     132 States=  5.1e+08 Transitions= 2.32e+09 Memory=     0.098	SharedMLeft= 869055 t= 1.8e+03 R=  3e+05
+cpu01 Depth=     132 States= 5.84e+08 Transitions= 2.32e+09 Memory=     0.098	SharedMLeft= 858650 t= 1.8e+03 R=  3e+05
+cpu00 Depth=     133 States= 5.26e+08 Transitions=  2.4e+09 Memory=     0.098	SharedMLeft= 868669 t= 1.86e+03 R=  3e+05
+cpu01 Depth=     133 States= 6.03e+08 Transitions=  2.4e+09 Memory=     0.098	SharedMLeft= 858030 t= 1.86e+03 R=  3e+05
+cpu00 Depth=     134 States= 5.41e+08 Transitions= 2.47e+09 Memory=     0.098	SharedMLeft= 868287 t= 1.92e+03 R=  3e+05
+cpu01 Depth=     134 States= 6.21e+08 Transitions= 2.47e+09 Memory=     0.098	SharedMLeft= 857440 t= 1.92e+03 R=  3e+05
+cpu00 Depth=     135 States= 5.57e+08 Transitions= 2.55e+09 Memory=     0.098	SharedMLeft= 867909 t= 1.98e+03 R=  3e+05
+cpu01 Depth=     135 States= 6.39e+08 Transitions= 2.55e+09 Memory=     0.098	SharedMLeft= 856860 t= 1.98e+03 R=  3e+05
+cpu00 Depth=     136 States= 5.72e+08 Transitions= 2.62e+09 Memory=     0.098	SharedMLeft= 867534 t= 2.04e+03 R=  3e+05
+cpu01 Depth=     136 States= 6.57e+08 Transitions= 2.62e+09 Memory=     0.098	SharedMLeft= 856289 t= 2.04e+03 R=  3e+05
+cpu00 Depth=     137 States= 5.88e+08 Transitions=  2.7e+09 Memory=     0.098	SharedMLeft= 867164 t= 2.1e+03 R=  3e+05
+cpu01 Depth=     137 States= 6.74e+08 Transitions=  2.7e+09 Memory=     0.098	SharedMLeft= 855727 t= 2.1e+03 R=  3e+05
+cpu00 Depth=     138 States= 6.03e+08 Transitions= 2.77e+09 Memory=     0.098	SharedMLeft= 866797 t= 2.16e+03 R=  3e+05
+cpu01 Depth=     138 States= 6.91e+08 Transitions= 2.77e+09 Memory=     0.098	SharedMLeft= 855183 t= 2.16e+03 R=  3e+05
+cpu00 Depth=     139 States= 6.18e+08 Transitions= 2.84e+09 Memory=     0.098	SharedMLeft= 866435 t= 2.22e+03 R=  3e+05
+cpu01 Depth=     139 States= 7.09e+08 Transitions= 2.84e+09 Memory=     0.098	SharedMLeft= 854654 t= 2.22e+03 R=  3e+05
+cpu00 Depth=     140 States= 6.33e+08 Transitions= 2.92e+09 Memory=     0.098	SharedMLeft= 866076 t= 2.27e+03 R=  3e+05
+cpu01 Depth=     140 States= 7.26e+08 Transitions= 2.92e+09 Memory=     0.098	SharedMLeft= 854129 t= 2.27e+03 R=  3e+05
+cpu00 Depth=     141 States= 6.48e+08 Transitions= 2.99e+09 Memory=     0.098	SharedMLeft= 865720 t= 2.33e+03 R=  3e+05
+cpu01 Depth=     141 States= 7.42e+08 Transitions= 2.99e+09 Memory=     0.098	SharedMLeft= 853602 t= 2.33e+03 R=  3e+05
+cpu00 Depth=     142 States= 6.62e+08 Transitions= 3.06e+09 Memory=     0.098	SharedMLeft= 865367 t= 2.39e+03 R=  3e+05
+cpu01 Depth=     142 States= 7.59e+08 Transitions= 3.06e+09 Memory=     0.098	SharedMLeft= 853074 t= 2.39e+03 R=  3e+05
+cpu00 Depth=     143 States= 6.77e+08 Transitions= 3.13e+09 Memory=     0.098	SharedMLeft= 865014 t= 2.44e+03 R=  3e+05
+cpu01 Depth=     143 States= 7.76e+08 Transitions= 3.13e+09 Memory=     0.098	SharedMLeft= 852534 t= 2.44e+03 R=  3e+05
+cpu00 Depth=     144 States= 6.92e+08 Transitions=  3.2e+09 Memory=     0.098	SharedMLeft= 864663 t= 2.5e+03 R=  3e+05
+cpu01 Depth=     144 States= 7.93e+08 Transitions=  3.2e+09 Memory=     0.098	SharedMLeft= 851990 t= 2.5e+03 R=  3e+05
+cpu00 Depth=     145 States= 7.06e+08 Transitions= 3.27e+09 Memory=     0.098	SharedMLeft= 864314 t= 2.56e+03 R=  3e+05
+cpu01 Depth=     145 States= 8.09e+08 Transitions= 3.27e+09 Memory=     0.098	SharedMLeft= 851469 t= 2.56e+03 R=  3e+05
+cpu00 Depth=     146 States=  7.2e+08 Transitions= 3.34e+09 Memory=     0.098	SharedMLeft= 863971 t= 2.61e+03 R=  3e+05
+cpu01 Depth=     146 States= 8.25e+08 Transitions= 3.34e+09 Memory=     0.098	SharedMLeft= 850990 t= 2.61e+03 R=  3e+05
+cpu00 Depth=     147 States= 7.33e+08 Transitions= 3.41e+09 Memory=     0.098	SharedMLeft= 863641 t= 2.67e+03 R=  3e+05
+cpu01 Depth=     147 States=  8.4e+08 Transitions=  3.4e+09 Memory=     0.098	SharedMLeft= 850557 t= 2.67e+03 R=  3e+05
+cpu00 Depth=     148 States= 7.46e+08 Transitions= 3.47e+09 Memory=     0.098	SharedMLeft= 863322 t= 2.72e+03 R=  3e+05
+cpu01 Depth=     148 States= 8.55e+08 Transitions= 3.47e+09 Memory=     0.098	SharedMLeft= 850165 t= 2.72e+03 R=  3e+05
+cpu00 Depth=     149 States= 7.59e+08 Transitions= 3.53e+09 Memory=     0.098	SharedMLeft= 863016 t= 2.77e+03 R=  3e+05
+cpu01 Depth=     149 States= 8.69e+08 Transitions= 3.53e+09 Memory=     0.098	SharedMLeft= 849799 t= 2.77e+03 R=  3e+05
+cpu00 Depth=     150 States= 7.71e+08 Transitions= 3.59e+09 Memory=     0.098	SharedMLeft= 862721 t= 2.82e+03 R=  3e+05
+cpu01 Depth=     150 States= 8.83e+08 Transitions= 3.59e+09 Memory=     0.098	SharedMLeft= 849441 t= 2.82e+03 R=  3e+05
+cpu00 Depth=     151 States= 7.82e+08 Transitions= 3.65e+09 Memory=     0.098	SharedMLeft= 862437 t= 2.87e+03 R=  3e+05
+cpu01 Depth=     151 States= 8.96e+08 Transitions= 3.65e+09 Memory=     0.098	SharedMLeft= 849112 t= 2.87e+03 R=  3e+05
+cpu00 Depth=     152 States= 7.93e+08 Transitions= 3.71e+09 Memory=     0.098	SharedMLeft= 862164 t= 2.91e+03 R=  3e+05
+cpu01 Depth=     152 States= 9.09e+08 Transitions=  3.7e+09 Memory=     0.098	SharedMLeft= 848789 t= 2.91e+03 R=  3e+05
+cpu00 Depth=     153 States= 8.04e+08 Transitions= 3.76e+09 Memory=     0.098	SharedMLeft= 861899 t= 2.96e+03 R=  3e+05
+cpu01 Depth=     153 States= 9.21e+08 Transitions= 3.76e+09 Memory=     0.098	SharedMLeft= 848478 t= 2.96e+03 R=  3e+05
+cpu00 Depth=     154 States= 8.15e+08 Transitions= 3.81e+09 Memory=     0.098	SharedMLeft= 861644 t=  3e+03 R=  3e+05
+cpu01 Depth=     154 States= 9.33e+08 Transitions= 3.81e+09 Memory=     0.098	SharedMLeft= 848168 t=  3e+03 R=  3e+05
+cpu00 Depth=     155 States= 8.25e+08 Transitions= 3.86e+09 Memory=     0.098	SharedMLeft= 861398 t= 3.04e+03 R=  3e+05
+cpu01 Depth=     155 States= 9.44e+08 Transitions= 3.86e+09 Memory=     0.098	SharedMLeft= 847854 t= 3.04e+03 R=  3e+05
+cpu00 Depth=     156 States= 8.35e+08 Transitions= 3.91e+09 Memory=     0.098	SharedMLeft= 861156 t= 3.08e+03 R=  3e+05
+cpu01 Depth=     156 States= 9.56e+08 Transitions= 3.91e+09 Memory=     0.098	SharedMLeft= 847539 t= 3.08e+03 R=  3e+05
+cpu00 Depth=     157 States= 8.45e+08 Transitions= 3.96e+09 Memory=     0.098	SharedMLeft= 860918 t= 3.12e+03 R=  3e+05
+cpu01 Depth=     157 States= 9.67e+08 Transitions= 3.96e+09 Memory=     0.098	SharedMLeft= 847208 t= 3.12e+03 R=  3e+05
+cpu00 Depth=     158 States= 8.54e+08 Transitions= 4.01e+09 Memory=     0.098	SharedMLeft= 860683 t= 3.16e+03 R=  3e+05
+cpu01 Depth=     158 States= 9.78e+08 Transitions= 4.01e+09 Memory=     0.098	SharedMLeft= 846873 t= 3.16e+03 R=  3e+05
+cpu00 Depth=     159 States= 8.64e+08 Transitions= 4.05e+09 Memory=     0.098	SharedMLeft= 860452 t= 3.2e+03 R=  3e+05
+cpu01 Depth=     159 States= 9.89e+08 Transitions= 4.05e+09 Memory=     0.098	SharedMLeft= 846555 t= 3.2e+03 R=  3e+05
+cpu00 Depth=     160 States= 8.73e+08 Transitions=  4.1e+09 Memory=     0.098	SharedMLeft= 860229 t= 3.24e+03 R=  3e+05
+cpu01 Depth=     160 States= 9.99e+08 Transitions=  4.1e+09 Memory=     0.098	SharedMLeft= 846285 t= 3.24e+03 R=  3e+05
+cpu00 Depth=     161 States= 8.81e+08 Transitions= 4.14e+09 Memory=     0.098	SharedMLeft= 860019 t= 3.28e+03 R=  3e+05
+cpu01 Depth=     161 States= 1.01e+09 Transitions= 4.14e+09 Memory=     0.098	SharedMLeft= 846064 t= 3.28e+03 R=  3e+05
+cpu00 Depth=     162 States= 8.89e+08 Transitions= 4.19e+09 Memory=     0.098	SharedMLeft= 859823 t= 3.31e+03 R=  3e+05
+cpu01 Depth=     162 States= 1.02e+09 Transitions= 4.18e+09 Memory=     0.098	SharedMLeft= 845861 t= 3.31e+03 R=  3e+05
+cpu00 Depth=     163 States= 8.96e+08 Transitions= 4.22e+09 Memory=     0.098	SharedMLeft= 859640 t= 3.34e+03 R=  3e+05
+cpu01 Depth=     163 States= 1.03e+09 Transitions= 4.22e+09 Memory=     0.098	SharedMLeft= 845671 t= 3.34e+03 R=  3e+05
+cpu00 Depth=     164 States= 9.03e+08 Transitions= 4.26e+09 Memory=     0.098	SharedMLeft= 859469 t= 3.37e+03 R=  3e+05
+cpu01 Depth=     164 States= 1.03e+09 Transitions= 4.26e+09 Memory=     0.098	SharedMLeft= 845492 t= 3.37e+03 R=  3e+05
+cpu00 Depth=     165 States=  9.1e+08 Transitions= 4.29e+09 Memory=     0.098	SharedMLeft= 859308 t= 3.4e+03 R=  3e+05
+cpu01 Depth=     165 States= 1.04e+09 Transitions= 4.29e+09 Memory=     0.098	SharedMLeft= 845322 t= 3.4e+03 R=  3e+05
+cpu00 Depth=     166 States= 9.16e+08 Transitions= 4.32e+09 Memory=     0.098	SharedMLeft= 859154 t= 3.43e+03 R=  3e+05
+cpu01 Depth=     166 States= 1.05e+09 Transitions= 4.32e+09 Memory=     0.098	SharedMLeft= 845162 t= 3.43e+03 R=  3e+05
+cpu00 Depth=     167 States= 9.22e+08 Transitions= 4.35e+09 Memory=     0.098	SharedMLeft= 859009 t= 3.45e+03 R=  3e+05
+cpu01 Depth=     167 States= 1.05e+09 Transitions= 4.35e+09 Memory=     0.098	SharedMLeft= 845010 t= 3.45e+03 R=  3e+05
+cpu00 Depth=     168 States= 9.27e+08 Transitions= 4.38e+09 Memory=     0.098	SharedMLeft= 858871 t= 3.48e+03 R=  3e+05
+cpu01 Depth=     168 States= 1.06e+09 Transitions= 4.38e+09 Memory=     0.098	SharedMLeft= 844866 t= 3.48e+03 R=  3e+05
+cpu00 Depth=     169 States= 9.33e+08 Transitions= 4.41e+09 Memory=     0.098	SharedMLeft= 858739 t= 3.5e+03 R=  3e+05
+cpu01 Depth=     169 States= 1.07e+09 Transitions= 4.41e+09 Memory=     0.098	SharedMLeft= 844727 t= 3.5e+03 R=  3e+05
+cpu00 Depth=     170 States= 9.38e+08 Transitions= 4.44e+09 Memory=     0.098	SharedMLeft= 858612 t= 3.52e+03 R=  3e+05
+cpu01 Depth=     170 States= 1.07e+09 Transitions= 4.43e+09 Memory=     0.098	SharedMLeft= 844592 t= 3.52e+03 R=  3e+05
+cpu00 Depth=     171 States= 9.43e+08 Transitions= 4.46e+09 Memory=     0.098	SharedMLeft= 858487 t= 3.54e+03 R=  3e+05
+cpu01 Depth=     171 States= 1.08e+09 Transitions= 4.46e+09 Memory=     0.098	SharedMLeft= 844459 t= 3.54e+03 R=  3e+05
+cpu00 Depth=     172 States= 9.48e+08 Transitions= 4.49e+09 Memory=     0.098	SharedMLeft= 858365 t= 3.56e+03 R=  3e+05
+cpu01 Depth=     172 States= 1.08e+09 Transitions= 4.48e+09 Memory=     0.098	SharedMLeft= 844329 t= 3.56e+03 R=  3e+05
+cpu00 Depth=     173 States= 9.53e+08 Transitions= 4.51e+09 Memory=     0.098	SharedMLeft= 858246 t= 3.58e+03 R=  3e+05
+cpu01 Depth=     173 States= 1.09e+09 Transitions= 4.51e+09 Memory=     0.098	SharedMLeft= 844179 t= 3.58e+03 R=  3e+05
+cpu00 Depth=     174 States= 9.57e+08 Transitions= 4.53e+09 Memory=     0.098	SharedMLeft= 858133 t= 3.6e+03 R=  3e+05
+cpu01 Depth=     174 States= 1.09e+09 Transitions= 4.53e+09 Memory=     0.098	SharedMLeft= 844063 t= 3.6e+03 R=  3e+05
+cpu00 Depth=     175 States= 9.61e+08 Transitions= 4.56e+09 Memory=     0.098	SharedMLeft= 858029 t= 3.62e+03 R=  3e+05
+cpu01 Depth=     175 States=  1.1e+09 Transitions= 4.55e+09 Memory=     0.098	SharedMLeft= 843958 t= 3.62e+03 R=  3e+05
+cpu00 Depth=     176 States= 9.65e+08 Transitions= 4.58e+09 Memory=     0.098	SharedMLeft= 857935 t= 3.64e+03 R=  3e+05
+cpu01 Depth=     176 States=  1.1e+09 Transitions= 4.57e+09 Memory=     0.098	SharedMLeft= 843863 t= 3.64e+03 R=  3e+05
+cpu00 Depth=     177 States= 9.68e+08 Transitions= 4.59e+09 Memory=     0.098	SharedMLeft= 857850 t= 3.65e+03 R=  3e+05
+cpu01 Depth=     177 States= 1.11e+09 Transitions= 4.59e+09 Memory=     0.098	SharedMLeft= 843777 t= 3.65e+03 R=  3e+05
+cpu00 Depth=     178 States= 9.72e+08 Transitions= 4.61e+09 Memory=     0.098	SharedMLeft= 857772 t= 3.67e+03 R=  3e+05
+cpu01 Depth=     178 States= 1.11e+09 Transitions= 4.61e+09 Memory=     0.098	SharedMLeft= 843697 t= 3.67e+03 R=  3e+05
+cpu00 Depth=     179 States= 9.74e+08 Transitions= 4.63e+09 Memory=     0.098	SharedMLeft= 857701 t= 3.68e+03 R=  3e+05
+cpu01 Depth=     179 States= 1.11e+09 Transitions= 4.62e+09 Memory=     0.098	SharedMLeft= 843624 t= 3.68e+03 R=  3e+05
+cpu00 Depth=     180 States= 9.77e+08 Transitions= 4.64e+09 Memory=     0.098	SharedMLeft= 857634 t= 3.69e+03 R=  3e+05
+cpu01 Depth=     180 States= 1.12e+09 Transitions= 4.64e+09 Memory=     0.098	SharedMLeft= 843556 t= 3.69e+03 R=  3e+05
+cpu00 Depth=     181 States= 9.79e+08 Transitions= 4.65e+09 Memory=     0.098	SharedMLeft= 857573 t= 3.7e+03 R=  3e+05
+cpu01 Depth=     181 States= 1.12e+09 Transitions= 4.65e+09 Memory=     0.098	SharedMLeft= 843493 t= 3.7e+03 R=  3e+05
+cpu00 Depth=     182 States= 9.82e+08 Transitions= 4.66e+09 Memory=     0.098	SharedMLeft= 857516 t= 3.71e+03 R=  3e+05
+cpu01 Depth=     182 States= 1.12e+09 Transitions= 4.66e+09 Memory=     0.098	SharedMLeft= 843434 t= 3.71e+03 R=  3e+05
+cpu00 Depth=     183 States= 9.84e+08 Transitions= 4.68e+09 Memory=     0.098	SharedMLeft= 857462 t= 3.72e+03 R=  3e+05
+cpu01 Depth=     183 States= 1.12e+09 Transitions= 4.67e+09 Memory=     0.098	SharedMLeft= 843377 t= 3.72e+03 R=  3e+05
+cpu00 Depth=     184 States= 9.86e+08 Transitions= 4.69e+09 Memory=     0.098	SharedMLeft= 857410 t= 3.73e+03 R=  3e+05
+cpu01 Depth=     184 States= 1.13e+09 Transitions= 4.68e+09 Memory=     0.098	SharedMLeft= 843323 t= 3.73e+03 R=  3e+05
+cpu00 Depth=     185 States= 9.88e+08 Transitions=  4.7e+09 Memory=     0.098	SharedMLeft= 857361 t= 3.74e+03 R=  3e+05
+cpu01 Depth=     185 States= 1.13e+09 Transitions= 4.69e+09 Memory=     0.098	SharedMLeft= 843271 t= 3.74e+03 R=  3e+05
+cpu00 Depth=     186 States=  9.9e+08 Transitions= 4.71e+09 Memory=     0.098	SharedMLeft= 857312 t= 3.75e+03 R=  3e+05
+cpu01 Depth=     186 States= 1.13e+09 Transitions=  4.7e+09 Memory=     0.098	SharedMLeft= 843220 t= 3.75e+03 R=  3e+05
+cpu00 Depth=     187 States= 9.92e+08 Transitions= 4.72e+09 Memory=     0.098	SharedMLeft= 857265 t= 3.76e+03 R=  3e+05
+cpu01 Depth=     187 States= 1.13e+09 Transitions= 4.71e+09 Memory=     0.098	SharedMLeft= 843172 t= 3.76e+03 R=  3e+05
+cpu00 Depth=     188 States= 9.94e+08 Transitions= 4.73e+09 Memory=     0.098	SharedMLeft= 857221 t= 3.77e+03 R=  3e+05
+cpu01 Depth=     188 States= 1.14e+09 Transitions= 4.72e+09 Memory=     0.098	SharedMLeft= 843128 t= 3.77e+03 R=  3e+05
+cpu00 Depth=     189 States= 9.95e+08 Transitions= 4.73e+09 Memory=     0.098	SharedMLeft= 857182 t= 3.77e+03 R=  3e+05
+cpu01 Depth=     189 States= 1.14e+09 Transitions= 4.73e+09 Memory=     0.098	SharedMLeft= 843090 t= 3.77e+03 R=  3e+05
+cpu00 Depth=     190 States= 9.97e+08 Transitions= 4.74e+09 Memory=     0.098	SharedMLeft= 857148 t= 3.78e+03 R=  3e+05
+cpu01 Depth=     190 States= 1.14e+09 Transitions= 4.74e+09 Memory=     0.098	SharedMLeft= 843057 t= 3.78e+03 R=  3e+05
+cpu00 Depth=     191 States= 9.98e+08 Transitions= 4.75e+09 Memory=     0.098	SharedMLeft= 857118 t= 3.78e+03 R=  3e+05
+cpu01 Depth=     191 States= 1.14e+09 Transitions= 4.75e+09 Memory=     0.098	SharedMLeft= 843029 t= 3.78e+03 R=  3e+05
+cpu00 Depth=     192 States= 9.99e+08 Transitions= 4.75e+09 Memory=     0.098	SharedMLeft= 857092 t= 3.79e+03 R=  3e+05
+cpu01 Depth=     192 States= 1.14e+09 Transitions= 4.75e+09 Memory=     0.098	SharedMLeft= 843003 t= 3.79e+03 R=  3e+05
+cpu00 Depth=     193 States=    1e+09 Transitions= 4.76e+09 Memory=     0.098	SharedMLeft= 857068 t= 3.79e+03 R=  3e+05
+cpu01 Depth=     193 States= 1.14e+09 Transitions= 4.76e+09 Memory=     0.098	SharedMLeft= 842980 t= 3.79e+03 R=  3e+05
+cpu00 Depth=     194 States=    1e+09 Transitions= 4.76e+09 Memory=     0.098	SharedMLeft= 857047 t= 3.8e+03 R=  3e+05
+cpu01 Depth=     194 States= 1.14e+09 Transitions= 4.76e+09 Memory=     0.098	SharedMLeft= 842958 t= 3.8e+03 R=  3e+05
+cpu00 Depth=     195 States=    1e+09 Transitions= 4.77e+09 Memory=     0.098	SharedMLeft= 857026 t= 3.8e+03 R=  3e+05
+cpu00 Depth=     196 States=    1e+09 Transitions= 4.77e+09 Memory=     0.098	SharedMLeft= 857008 t= 3.8e+03 R=  3e+05
+cpu01 Depth=     196 States= 1.14e+09 Transitions= 4.77e+09 Memory=     0.098	SharedMLeft= 842920 t= 3.8e+03 R=  3e+05
+cpu01 Depth=     197 States= 1.15e+09 Transitions= 4.77e+09 Memory=     0.098	SharedMLeft= 842903 t= 3.81e+03 R=  3e+05
+cpu00 Depth=     198 States=    1e+09 Transitions= 4.78e+09 Memory=     0.098	SharedMLeft= 856973 t= 3.81e+03 R=  3e+05
+cpu01 Depth=     198 States= 1.15e+09 Transitions= 4.78e+09 Memory=     0.098	SharedMLeft= 842886 t= 3.81e+03 R=  3e+05
+cpu00 Depth=     199 States=    1e+09 Transitions= 4.78e+09 Memory=     0.098	SharedMLeft= 856957 t= 3.81e+03 R=  3e+05
+cpu00 Depth=     200 States= 1.01e+09 Transitions= 4.79e+09 Memory=     0.098	SharedMLeft= 856941 t= 3.82e+03 R=  3e+05
+cpu01 Depth=     200 States= 1.15e+09 Transitions= 4.78e+09 Memory=     0.098	SharedMLeft= 842852 t= 3.82e+03 R=  3e+05
+cpu01 Depth=     201 States= 1.15e+09 Transitions= 4.79e+09 Memory=     0.098	SharedMLeft= 842836 t= 3.82e+03 R=  3e+05
+cpu00 Depth=     202 States= 1.01e+09 Transitions= 4.79e+09 Memory=     0.098	SharedMLeft= 856910 t= 3.82e+03 R=  3e+05
+cpu01 Depth=     202 States= 1.15e+09 Transitions= 4.79e+09 Memory=     0.098	SharedMLeft= 842823 t= 3.82e+03 R=  3e+05
+cpu00 Depth=     204 States= 1.01e+09 Transitions=  4.8e+09 Memory=     0.098	SharedMLeft= 856886 t= 3.83e+03 R=  3e+05
+cpu01 Depth=     205 States= 1.15e+09 Transitions=  4.8e+09 Memory=     0.098	SharedMLeft= 842793 t= 3.83e+03 R=  3e+05
+cpu00 Depth=     207 States= 1.01e+09 Transitions=  4.8e+09 Memory=     0.098	SharedMLeft= 856862 t= 3.83e+03 R=  3e+05
+cpu01 Depth=     208 States= 1.15e+09 Transitions=  4.8e+09 Memory=     0.098	SharedMLeft= 842773 t= 3.83e+03 R=  3e+05
+cpu00 Depth=     211 States= 1.01e+09 Transitions= 4.81e+09 Memory=     0.098	SharedMLeft= 856840 t= 3.84e+03 R=  3e+05
+cpu01 Depth=     212 States= 1.15e+09 Transitions= 4.81e+09 Memory=     0.098	SharedMLeft= 842754 t= 3.84e+03 R=  3e+05
+cpu00 Depth=     216 States= 1.01e+09 Transitions= 4.81e+09 Memory=     0.098	SharedMLeft= 856818 t= 3.84e+03 R=  3e+05
+cpu01 Depth=     219 States= 1.15e+09 Transitions= 4.81e+09 Memory=     0.098	SharedMLeft= 842730 t= 3.84e+03 R=  3e+05
+
+(Spin Version 6.4.6 -- 2 December 2016)
+	+ Multi-Core (using 2 cores)
+	+ Breadth-First Search
+	+ Partial Order Reduction
+
+Hash-Compact 4 search for:
+	never claim         	- (none specified)
+	assertion violations	+
+	cycle checks       	+ (bound 10)
+	invalid end states	+
+
+State-vector 80 byte, depth reached 247, errors: 0
+2.1644912e+09 states, stored
+	2.16449e+09 nominal states (stored-atomic)
+7.4666752e+09 states, matched
+9.6311664e+09 transitions (= stored+matched)
+        0 atomic steps
+hash conflicts: 3.1282936e+09 (resolved)
+the hash table is 2.16e+11 % filled
+
+Stats on memory usage (in Megabytes):
+206421.965	equivalent memory usage for states (stored*(State-vector + overhead))
+53248.001	shared memory used for hash table (-w32)
+    0.195	total non-shared memory usage
+
+116933.922	total shared memory usage
+
+unreached in init
+	(0 of 10 states)
+unreached in proctype P
+	bakery.pml:90, state 69, "-end-"
+	(1 of 69 states)
+
+pan: elapsed time 3.84e+03 seconds
+pan: rate 563217.83 states/second
+pan: releasing shared memory...done

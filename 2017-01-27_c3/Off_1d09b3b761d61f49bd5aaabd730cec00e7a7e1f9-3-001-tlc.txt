@@ -1,0 +1,32 @@
+JUnit version 4.12
+.Test started at Fri Jan 27 09:47:11 UTC 2017
+Insertions: 34,359,738,368 (approx: 262,144 GiB)
+Thread count: 1
+Running test: FingerPrintGenerator
+Maximum FPSet table count is: 7,516,192,768 (approx: 57,344 GiB)
+FPSet lock count is: 0
+FPSet bucket count is: 7516192768
+Testing tlc2.tool.fp.OffHeapDiskFPSet
+1485510455966 s (epoch); 254 insertions/min; 0 load factor
+1485510515965 s (epoch); 248,701,741 insertions/min; 0.03 load factor
+1485510575965 s (epoch); 247,126,572 insertions/min; 0.07 load factor
+1485510635965 s (epoch); 245,877,320 insertions/min; 0.1 load factor
+1485510695965 s (epoch); 244,269,593 insertions/min; 0.13 load factor
+1485510755965 s (epoch); 242,512,173 insertions/min; 0.16 load factor
+1485510815965 s (epoch); 240,446,484 insertions/min; 0.2 load factor
+1485510875965 s (epoch); 238,451,041 insertions/min; 0.23 load factor
+1485510935965 s (epoch); 236,216,920 insertions/min; 0.26 load factor
+1485510995965 s (epoch); 233,775,574 insertions/min; 0.29 load factor
+1485511055965 s (epoch); 231,475,153 insertions/min; 0.32 load factor
+1485511115965 s (epoch); 229,340,445 insertions/min; 0.35 load factor
+1485511175965 s (epoch); 226,701,188 insertions/min; 0.38 load factor
+1485511235965 s (epoch); 224,734,010 insertions/min; 0.41 load factor
+1485511295965 s (epoch); 223,387,718 insertions/min; 0.44 load factor
+1485511355965 s (epoch); 221,635,551 insertions/min; 0.47 load factor
+1485511415965 s (epoch); 220,054,595 insertions/min; 0.5 load factor
+1485511475965 s (epoch); 218,497,854 insertions/min; 0.53 load factor
+1485511535966 s (epoch); 216,514,688 insertions/min; 0.56 load factor
+1485511595965 s (epoch); 213,899,566 insertions/min; 0.59 load factor
+1485511655965 s (epoch); 210,608,716 insertions/min; 0.61 load factor
+1485511715966 s (epoch); 206,443,978 insertions/min; 0.64 load factor
+1485511775965 s (epoch); 191,022,190 insertions/min; 0.67 load factor

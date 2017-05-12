@@ -1,0 +1,117 @@
+JUnit version 4.12
+.Test started at Fri Nov 25 14:49:28 UTC 2016
+Insertions: 8,589,934,592 (approx: 65,536 GiB)
+Thread count: 1
+Running test: FingerPrintGenerator
+Maximum FPSet table count is: 17,179,869,184 (approx: 131,072 GiB)
+FPSet lock count is: 256
+FPSet bucket count is: 1073741824
+Testing tlc2.tool.fp.MSBDiskFPSet
+Nov 25, 2016 2:49:37 PM se.hirt.jmx2jfr.SubscriptionCommand setUpEvents
+WARNING: Added attribute to the fail list. Will retry later.
+javax.management.InstanceNotFoundException: tlc2.tool:type=ModelChecker
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1095)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBeanInfo(DefaultMBeanServerInterceptor.java:1375)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.getMBeanInfo(JmxMBeanServer.java:920)
+	at se.hirt.jmx2jfr.EventDescriptor.create(EventDescriptor.java:86)
+	at se.hirt.jmx2jfr.SubscriptionCommand.setUpEvents(SubscriptionCommand.java:73)
+	at se.hirt.jmx2jfr.SubscriptionCommand.run(SubscriptionCommand.java:87)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+1480085431926 s; 131,973,562 insertions/min; 0.01 load factor
+1480085491925 s; 130,626,831 insertions/min; 0.02 load factor
+1480085551925 s; 129,736,494 insertions/min; 0.02 load factor
+1480085611925 s; 128,985,814 insertions/min; 0.03 load factor
+1480085671925 s; 127,386,086 insertions/min; 0.04 load factor
+1480085731925 s; 126,861,903 insertions/min; 0.05 load factor
+1480085791925 s; 125,678,997 insertions/min; 0.05 load factor
+1480085851925 s; 125,269,510 insertions/min; 0.06 load factor
+1480085918585 s; 63,461,652 insertions/min; 0.06 load factor
+1480086031925 s; 360,117,654 insertions/min; 0.07 load factor
+1480086091926 s; 98,681,540 insertions/min; 0.08 load factor
+1480086211925 s; 382,809,561 insertions/min; 0.09 load factor
+1480086271926 s; 95,004,256 insertions/min; 0.1 load factor
+1480086391925 s; 375,712,393 insertions/min; 0.11 load factor
+1480086451926 s; 94,396,332 insertions/min; 0.11 load factor
+1480086571925 s; 377,231,254 insertions/min; 0.12 load factor
+1480086631925 s; 93,461,092 insertions/min; 0.13 load factor
+1480086691925 s; 93,267,519 insertions/min; 0.13 load factor
+1480086751926 s; 92,938,058 insertions/min; 0.14 load factor
+1480086871925 s; 375,054,188 insertions/min; 0.15 load factor
+1480086931926 s; 94,583,606 insertions/min; 0.16 load factor
+1480087051925 s; 377,270,692 insertions/min; 0.17 load factor
+1480087111925 s; 94,017,072 insertions/min; 0.17 load factor
+1480087171925 s; 94,307,837 insertions/min; 0.18 load factor
+1480087231926 s; 94,096,714 insertions/min; 0.18 load factor
+1480087351925 s; 374,868,088 insertions/min; 0.2 load factor
+1480087411926 s; 93,428,654 insertions/min; 0.2 load factor
+1480087531925 s; 373,918,401 insertions/min; 0.21 load factor
+1480087591926 s; 93,725,786 insertions/min; 0.22 load factor
+1480087711925 s; 371,550,095 insertions/min; 0.23 load factor
+1480087771926 s; 93,471,267 insertions/min; 0.23 load factor
+1480087891925 s; 372,209,138 insertions/min; 0.24 load factor
+1480087951926 s; 92,521,227 insertions/min; 0.25 load factor
+1480088071925 s; 368,872,282 insertions/min; 0.26 load factor
+1480088131926 s; 92,228,531 insertions/min; 0.27 load factor
+1480088251925 s; 367,788,041 insertions/min; 0.28 load factor
+1480088311926 s; 92,157,906 insertions/min; 0.28 load factor
+1480088431925 s; 366,979,549 insertions/min; 0.29 load factor
+1480088491925 s; 91,570,938 insertions/min; 0.3 load factor
+1480088551925 s; 92,060,249 insertions/min; 0.3 load factor
+1480088611926 s; 91,504,417 insertions/min; 0.31 load factor
+1480088731925 s; 365,489,032 insertions/min; 0.32 load factor
+1480088791926 s; 91,407,342 insertions/min; 0.32 load factor
+1480088911925 s; 364,240,798 insertions/min; 0.33 load factor
+1480089324537 s; 598,367,797 insertions/min; 0.34 load factor
+1480089391926 s; 128,651,686 insertions/min; 0.35 load factor
+1480089511925 s; 389,645,490 insertions/min; 0.36 load factor
+1480089571926 s; 95,501,879 insertions/min; 0.36 load factor
+1480089691925 s; 377,408,184 insertions/min; 0.37 load factor
+1480089751926 s; 94,560,727 insertions/min; 0.38 load factor
+1480089871925 s; 377,239,394 insertions/min; 0.39 load factor
+1480089931926 s; 94,299,916 insertions/min; 0.4 load factor
+1480090051925 s; 375,685,799 insertions/min; 0.41 load factor
+1480090111926 s; 93,497,783 insertions/min; 0.41 load factor
+1480090231925 s; 373,634,970 insertions/min; 0.42 load factor
+1480090291925 s; 93,492,051 insertions/min; 0.43 load factor
+1480090351925 s; 92,980,356 insertions/min; 0.43 load factor
+1480090411925 s; 92,825,218 insertions/min; 0.44 load factor
+1480090471925 s; 92,707,131 insertions/min; 0.45 load factor
+1480090531925 s; 92,079,697 insertions/min; 0.45 load factor
+1480090591926 s; 92,688,261 insertions/min; 0.46 load factor
+1480090711925 s; 367,613,582 insertions/min; 0.47 load factor
+1480090771925 s; 92,143,909 insertions/min; 0.47 load factor
+1480090831925 s; 91,939,288 insertions/min; 0.48 load factor
+1480090891926 s; 92,150,291 insertions/min; 0.48 load factor
+1480091011925 s; 370,355,869 insertions/min; 0.49 load factor
+1480091071926 s; 91,785,257 insertions/min; 0.5 load factor
+Producer: 0, puts: 8589934592, puts/collisions: none
+Total puts: 8589934592, total collisions: 0, total load factor: 0.5, duration: 5712963 ms.
+1480091084890 s; 90,180,000 insertions/min; 0.5 load factor
+Test finished at Fri Nov 25 16:24:44 UTC 2016
+.Test started at Fri Nov 25 16:39:51 UTC 2016
+Insertions: 8,589,934,592 (approx: 65,536 GiB)
+Thread count: 1
+Test finished at Fri Nov 25 16:39:51 UTC 2016
+.Test started at Fri Nov 25 16:39:51 UTC 2016
+Insertions: 8,589,934,592 (approx: 65,536 GiB)
+Thread count: 1
+Test finished at Fri Nov 25 16:39:51 UTC 2016
+.Test started at Fri Nov 25 16:39:51 UTC 2016
+Insertions: 8,589,934,592 (approx: 65,536 GiB)
+Thread count: 1
+Test finished at Fri Nov 25 16:39:51 UTC 2016
+
+Time: 6,622.784
+
+OK (4 tests)
+
+page_defrag = always madvise [never]
+scaling_governor = performance
+kernel.numa_balancing = 0

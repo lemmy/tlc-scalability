@@ -1,0 +1,47 @@
+JUnit version 4.12
+.Test started at Mon Jan 30 15:16:45 UTC 2017
+Insertions: 2,000,000,000 (approx: 15,258 GiB)
+Thread count: 1
+Running test: FingerPrintGenerator
+Maximum FPSet table count is: 2,147,483,648 (approx: 16,384 GiB)
+FPSet lock count is: 1
+FPSet bucket count is: 134217728
+Testing tlc2.tool.fp.MSBDiskFPSet
+1485789405931 s (epoch); 91 insertions/min; 0 load factor
+1485789465930 s (epoch); 187,103,633 insertions/min; 0.09 load factor
+1485789525931 s (epoch); 162,123,475 insertions/min; 0.16 load factor
+1485789585930 s (epoch); 158,813,826 insertions/min; 0.24 load factor
+1485789645930 s (epoch); 157,456,381 insertions/min; 0.31 load factor
+1485789705931 s (epoch); 155,941,752 insertions/min; 0.38 load factor
+1485789765930 s (epoch); 154,214,570 insertions/min; 0.45 load factor
+1485789825930 s (epoch); 152,468,091 insertions/min; 0.53 load factor
+1485789885931 s (epoch); 150,481,422 insertions/min; 0.6 load factor
+1485789945930 s (epoch); 148,278,850 insertions/min; 0.66 load factor
+1485790005930 s (epoch); 145,869,349 insertions/min; 0.73 load factor
+1485790065931 s (epoch); 143,692,381 insertions/min; 0.8 load factor
+1485790125930 s (epoch); 127,057,254 insertions/min; 0.86 load factor
+1485790185930 s (epoch); 136,413,358 insertions/min; 0.92 load factor
+Producer: 0, puts: 2000000000, puts/collisions: none
+Total puts: 2000000000, total collisions: 0, total load factor: 0.931, duration: 788881 ms.
+1485790194812 s; 152,100,000 insertions/min; 0.93 load factor
+Test finished at Mon Jan 30 15:29:54 UTC 2017
+.Test started at Mon Jan 30 15:29:54 UTC 2017
+Insertions: 2,000,000,000 (approx: 15,258 GiB)
+Thread count: 1
+Test finished at Mon Jan 30 15:29:54 UTC 2017
+.Test started at Mon Jan 30 15:29:54 UTC 2017
+Insertions: 2,000,000,000 (approx: 15,258 GiB)
+Thread count: 1
+Test finished at Mon Jan 30 15:29:54 UTC 2017
+.Test started at Mon Jan 30 15:29:54 UTC 2017
+Insertions: 2,000,000,000 (approx: 15,258 GiB)
+Thread count: 1
+Test finished at Mon Jan 30 15:29:54 UTC 2017
+
+Time: 789.302
+
+OK (4 tests)
+
+page_defrag = always madvise [never]
+scaling_governor = 
+kernel.numa_balancing = 0

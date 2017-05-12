@@ -1,0 +1,3 @@
+Command exited with non-zero status 1
+10971.03user 211.84system 11:45.66elapsed 1584%CPU (0avgtext+0avgdata 537069636maxresident)k
+0inputs+23792outputs (0major+277379minor)pagefaults 0swaps

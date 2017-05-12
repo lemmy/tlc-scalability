@@ -1,0 +1,36 @@
+Command exited with non-zero status 1
+1.81user 0.11system 0:01.59elapsed 121%CPU (0avgtext+0avgdata 200872maxresident)k
+0inputs+952outputs (0major+16301minor)pagefaults 0swaps
+Command exited with non-zero status 1
+1.73user 0.12system 0:01.54elapsed 120%CPU (0avgtext+0avgdata 199664maxresident)k
+0inputs+984outputs (0major+16633minor)pagefaults 0swaps
+Command exited with non-zero status 1
+1.79user 0.11system 0:01.65elapsed 115%CPU (0avgtext+0avgdata 202860maxresident)k
+0inputs+952outputs (0major+16771minor)pagefaults 0swaps
+Command exited with non-zero status 1
+13.27user 6.45system 0:11.32elapsed 174%CPU (0avgtext+0avgdata 1796144maxresident)k
+8inputs+1712outputs (0major+23647minor)pagefaults 0swaps
+Command terminated by signal 13
+8.30user 3.09system 0:06.82elapsed 166%CPU (0avgtext+0avgdata 1255548maxresident)k
+2368inputs+1824outputs (8major+20287minor)pagefaults 0swaps
+Command terminated by signal 13
+47.14user 21.08system 0:38.68elapsed 176%CPU (0avgtext+0avgdata 4049288maxresident)k
+16inputs+2144outputs (1major+410418minor)pagefaults 0swaps
+Command exited with non-zero status 1
+188.11user 112.34system 2:35.43elapsed 193%CPU (0avgtext+0avgdata 5151380maxresident)k
+2064inputs+2608outputs (22major+398616minor)pagefaults 0swaps
+Command exited with non-zero status 1
+180.69user 103.31system 2:28.87elapsed 190%CPU (0avgtext+0avgdata 5163192maxresident)k
+320inputs+2488outputs (10major+309719minor)pagefaults 0swaps
+Command exited with non-zero status 1
+176.45user 104.14system 2:26.97elapsed 190%CPU (0avgtext+0avgdata 5181236maxresident)k
+1096inputs+2528outputs (8major+214695minor)pagefaults 0swaps
+Command exited with non-zero status 1
+83.52user 3.21system 0:29.99elapsed 289%CPU (0avgtext+0avgdata 4250300maxresident)k
+16inputs+2216outputs (0major+27685minor)pagefaults 0swaps
+Command exited with non-zero status 1
+88.70user 3.23system 0:32.05elapsed 286%CPU (0avgtext+0avgdata 4262824maxresident)k
+0inputs+2264outputs (0major+29148minor)pagefaults 0swaps
+Command exited with non-zero status 1
+89.68user 3.00system 0:32.71elapsed 283%CPU (0avgtext+0avgdata 4266288maxresident)k
+24inputs+2224outputs (0major+28846minor)pagefaults 0swaps

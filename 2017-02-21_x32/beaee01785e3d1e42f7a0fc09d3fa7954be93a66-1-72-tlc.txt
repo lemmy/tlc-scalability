@@ -1,0 +1,31 @@
+TLC2 Version 2.09 of 28 January 2016
+Running in Model-Checking mode with 72 workers.
+Parsing file MC.tla
+Parsing file Bakery.tla
+Parsing file /mnt/markus/tlaplus-master/git/tlaplus/tlatools/class/tla2sany/StandardModules/TLC.tla
+Parsing file /mnt/markus/tlaplus-master/git/tlaplus/tlatools/class/tla2sany/StandardModules/Naturals.tla
+Parsing file TLAPS.tla
+Parsing file /mnt/markus/tlaplus-master/git/tlaplus/tlatools/class/tla2sany/StandardModules/Sequences.tla
+Semantic processing of module Naturals
+Semantic processing of module TLAPS
+Semantic processing of module Bakery
+Semantic processing of module Sequences
+Semantic processing of module TLC
+Semantic processing of module MC
+Starting... (2017-02-21 13:23:44)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated.
+Switched to second gen workers.
+Progress(1) at 2017-02-21 13:23:50: 2718646 states generated (2,718,646 s/min), 609577 distinct states found (609,577 ds/min), 309278 states left on queue.
+Progress(1) at 2017-02-21 13:24:50: 669012094 states generated (666,293,448 s/min), 104314704 distinct states found (103,705,127 ds/min), 38242626 states left on queue.
+Progress(1) at 2017-02-21 13:25:50: 1308039244 states generated (639,027,150 s/min), 191155642 distinct states found (86,840,938 ds/min), 61668087 states left on queue.
+Progress(1) at 2017-02-21 13:26:51: 1962418396 states generated (654,379,152 s/min), 282639367 distinct states found (91,483,725 ds/min), 84072605 states left on queue.
+Progress(1) at 2017-02-21 13:27:51: 2609308776 states generated (646,890,380 s/min), 373701816 distinct states found (91,062,449 ds/min), 105619538 states left on queue.
+Model checking completed. No error has been found.
+  Estimates of the probability that TLC did not check all reachable states
+  because two distinct states had the same fingerprint:
+  calculated (optimistic):  val = .070
+  based on the actual fingerprints:  val = 0.0
+3250098325 states generated, 462611339 distinct states found, 124105185 states left on queue.
+The depth of the complete state graph search is 1.
+Finished in 307845

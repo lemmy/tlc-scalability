@@ -1,0 +1,206 @@
+diff --git a/general/performance/csv.sh b/general/performance/csv.sh
+index 8629d95..873a05e 100755
+--- a/general/performance/csv.sh
++++ b/general/performance/csv.sh
+@@ -1,22 +1,14 @@
+ #!/bin/bash
+ 
+-echo "Implementation,Processors,Insertions,Duration,Memory,LoadFactor,Locks,TblCnt,JunitTime,NUMABalancing,PageDefrag,Govenor"
++echo "Processes,Insertions,Duration"
+ 
+ for file in $1/*-tlc.txt; do
+    PROCESSORS=$(echo $file | cut -d "-" -f3)
+-   IMPL=$(basename $file | cut -d "_" -f1)
++   PROC_ALIGNED=$(printf "%03d" $PROCESSORS)
+ 
+    FILE=$(cat $file)
+-   INSERTIONS=$(echo $FILE | grep -Po 'Total puts: \K[0-9]+')
+-   DURATION=$(echo $FILE | grep -Po 'duration: \K[^ ]+')
+-   LOADFACTOR=$(echo $FILE | grep -Po 'total load factor: \K[0-9.]+')
+-   LOCKS=$(echo $FILE | grep -Po 'FPSet lock count is: \K[0-9]+')
+-   MEM=$(echo $FILE | grep -Po 'FPSet table count is: \K[^ ]+')
+-   TBLCNT=$(echo $FILE | grep -Po 'FPSet bucket count is: \K[0-9]+')
+-   JUNITTIME=$(echo $FILE | grep -Po 'Time: \K[0-9,.]*')
+-   NUMA=$(echo $FILE | grep -Po 'kernel.numa_balancing = \K[0-9,.]*')
+-   DEFRAG=$(echo $FILE | grep 'page_defrag = ' | grep -Po '\[.*\]')
+-   GOVENOR=$(echo $FILE | grep -Po 'scaling_governor = \K[a-z]*')
++   INSERTIONS=$(echo $FILE | grep -Po '[0-9]+(?= distinct states found,)')
++   DURATION=$(echo $FILE | grep -Po 'Finished in \K[^ ]+')
+ 
+-   echo $IMPL,$PROCESSORS,$INSERTIONS,$DURATION,$(echo $MEM | sed s/,//g),$LOADFACTOR,$LOCKS,$TBLCNT,$(echo $JUNITTIME | sed s/,//g),$NUMA,$DEFRAG,$GOVENOR
++   echo $PROC_ALIGNED,$INSERTIONS,$DURATION
+ done
+diff --git a/general/performance/measure.sh b/general/performance/measure.sh
+old mode 100644
+new mode 100755
+index c2c1b9c..9b54456
+--- a/general/performance/measure.sh
++++ b/general/performance/measure.sh
+@@ -1,18 +1,13 @@
+ #!/bin/bash
+ 
+-SPEC="Grid5k"
++SPEC="Bakery"
+ 
+-# Check Grid5k.tla for semantical meaning
+-K=${1-"04"}
+-L=${2-"01"}
+-N=${3-"10"}
+-C=${4-"04"}
+-MODEL='k'$K'_l'$L'_n'$N'_c'$C
++MODEL=MC
+ 
+ # Performance related properties
+ WORKERS=${5-"$(nproc --all)"}
+-HEAP_MEM=${6-"128G"}
+-DIRECT_MEM=${7-"128g"}
++HEAP_MEM=${6-"512G"}
++DIRECT_MEM=${7-"256g"}
+ FPSET_IMPL="tlc2.tool.fp.OffHeapDiskFPSet"
+ 
+ # TLC version
+@@ -22,27 +17,19 @@ REV=$(git rev-parse HEAD)
+ #DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+ 
+ # TLC's code location
+-TLATOOLS_HOME=../../tlatools/
++TLATOOLS_HOME=/mnt/markus/tlaplus-master/git/tlaplus/tlatools/
+ 
+ # Trap interrupts and exit instead of continuing the for loop below
+ trap "echo Exited!; exit;" SIGINT SIGTERM
+ 
+ ######################################
+ 
+-# Generate TLC's config on-the-fly
+-cat > $MODEL.cfg <<EOF
+-CONSTANT K = $K
+-CONSTANT L = $L
+-CONSTANT N = $N
+-CONSTANT C = $C
+-INIT Init
+-NEXT Next
+-EOF
++cd /mnt/markus/Bakery/Bakery.toolbox/Model_1/
+ 
+ # Repeat N times to even out noise...
+-for i in {1..3}; do
++for i in {1..6}; do
+         # For varying worker (core) counts...
+-        for ((w=$WORKERS; w > 0;w=w/2)); do
++        for w in 56 52 48 44 40 36; do
+ 
+           # Output/log files
+           JFR_OUTPUT_FILE=$REV'_w'$w'_i'$i.jfr
+@@ -60,7 +47,7 @@ for i in {1..3}; do
+            -cp $TLATOOLS_HOME/class:$TLATOOLS_HOME/lib/* \
+            -DspecName=$SPEC \
+            -DmodelName=$MODEL \
+-           tlc2.TLC -deadlock -checkpoint 99999 -workers $w -config $MODEL $SPEC 2>&1 | tee $TLC_OUTPUT_FILE;
++           tlc2.TLC -deadlock -checkpoint 99999 -workers $w $MODEL  2>&1 | tee $TLC_OUTPUT_FILE;
+           # newer TLC versions support "-checkpoint 0", but 99999 suffices.
+ 
+           # cleanup left-over states/ directory to free disk space
+diff --git a/tlatools/src/tlc2/TLC.java b/tlatools/src/tlc2/TLC.java
+index 5366a3d..4327f73 100644
+--- a/tlatools/src/tlc2/TLC.java
++++ b/tlatools/src/tlc2/TLC.java
+@@ -830,8 +830,7 @@ public class TLC
+ 				}
+         	}
+ 			modelCheckerMXWrapper.unregister();
+-			MP.printMessage(EC.TLC_FINISHED,
+-					convertRuntimeToHumanReadable(System.currentTimeMillis() - startTime));
++			MP.printMessage(EC.TLC_FINISHED, ""+(System.currentTimeMillis() - startTime));
+ 			MP.flush();
+         }
+     }
+diff --git a/tlatools/src/tlc2/output/MP.java b/tlatools/src/tlc2/output/MP.java
+index 6a3c80f..2516bea 100644
+--- a/tlatools/src/tlc2/output/MP.java
++++ b/tlatools/src/tlc2/output/MP.java
+@@ -743,7 +743,7 @@ public class MP
+             b.append("Starting... (").append(SDF.format(new Date())).append(")");
+             break;
+         case EC.TLC_FINISHED:
+-            b.append("Finished in %1% at (").append(SDF.format(new Date())).append(")");
++            b.append("Finished in %1%");
+             break;
+         case EC.TLC_MODE_MC:
+             b.append("Running in Model-Checking mode with %1% worker%2%.");
+diff --git a/tlatools/src/tlc2/tool/AbstractChecker.java b/tlatools/src/tlc2/tool/AbstractChecker.java
+index da976dc..a2803b5 100644
+--- a/tlatools/src/tlc2/tool/AbstractChecker.java
++++ b/tlatools/src/tlc2/tool/AbstractChecker.java
+@@ -271,7 +271,8 @@ public abstract class AbstractChecker implements Cancelable
+         // SZ Feb 23, 2009: exit if canceled
+         // added condition to run in the cycle
+         // while (true) {
+-        while (!this.cancellationFlag)
++        int j = 0;
++        while (!this.cancellationFlag && j++ < 5)
+         {
+             if (!this.doPeriodicWork())
+             {
+@@ -296,6 +297,10 @@ public abstract class AbstractChecker implements Cancelable
+                     break;
+             }
+         }
++        for (int i = 0; i < workers.length; i++)
++        {
++            ((Worker)workers[i]).terminate();
++        }
+ 
+         // Wait for all the workers to terminate:
+         for (int i = 0; i < workers.length; i++)
+diff --git a/tlatools/src/tlc2/tool/ModelChecker.java b/tlatools/src/tlc2/tool/ModelChecker.java
+index 0be45ea..0215dcb 100644
+--- a/tlatools/src/tlc2/tool/ModelChecker.java
++++ b/tlatools/src/tlc2/tool/ModelChecker.java
+@@ -437,7 +437,7 @@ public class ModelChecker extends AbstractChecker
+                             // exploring this new state. Conversely, the state has to
+                             // be in the trace in case either invariant or implied action
+                             // checks want to print the trace. 
+-							long loc = this.trace.writeState(curState, fp);
++							long loc = 1;//this.trace.writeState(curState, fp);
+ 							succState.uid = loc;
+ 						}
+ 						// For liveness checking:
+@@ -670,7 +670,7 @@ public class ModelChecker extends AbstractChecker
+ //		}
+ //TODO re-add
+    	
+-        if (this.theStateQueue.size() > MemStateQueue.InitialSize && this.theStateQueue.suspendAll())
++        if (this.theStateQueue.size() > MemStateQueue.InitialSize && this.workers.length > 1 && this.theStateQueue.suspendAll())
+         {
+ 
+ 			// Replace the existing workers (those that dequeue states from the
+@@ -747,6 +747,7 @@ public class ModelChecker extends AbstractChecker
+ //				// Just resume worker threads when checkpointing is skipped
+             	this.theStateQueue.resumeAll();
+             	this.startWorkers(null, -1);
++            	System.err.println("Switched to second gen workers.");
+ //            }
+         }
+         return true;
+@@ -890,7 +891,7 @@ public class ModelChecker extends AbstractChecker
+     private static final void reportSuccess(final FPSet anFpSet, final long numOfGenStates) throws IOException
+     {
+         final long fpSetSize = anFpSet.size();
+-        final double actualProb = anFpSet.checkFPs();
++        final double actualProb = 0.0;// anFpSet.checkFPs();
+         reportSuccess(fpSetSize,  actualProb, numOfGenStates);
+     }
+     
+diff --git a/tlatools/src/tlc2/tool/NoCoherenceWorker.java b/tlatools/src/tlc2/tool/NoCoherenceWorker.java
+index 62a5f17..0f65b11 100644
+--- a/tlatools/src/tlc2/tool/NoCoherenceWorker.java
++++ b/tlatools/src/tlc2/tool/NoCoherenceWorker.java
+@@ -83,7 +83,7 @@ public class NoCoherenceWorker extends Worker implements IWorker {
+ 	 */
+ 	public final void run() {
+ 		try {
+-			while (true) {
++			while (running) {
+ 				if (head == null) {
+ 					finalization.await();
+ 					return;

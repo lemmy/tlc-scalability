@@ -1,0 +1,288 @@
+JUnit version 4.12
+.Test started at Tue Dec 20 00:59:57 UTC 2016
+Insertions: 25,769,803,776 (approx: 196,608 GiB)
+Thread count: 1
+Running test: FingerPrintGenerator
+Fully instantiated OffHeapDiskFPSet.
+Added attribute to the fail list. Will retry later.
+javax.management.InstanceNotFoundException: tlc2.tool:type=ModelChecker
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1095)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBeanInfo(DefaultMBeanServerInterceptor.java:1375)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.getMBeanInfo(JmxMBeanServer.java:920)
+	at se.hirt.jmx2jfr.EventDescriptor.create(EventDescriptor.java:86)
+	at se.hirt.jmx2jfr.SubscriptionCommand.setUpEvents(SubscriptionCommand.java:73)
+	at se.hirt.jmx2jfr.SubscriptionCommand.run(SubscriptionCommand.java:87)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+Maximum FPSet table count is: 26,575,110,144 (approx: 202,752 GiB)
+FPSet lock count is: 0
+FPSet bucket count is: 26575110144
+Testing tlc2.tool.fp.OffHeapDiskFPSet
+1482195767634 s; 162,624,223 insertions/min; 0.01 load factor
+1482195887634 s; 703,234,064 insertions/min; 0.02 load factor
+1482196007634 s; 727,397,474 insertions/min; 0.03 load factor
+1482196067633 s; 178,003,614 insertions/min; 0.04 load factor
+1482196127634 s; 194,208,660 insertions/min; 0.05 load factor
+1482196247633 s; 696,311,839 insertions/min; 0.06 load factor
+1482196307633 s; 192,230,439 insertions/min; 0.07 load factor
+1482196367633 s; 181,495,986 insertions/min; 0.07 load factor
+1482196427633 s; 168,855,381 insertions/min; 0.08 load factor
+1482196487633 s; 187,295,681 insertions/min; 0.09 load factor
+1482196547633 s; 187,063,273 insertions/min; 0.09 load factor
+1482196607634 s; 166,755,863 insertions/min; 0.1 load factor
+1482196727633 s; 740,175,645 insertions/min; 0.11 load factor
+1482196787634 s; 168,099,569 insertions/min; 0.12 load factor
+1482196907633 s; 728,945,451 insertions/min; 0.13 load factor
+1482196967633 s; 173,044,557 insertions/min; 0.14 load factor
+1482197027633 s; 168,742,270 insertions/min; 0.15 load factor
+1482197087634 s; 187,738,637 insertions/min; 0.15 load factor
+1482197207633 s; 690,189,348 insertions/min; 0.17 load factor
+1482197267634 s; 182,491,300 insertions/min; 0.17 load factor
+1482197387633 s; 697,123,786 insertions/min; 0.19 load factor
+1482197447634 s; 175,861,066 insertions/min; 0.19 load factor
+1482197567633 s; 706,926,122 insertions/min; 0.21 load factor
+1482197627634 s; 169,775,433 insertions/min; 0.21 load factor
+1482197747633 s; 714,643,258 insertions/min; 0.23 load factor
+1482197807633 s; 164,810,117 insertions/min; 0.23 load factor
+1482197867633 s; 183,122,211 insertions/min; 0.24 load factor
+1482197927634 s; 176,789,768 insertions/min; 0.25 load factor
+1482198047633 s; 675,567,662 insertions/min; 0.26 load factor
+1482198107634 s; 180,912,839 insertions/min; 0.27 load factor
+1482198227633 s; 662,305,388 insertions/min; 0.28 load factor
+1482198287633 s; 182,594,967 insertions/min; 0.29 load factor
+1482198347633 s; 162,998,722 insertions/min; 0.29 load factor
+1482198407634 s; 164,975,339 insertions/min; 0.3 load factor
+1482198527633 s; 696,592,641 insertions/min; 0.31 load factor
+1482198587634 s; 160,030,878 insertions/min; 0.32 load factor
+1482198707633 s; 698,769,202 insertions/min; 0.33 load factor
+1482198767634 s; 156,496,192 insertions/min; 0.34 load factor
+1482198887633 s; 694,573,797 insertions/min; 0.35 load factor
+1482198947634 s; 156,547,829 insertions/min; 0.36 load factor
+1482199067633 s; 683,500,344 insertions/min; 0.37 load factor
+1482199127633 s; 159,591,764 insertions/min; 0.37 load factor
+1482199187633 s; 159,562,551 insertions/min; 0.38 load factor
+1482199247634 s; 175,092,488 insertions/min; 0.39 load factor
+1482199367633 s; 638,661,873 insertions/min; 0.4 load factor
+1482199427634 s; 171,593,248 insertions/min; 0.41 load factor
+1482199547634 s; 643,130,952 insertions/min; 0.42 load factor
+1482199607633 s; 165,358,636 insertions/min; 0.42 load factor
+1482199667634 s; 171,772,032 insertions/min; 0.43 load factor
+1482199787633 s; 624,438,844 insertions/min; 0.44 load factor
+1482199847634 s; 172,225,343 insertions/min; 0.45 load factor
+1482199967633 s; 620,358,766 insertions/min; 0.46 load factor
+1482200027634 s; 170,083,375 insertions/min; 0.47 load factor
+1482200147633 s; 621,081,596 insertions/min; 0.48 load factor
+1482200207634 s; 165,857,572 insertions/min; 0.48 load factor
+1482200327633 s; 625,575,674 insertions/min; 0.5 load factor
+1482200387634 s; 160,270,729 insertions/min; 0.5 load factor
+1482200507633 s; 633,382,605 insertions/min; 0.51 load factor
+1482200567633 s; 154,467,701 insertions/min; 0.52 load factor
+1482200627633 s; 167,472,042 insertions/min; 0.53 load factor
+1482200687633 s; 151,906,627 insertions/min; 0.53 load factor
+1482200747633 s; 149,716,094 insertions/min; 0.54 load factor
+1482200807633 s; 164,707,965 insertions/min; 0.54 load factor
+1482200867633 s; 157,078,796 insertions/min; 0.55 load factor
+1482200927633 s; 145,403,510 insertions/min; 0.56 load factor
+1482200987633 s; 159,911,293 insertions/min; 0.56 load factor
+1482201047633 s; 160,541,961 insertions/min; 0.57 load factor
+1482201107634 s; 143,697,029 insertions/min; 0.57 load factor
+1482201227633 s; 633,049,666 insertions/min; 0.58 load factor
+1482201287634 s; 144,649,544 insertions/min; 0.59 load factor
+1482201407633 s; 618,498,791 insertions/min; 0.6 load factor
+1482201467634 s; 147,154,042 insertions/min; 0.61 load factor
+1482201587633 s; 601,146,132 insertions/min; 0.62 load factor
+1482201647634 s; 150,908,347 insertions/min; 0.62 load factor
+1482201767633 s; 581,586,805 insertions/min; 0.64 load factor
+1482201827634 s; 153,640,866 insertions/min; 0.64 load factor
+1482201947633 s; 566,664,579 insertions/min; 0.65 load factor
+1482202007633 s; 153,922,319 insertions/min; 0.66 load factor
+1482202067633 s; 137,794,616 insertions/min; 0.66 load factor
+1482202127634 s; 139,828,584 insertions/min; 0.67 load factor
+1482202247633 s; 581,227,832 insertions/min; 0.68 load factor
+1482202307634 s; 134,495,636 insertions/min; 0.68 load factor
+1482202427633 s; 576,221,476 insertions/min; 0.69 load factor
+1482202487634 s; 129,656,997 insertions/min; 0.7 load factor
+1482202607633 s; 564,393,330 insertions/min; 0.71 load factor
+1482202667634 s; 127,280,226 insertions/min; 0.72 load factor
+1482202787633 s; 547,565,526 insertions/min; 0.73 load factor
+1482202847634 s; 126,011,118 insertions/min; 0.73 load factor
+1482202967633 s; 526,572,141 insertions/min; 0.74 load factor
+1482203027634 s; 125,867,272 insertions/min; 0.74 load factor
+1482203147633 s; 503,661,096 insertions/min; 0.75 load factor
+1482203207634 s; 125,596,951 insertions/min; 0.76 load factor
+1482203327633 s; 478,249,160 insertions/min; 0.77 load factor
+1482203387634 s; 124,049,738 insertions/min; 0.77 load factor
+1482203507633 s; 457,052,793 insertions/min; 0.78 load factor
+1482203567633 s; 120,712,998 insertions/min; 0.79 load factor
+1482203627633 s; 109,608,777 insertions/min; 0.79 load factor
+1482203687634 s; 109,495,763 insertions/min; 0.79 load factor
+1482203807633 s; 445,360,898 insertions/min; 0.8 load factor
+1482203867634 s; 102,957,923 insertions/min; 0.81 load factor
+1482203987633 s; 428,834,914 insertions/min; 0.81 load factor
+1482204047633 s; 97,238,743 insertions/min; 0.82 load factor
+1482204107633 s; 101,599,266 insertions/min; 0.82 load factor
+1482204167633 s; 101,570,881 insertions/min; 0.83 load factor
+1482204227633 s; 92,657,049 insertions/min; 0.83 load factor
+1482204287634 s; 94,461,291 insertions/min; 0.83 load factor
+1482204407633 s; 371,558,331 insertions/min; 0.84 load factor
+1482204467634 s; 75,764,711 insertions/min; 0.84 load factor
+1482204587633 s; 0 insertions/min; 0.84 load factor
+1482204647634 s; 0 insertions/min; 0.84 load factor
+1482204767633 s; 0 insertions/min; 0.84 load factor
+1482204827634 s; 0 insertions/min; 0.84 load factor
+1482204947633 s; 0 insertions/min; 0.84 load factor
+1482205007633 s; 0 insertions/min; 0.84 load factor
+1482205067633 s; 0 insertions/min; 0.84 load factor
+1482205127633 s; 0 insertions/min; 0.84 load factor
+1482205187633 s; 0 insertions/min; 0.84 load factor
+1482205247633 s; 0 insertions/min; 0.84 load factor
+1482205307634 s; 0 insertions/min; 0.84 load factor
+1482205427633 s; 0 insertions/min; 0.84 load factor
+1482205487633 s; 0 insertions/min; 0.84 load factor
+1482205547633 s; 0 insertions/min; 0.84 load factor
+1482205607633 s; 0 insertions/min; 0.84 load factor
+1482205667634 s; 0 insertions/min; 0.84 load factor
+1482205727633 s; 0 insertions/min; 0.84 load factor
+1482205787633 s; 0 insertions/min; 0.84 load factor
+1482205847633 s; 0 insertions/min; 0.84 load factor
+1482205907634 s; 0 insertions/min; 0.84 load factor
+1482206027633 s; 0 insertions/min; 0.84 load factor
+1482206087633 s; 0 insertions/min; 0.84 load factor
+1482206147633 s; 0 insertions/min; 0.84 load factor
+1482206207633 s; 0 insertions/min; 0.84 load factor
+1482206267633 s; 0 insertions/min; 0.84 load factor
+1482206327633 s; 0 insertions/min; 0.84 load factor
+1482206387633 s; 0 insertions/min; 0.84 load factor
+1482206447634 s; 0 insertions/min; 0.84 load factor
+1482206567633 s; 0 insertions/min; 0.84 load factor
+1482206627633 s; 0 insertions/min; 0.84 load factor
+1482206687633 s; 0 insertions/min; 0.84 load factor
+1482206747634 s; 0 insertions/min; 0.84 load factor
+1482206867633 s; 0 insertions/min; 0.84 load factor
+1482206927633 s; 0 insertions/min; 0.84 load factor
+1482206987633 s; 0 insertions/min; 0.84 load factor
+1482207047634 s; 0 insertions/min; 0.84 load factor
+1482207167633 s; 0 insertions/min; 0.84 load factor
+1482207227633 s; 0 insertions/min; 0.84 load factor
+1482207287633 s; 0 insertions/min; 0.84 load factor
+1482207347634 s; 0 insertions/min; 0.84 load factor
+1482207467633 s; 0 insertions/min; 0.84 load factor
+1482207527633 s; 0 insertions/min; 0.84 load factor
+1482207587633 s; 0 insertions/min; 0.84 load factor
+1482207647634 s; 0 insertions/min; 0.84 load factor
+1482207767633 s; 0 insertions/min; 0.84 load factor
+1482207827633 s; 0 insertions/min; 0.84 load factor
+1482207887633 s; 0 insertions/min; 0.84 load factor
+1482207947634 s; 0 insertions/min; 0.84 load factor
+1482208067633 s; 0 insertions/min; 0.84 load factor
+1482208127634 s; 0 insertions/min; 0.84 load factor
+1482208247633 s; 0 insertions/min; 0.84 load factor
+1482208307633 s; 0 insertions/min; 0.84 load factor
+1482208367633 s; 0 insertions/min; 0.84 load factor
+1482208427634 s; 0 insertions/min; 0.84 load factor
+1482208547633 s; 0 insertions/min; 0.84 load factor
+1482208607633 s; 0 insertions/min; 0.84 load factor
+1482208667633 s; 0 insertions/min; 0.84 load factor
+1482208727633 s; 0 insertions/min; 0.84 load factor
+1482208787633 s; 0 insertions/min; 0.84 load factor
+1482208847634 s; 0 insertions/min; 0.84 load factor
+1482208967633 s; 0 insertions/min; 0.84 load factor
+1482209027633 s; 0 insertions/min; 0.84 load factor
+1482209087633 s; 0 insertions/min; 0.84 load factor
+1482209147634 s; 0 insertions/min; 0.84 load factor
+1482209267633 s; 0 insertions/min; 0.84 load factor
+1482209327633 s; 0 insertions/min; 0.84 load factor
+1482209387633 s; 0 insertions/min; 0.84 load factor
+1482209447634 s; 0 insertions/min; 0.84 load factor
+1482209567633 s; 0 insertions/min; 0.84 load factor
+1482209627633 s; 0 insertions/min; 0.84 load factor
+1482209687633 s; 0 insertions/min; 0.84 load factor
+1482209747634 s; 0 insertions/min; 0.84 load factor
+1482209867633 s; 0 insertions/min; 0.84 load factor
+1482209927633 s; 0 insertions/min; 0.84 load factor
+Sorted in-memory table with 1 workers and reprobe 1,015 in 5490,690 ms.
+1482209987633 s; 0 insertions/min; 0.84 load factor
+1482210047633 s; 0 insertions/min; 0.84 load factor
+1482210107633 s; 0 insertions/min; 0.84 load factor
+1482210167633 s; 0 insertions/min; 0.84 load factor
+1482210227633 s; 0 insertions/min; 0.84 load factor
+1482210287633 s; 0 insertions/min; 0.84 load factor
+1482210347633 s; 0 insertions/min; 0.84 load factor
+1482210407633 s; 0 insertions/min; 0.84 load factor
+1482210467633 s; 0 insertions/min; 0.84 load factor
+1482210527633 s; 0 insertions/min; 0.84 load factor
+1482210587633 s; 0 insertions/min; 0.84 load factor
+1482210647633 s; 0 insertions/min; 0.84 load factor
+1482210707633 s; 0 insertions/min; 0.84 load factor
+1482210767634 s; 0 insertions/min; 0.84 load factor
+1482210887633 s; 0 insertions/min; 0.84 load factor
+1482210947633 s; 0 insertions/min; 0.84 load factor
+1482211007633 s; 0 insertions/min; 0.84 load factor
+1482211067634 s; 0 insertions/min; 0.84 load factor
+1482211187633 s; 0 insertions/min; 0.84 load factor
+1482211247633 s; 0 insertions/min; 0.84 load factor
+1482211307633 s; 0 insertions/min; 0.84 load factor
+1482211367633 s; 0 insertions/min; 0.84 load factor
+1482211427634 s; 0 insertions/min; 0.84 load factor
+1482211547633 s; 0 insertions/min; 0.84 load factor
+1482211607633 s; 0 insertions/min; 0.84 load factor
+1482211667633 s; 0 insertions/min; 0.84 load factor
+Wrote table to disk with 1 workers in 1,758,731 ms.
+Flushed disk DiskFPSet0 the 1. time, in 7,249,575 sec after 22,389,060,277 insertions, load factor 0.842 and reprobe of 1,015.
+1482211727634 s; 124,058 insertions/min; 0 load factor
+1482211847633 s; 1,581,692 insertions/min; 0 load factor
+1482211907633 s; 402,778 insertions/min; 0 load factor
+1482211967633 s; 402,118 insertions/min; 0 load factor
+1482212027633 s; 395,320 insertions/min; 0 load factor
+1482212087633 s; 382,667 insertions/min; 0 load factor
+1482212147633 s; 396,010 insertions/min; 0 load factor
+1482212207633 s; 398,926 insertions/min; 0 load factor
+1482212267633 s; 399,979 insertions/min; 0 load factor
+1482212327633 s; 396,515 insertions/min; 0 load factor
+1482212387633 s; 391,287 insertions/min; 0 load factor
+1482212447633 s; 381,365 insertions/min; 0 load factor
+1482212507633 s; 397,652 insertions/min; 0 load factor
+1482212567634 s; 395,637 insertions/min; 0 load factor
+1482212687633 s; 1,587,850 insertions/min; 0 load factor
+1482212747633 s; 395,746 insertions/min; 0 load factor
+1482212807633 s; 398,548 insertions/min; 0 load factor
+1482212867633 s; 398,775 insertions/min; 0 load factor
+1482212927633 s; 397,491 insertions/min; 0 load factor
+1482212987633 s; 398,083 insertions/min; 0 load factor
+1482213047633 s; 397,477 insertions/min; 0 load factor
+1482213107634 s; 399,586 insertions/min; 0 load factor
+1482213227633 s; 1,585,984 insertions/min; 0 load factor
+1482213287633 s; 382,742 insertions/min; 0 load factor
+1482213347634 s; 387,574 insertions/min; 0 load factor
+1482213467633 s; 1,578,248 insertions/min; 0 load factor
+1482213527633 s; 384,216 insertions/min; 0 load factor
+1482213587634 s; 391,829 insertions/min; 0 load factor
+1482213707633 s; 1,527,671 insertions/min; 0 load factor
+1482213767633 s; 394,461 insertions/min; 0 load factor
+1482213827633 s; 396,052 insertions/min; 0 load factor
+1482213887633 s; 394,304 insertions/min; 0 load factor
+1482213947633 s; 392,430 insertions/min; 0 load factor
+1482214007634 s; 392,698 insertions/min; 0 load factor
+1482214127633 s; 1,571,304 insertions/min; 0 load factor
+1482214187633 s; 394,711 insertions/min; 0 load factor
+1482214247633 s; 393,540 insertions/min; 0 load factor
+1482214307633 s; 390,106 insertions/min; 0 load factor
+1482214367633 s; 393,060 insertions/min; 0 load factor
+1482214427633 s; 393,224 insertions/min; 0 load factor
+1482214487634 s; 390,154 insertions/min; 0 load factor
+1482214607633 s; 1,536,203 insertions/min; 0 load factor
+1482214667633 s; 393,369 insertions/min; 0 load factor
+1482214727633 s; 393,071 insertions/min; 0 load factor
+1482214787633 s; 392,447 insertions/min; 0 load factor
+1482214847633 s; 381,926 insertions/min; 0 load factor
+1482214907633 s; 378,005 insertions/min; 0 load factor
+1482214967634 s; 392,231 insertions/min; 0 load factor
+page_defrag = [always] madvise never
+scaling_governor = 
+kernel.numa_balancing = 1

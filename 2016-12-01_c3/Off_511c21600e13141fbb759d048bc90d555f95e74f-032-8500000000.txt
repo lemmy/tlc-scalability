@@ -1,0 +1,12 @@
+Command exited with non-zero status 1
+8467.32user 96.10system 11:22.75elapsed 1254%CPU (0avgtext+0avgdata 52802628maxresident)k
+81912inputs+93182184outputs (179major+462325minor)pagefaults 0swaps
+Command exited with non-zero status 1
+8031.57user 95.16system 11:05.84elapsed 1220%CPU (0avgtext+0avgdata 52807680maxresident)k
+86408inputs+93105928outputs (204major+436048minor)pagefaults 0swaps
+Command exited with non-zero status 1
+8394.03user 96.03system 11:18.38elapsed 1251%CPU (0avgtext+0avgdata 52801504maxresident)k
+84072inputs+93686088outputs (194major+470730minor)pagefaults 0swaps
+Command exited with non-zero status 1
+8601.35user 97.28system 11:31.75elapsed 1257%CPU (0avgtext+0avgdata 52803356maxresident)k
+84488inputs+93997160outputs (210major+736033minor)pagefaults 0swaps

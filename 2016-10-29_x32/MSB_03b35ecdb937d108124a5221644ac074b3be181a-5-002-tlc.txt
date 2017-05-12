@@ -1,0 +1,38 @@
+JUnit version 4.12
+.Test started at Tue Oct 25 20:14:06 UTC 2016
+Insertions: 8,589,934,592 (approx: 65,536 GiB)
+Thread count: 2
+Maximum FPSet table count is: 34,359,738,368 (approx: 262,144 GiB)
+FPSet lock count is: 512
+FPSet bucket count is: 2147483639
+Testing tlc2.tool.fp.MSBDiskFPSet
+1477426513332 s; 174,562,706 insertions/min; 0.01 load factor
+1477426573331 s; 171,191,382 insertions/min; 0.01 load factor
+1477426633331 s; 168,628,808 insertions/min; 0.01 load factor
+1477426693331 s; 164,503,816 insertions/min; 0.02 load factor
+1477426753331 s; 160,559,945 insertions/min; 0.02 load factor
+1477426813332 s; 159,642,820 insertions/min; 0.03 load factor
+1477426933331 s; 635,487,728 insertions/min; 0.04 load factor
+1477426993331 s; 158,014,081 insertions/min; 0.04 load factor
+1477427053331 s; 155,413,899 insertions/min; 0.05 load factor
+1477427113331 s; 155,513,140 insertions/min; 0.05 load factor
+1477427173331 s; 153,959,136 insertions/min; 0.06 load factor
+1477427233331 s; 152,502,442 insertions/min; 0.06 load factor
+1477427293331 s; 152,731,818 insertions/min; 0.07 load factor
+1477427353331 s; 152,977,719 insertions/min; 0.07 load factor
+1477427413332 s; 152,064,411 insertions/min; 0.07 load factor
+1477427533331 s; 601,442,821 insertions/min; 0.08 load factor
+1477427593331 s; 149,800,243 insertions/min; 0.09 load factor
+1477427653331 s; 148,553,320 insertions/min; 0.09 load factor
+1477427713331 s; 148,003,109 insertions/min; 0.1 load factor
+1477427773331 s; 149,147,751 insertions/min; 0.1 load factor
+1477427833331 s; 146,848,530 insertions/min; 0.1 load factor
+1477427893331 s; 146,385,962 insertions/min; 0.11 load factor
+1477427953331 s; 144,878,255 insertions/min; 0.11 load factor
+1477428013331 s; 143,969,851 insertions/min; 0.12 load factor
+1477428073331 s; 146,479,784 insertions/min; 0.12 load factor
+1477428133332 s; 145,391,960 insertions/min; 0.13 load factor
+Running test: FingerPrintGenerator
+page_defrag = always madvise [never]
+scaling_governor = powersave
+kernel.numa_balancing = 1

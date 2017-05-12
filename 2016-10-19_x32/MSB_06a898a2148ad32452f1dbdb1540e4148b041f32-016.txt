@@ -1,0 +1,9 @@
+Command exited with non-zero status 1
+12441.79user 1893.84system 12:38.04elapsed 1891%CPU (0avgtext+0avgdata 249268032maxresident)k
+0inputs+24248outputs (0major+4490815minor)pagefaults 0swaps
+Command exited with non-zero status 1
+9639.62user 1935.42system 9:41.82elapsed 1989%CPU (0avgtext+0avgdata 246041256maxresident)k
+0inputs+18960outputs (0major+4230871minor)pagefaults 0swaps
+Command exited with non-zero status 1
+12022.59user 1834.13system 12:06.50elapsed 1907%CPU (0avgtext+0avgdata 246562816maxresident)k
+0inputs+23328outputs (0major+4636687minor)pagefaults 0swaps

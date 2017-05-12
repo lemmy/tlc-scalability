@@ -1,0 +1,47 @@
+JUnit version 4.12
+.Test started at Fri Oct 28 03:28:59 UTC 2016
+Insertions: 17,179,869,184 (approx: 131,072 GiB)
+Thread count: 128
+Maximum FPSet table count is: 34,359,738,368 (approx: 262,144 GiB)
+FPSet lock count is: 32768
+FPSet bucket count is: 2147483639
+Testing tlc2.tool.fp.MSBDiskFPSet
+1477625405612 s; 500,942,195 insertions/min; 0.01 load factor
+1477625465622 s; 1,177,145,969 insertions/min; 0.05 load factor
+1477625585612 s; 6,549,805,953 insertions/min; 0.14 load factor
+1477625645612 s; 1,598,885,518 insertions/min; 0.19 load factor
+1477625705612 s; 1,410,735,916 insertions/min; 0.23 load factor
+1477625765613 s; 1,180,323,003 insertions/min; 0.27 load factor
+1477625875670 s; 1,408,449,171 insertions/min; 0.29 load factor
+1477625945612 s; 1,112,008,407 insertions/min; 0.32 load factor
+1477626005613 s; 804,421,251 insertions/min; 0.34 load factor
+1477626125612 s; 3,165,462,752 insertions/min; 0.39 load factor
+1477626185612 s; 784,653,807 insertions/min; 0.41 load factor
+1477626272827 s; 396,218,047 insertions/min; 0.42 load factor
+1477626365612 s; 1,897,320,632 insertions/min; 0.45 load factor
+1477626425612 s; 795,552,204 insertions/min; 0.48 load factor
+1477626485612 s; 786,653,393 insertions/min; 0.5 load factor
+Total puts: 17179869184, total collisions: 0, total load factor: 0.5, duration: 1147897 ms.
+1477626493515 s; 897,960,000 insertions/min; 0.5 load factor
+Test finished at Fri Oct 28 03:48:13 UTC 2016
+.Test started at Fri Oct 28 03:48:13 UTC 2016
+Insertions: 17,179,869,184 (approx: 131,072 GiB)
+Thread count: 128
+Test finished at Fri Oct 28 03:48:13 UTC 2016
+.Test started at Fri Oct 28 03:48:13 UTC 2016
+Insertions: 17,179,869,184 (approx: 131,072 GiB)
+Thread count: 128
+Test finished at Fri Oct 28 03:48:13 UTC 2016
+.Test started at Fri Oct 28 03:48:13 UTC 2016
+Insertions: 17,179,869,184 (approx: 131,072 GiB)
+Thread count: 128
+Test finished at Fri Oct 28 03:48:13 UTC 2016
+
+Time: 1,154.21
+
+OK (4 tests)
+
+Running test: FingerPrintGenerator
+page_defrag = always madvise [never]
+scaling_governor = powersave
+kernel.numa_balancing = 1

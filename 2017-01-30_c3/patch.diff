@@ -1,0 +1,236 @@
+diff --git a/general/performance/measureFPSet.sh b/general/performance/measureFPSet.sh
+index 881fed4..536e7ba 100755
+--- a/general/performance/measureFPSet.sh
++++ b/general/performance/measureFPSet.sh
+@@ -2,8 +2,8 @@
+ 
+ # Performance related properties
+ WORKERS=${5-"$(nproc --all)"}
+-HEAP_MEM=${6-"512g"}
+-DIRECT_MEM=${7-"512g"}
++HEAP_MEM=${6-"56g"}
++DIRECT_MEM=${7-"56g"}
+ FPSET_IMPL="tlc2.tool.fp.OffHeapDiskFPSet"
+ 
+ # TLC version
+@@ -25,7 +25,7 @@ for i in {1..3}; do
+         # For varying worker (core) counts...
+         #for ((w=$WORKERS; w > 0;w=w/2)); do
+         #for w in 128 120 112 104 96 88 80 72 64 56 48 40 32 24 16 8 4 2 1; do
+-        for w in 128 64 32 16 8 4 2 1 24 40 48 56 82 80 88 96 104; do
++        for w in 1; do
+ 
+           ## MSB Output/log files
+           MSB_JFR_OUTPUT_FILE="MSB_"$REV'_w'$(printf "%03d" $w)'_i'$i.jfr
+@@ -44,11 +44,15 @@ for i in {1..3}; do
+            -Djava.util.logging.config.file=$TLATOOLS_HOME/logging.properties \
+            -Dtlc2.tool.fp.MultiThreadedFPSetTest.numThreads=$w \
+            -Dtlc2.tool.fp.MultiThreadedFPSetTest.excludes=_BatchedFingerPrintGenerator_LongVecFingerPrintGenerator_PartitionedFingerPrintGenerator \
+-           -Dtlc2.tool.fp.MultiThreadedFPSetTest.insertions=8589934592 \
++           -Dtlc2.tool.fp.MultiThreadedFPSetTest.insertions=2000000000 \
+            -Djava.io.tmpdir=/mnt/markus/tmp/ \
+            -cp $TLATOOLS_HOME/class:$TLATOOLS_HOME/lib/* \
+            org.junit.runner.JUnitCore tlc2.tool.fp.MultiThreadedMSBDiskFPSetTest 2>&1 | tee $MSB_TLC_OUTPUT_FILE;
+ 
++          echo "page_defrag = $(cat /sys/kernel/mm/transparent_hugepage/defrag)" >> $MSB_TLC_OUTPUT_FILE
++          echo "scaling_governor = $(cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor)" >> $MSB_TLC_OUTPUT_FILE
++          /sbin/sysctl kernel.numa_balancing >> $MSB_TLC_OUTPUT_FILE
++
+           ## OffHeap
+           JFR_OUTPUT_FILE="Off_"$REV'_w'$(printf "%03d" $w)'_i'$i.jfr
+           TIME_OUTPUT_FILE="Off_"$REV-$(printf "%03d" $w).txt
+@@ -66,14 +70,14 @@ for i in {1..3}; do
+            -Djava.util.logging.config.file=$TLATOOLS_HOME/logging.properties \
+            -Dtlc2.tool.fp.MultiThreadedFPSetTest.numThreads=$w \
+            -Dtlc2.tool.fp.MultiThreadedFPSetTest.excludes=_BatchedFingerPrintGenerator_LongVecFingerPrintGenerator_PartitionedFingerPrintGenerator \
+-           -Dtlc2.tool.fp.MultiThreadedFPSetTest.insertions=34359738368 \
++           -Dtlc2.tool.fp.MultiThreadedFPSetTest.insertions=5900000000 \
+            -Djava.io.tmpdir=/mnt/markus/tmp/ \
+            -cp $TLATOOLS_HOME/class:$TLATOOLS_HOME/lib/* \
+            org.junit.runner.JUnitCore tlc2.tool.fp.MultiThreadedOffHeapDiskFPSetTest 2>&1 | tee $TLC_OUTPUT_FILE;
+ 
+           echo "page_defrag = $(cat /sys/kernel/mm/transparent_hugepage/defrag)" >> $TLC_OUTPUT_FILE
+           echo "scaling_governor = $(cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor)" >> $TLC_OUTPUT_FILE
+-          sysctl kernel.numa_balancing >> $TLC_OUTPUT_FILE
++          /sbin/sysctl kernel.numa_balancing >> $TLC_OUTPUT_FILE
+         done
+ done
+ 
+diff --git a/tlatools/jfr/jmxprobes.xml b/tlatools/jfr/jmxprobes.xml
+index 0a17520..ed21301 100644
+--- a/tlatools/jfr/jmxprobes.xml
++++ b/tlatools/jfr/jmxprobes.xml
+@@ -75,67 +75,6 @@
+ 			<attributename>Uptime</attributename>
+ 			<contenttype>Millis</contenttype>
+ 		</attribute>
+-		<!-- tlc2.tool:type=ModelChecker -->
+-		<attribute>
+-			<objectname>tlc2.tool:type=ModelChecker</objectname>
+-			<attributename>StatesGenerated</attributename>
+-			<contenttype>None</contenttype>
+-		</attribute>
+-		<attribute>
+-			<objectname>tlc2.tool:type=ModelChecker</objectname>
+-			<attributename>StatesGeneratedPerMinute</attributename>
+-			<contenttype>None</contenttype>
+-		</attribute>
+-		<attribute>
+-			<objectname>tlc2.tool:type=ModelChecker</objectname>
+-			<attributename>DistinctStatesGenerated</attributename>
+-			<contenttype>None</contenttype>
+-		</attribute>
+-		<attribute>
+-			<objectname>tlc2.tool:type=ModelChecker</objectname>
+-			<attributename>DistinctStatesGeneratedPerMinute</attributename>
+-			<contenttype>None</contenttype>
+-		</attribute>
+-		<attribute>
+-			<objectname>tlc2.tool:type=ModelChecker</objectname>
+-			<attributename>StateQueueSize</attributename>
+-			<contenttype>None</contenttype>
+-		</attribute>
+-		<attribute>
+-			<objectname>tlc2.tool:type=ModelChecker</objectname>
+-			<attributename>Progress</attributename>
+-			<contenttype>None</contenttype>
+-		</attribute>
+-		<attribute>
+-			<objectname>tlc2.tool:type=ModelChecker</objectname>
+-			<attributename>WorkerCount</attributename>
+-			<contenttype>None</contenttype>
+-		</attribute>
+-		<attribute>
+-			<objectname>tlc2.tool:type=ModelChecker</objectname>
+-			<attributename>AverageBlockCnt</attributename>
+-			<contenttype>None</contenttype>
+-		</attribute>
+-		<attribute>
+-			<objectname>tlc2.tool:type=ModelChecker</objectname>
+-			<attributename>RuntimeRatio</attributename>
+-			<contenttype>None</contenttype>
+-		</attribute>
+-		<attribute>
+-			<objectname>tlc2.tool:type=ModelChecker</objectname>
+-			<attributename>SpecName</attributename>
+-			<contenttype>None</contenttype>
+-		</attribute>
+-		<attribute>
+-			<objectname>tlc2.tool:type=ModelChecker</objectname>
+-			<attributename>ModelName</attributename>
+-			<contenttype>None</contenttype>
+-		</attribute>
+-		<attribute>
+-			<objectname>tlc2.tool:type=ModelChecker</objectname>
+-			<attributename>CommandLine</attributename>
+-			<contenttype>None</contenttype>
+-		</attribute>
+ 		<!-- tlc2.tool.fp:type=DiskFPSet0 -->
+ 		<attribute>
+ 			<objectname>tlc2.tool.fp:type=DiskFPSet0</objectname>
+diff --git a/tlatools/jfr/tlc.jfc b/tlatools/jfr/tlc.jfc
+index 89b444a..374e2c3 100644
+--- a/tlatools/jfr/tlc.jfc
++++ b/tlatools/jfr/tlc.jfc
+@@ -444,7 +444,7 @@
+     </event>
+ 
+     <event path="MBeans/tlc2_tool/ModelChecker">
+-      <setting name="enabled">true</setting>
++      <setting name="enabled">false</setting>
+     </event>
+ 
+     <event path="MBeans/tlc2_tool_fp/DiskFPSet0">
+diff --git a/tlatools/logging.properties b/tlatools/logging.properties
+index f4fb74c..4d29193 100644
+--- a/tlatools/logging.properties
++++ b/tlatools/logging.properties
+@@ -54,5 +54,5 @@ java.util.logging.ConsoleHandler.formatter = java.util.logging.SimpleFormatter
+ ############################################################
+ 
+ #tlc2.tool.level = ALL
+-#tlc2.tool.fp.level = ALL
++tlc2.tool.fp.level = ALL
+ #tlc2.tool.liveness.level = ALL
+diff --git a/tlatools/src/tlc2/tool/fp/HeapBasedDiskFPSet.java b/tlatools/src/tlc2/tool/fp/HeapBasedDiskFPSet.java
+index 9a0d165..78cb40c 100644
+--- a/tlatools/src/tlc2/tool/fp/HeapBasedDiskFPSet.java
++++ b/tlatools/src/tlc2/tool/fp/HeapBasedDiskFPSet.java
+@@ -73,11 +73,11 @@ public abstract class HeapBasedDiskFPSet extends DiskFPSet {
+ 		// test available for the job. It just inserts long values into the
+ 		// set. int is obviously going to be too small once 2^23 cores become
+ 		// commonplace.
+-		this.lockCnt = 1 << LogLockCnt;
++		this.lockCnt = TLCGlobals.getNumWorkers() > 1 ? 1 << LogLockCnt : 1;
+ 		this.rwLock = Striped.readWriteLock(lockCnt);
+ 
+ 		// Reserve a portion of the memory for the auxiliary storage
+-		long maxMemCnt = (long) (fpSetConfig.getMemoryInFingerprintCnt() / getAuxiliaryStorageRequirement());
++		long maxMemCnt = (long) (fpSetConfig.getMemoryInFingerprintCnt() / 1.4d);
+ 
+ 		// default if not specific value given
+ 		if ((maxMemCnt - LogMaxLoad) <= 0) {
+@@ -301,6 +301,11 @@ public abstract class HeapBasedDiskFPSet extends DiskFPSet {
+ 			final long timestamp = System.currentTimeMillis();
+ 			final long insertions = getTblCnt();
+ 			
++			LOGGER.log(Level.FINE,
++					"Started eviction of disk {0} the {1}. time at {2} after {3} insertions, load factor {4} and tbl load of {5}.",
++					new Object[] { ((DiskFPSetMXWrapper) diskFPSetMXWrapper).getObjectName(), getGrowDiskMark(),
++							timestamp, insertions, getLoadFactor(), getTblLoad() });
++			
+ 			// acquire _all_ write locks
+ 			rwLock.acquireAllLocks();
+ 			
+diff --git a/tlatools/test-concurrent/tlc2/tool/fp/MultiThreadedFPSetTest.java b/tlatools/test-concurrent/tlc2/tool/fp/MultiThreadedFPSetTest.java
+index d607913..1ddbd51 100644
+--- a/tlatools/test-concurrent/tlc2/tool/fp/MultiThreadedFPSetTest.java
++++ b/tlatools/test-concurrent/tlc2/tool/fp/MultiThreadedFPSetTest.java
+@@ -101,7 +101,9 @@ public abstract class MultiThreadedFPSetTest extends AbstractFPSetTest {
+ 		Assume.assumeFalse(System.getProperty(MultiThreadedFPSetTest.class.getName() + ".excludes", "")
+ 				.contains("_" + fpgClass.getSimpleName()));
+ 		System.out.println("Running test: " + fpgClass.getSimpleName());
+-		
++
++		startTimestamp = System.currentTimeMillis();
++
+ 		TLCGlobals.setNumWorkers(NUM_THREADS);
+ 		final FPSet fpSet = getFPSetInitialized(NUM_THREADS);
+ 		final CountDownLatch latch = new CountDownLatch(NUM_THREADS);
+@@ -109,9 +111,6 @@ public abstract class MultiThreadedFPSetTest extends AbstractFPSetTest {
+ 		final Constructor<?> constructor = fpgClass.getConstructor(new Class[] { MultiThreadedFPSetTest.class,
+ 				int.class, int.class, FPSet.class, CountDownLatch.class, long.class, long.class, CyclicBarrier.class });
+ 		
+-		// Take timestamp after instantiating FPSet to not measure zero'ing/initializing FPSet.  
+-		startTimestamp = System.currentTimeMillis();
+-
+ 		final Timer timer = new Timer();
+ 		final CyclicBarrier barrier = new CyclicBarrier(NUM_THREADS, new Runnable() {
+ 			public void run() {
+@@ -180,10 +179,6 @@ public abstract class MultiThreadedFPSetTest extends AbstractFPSetTest {
+ 		assertTrue(fpSet.size() >= INSERTIONS);
+ 		assertTrue(fpSet.size() <= INSERTIONS + NUM_THREADS);
+ 		
+-		// Check a DiskFPSet's invariant that after flush all fingerprints in
+-		// the file are a) monotonically increasing and b) there are no duplicates.
+-		assertTrue(fpSet.checkInvariant());
+-		
+ 		return fpSet;
+ 	}
+ }
+diff --git a/tlatools/test-concurrent/tlc2/tool/fp/generator/FingerPrintGenerator.java b/tlatools/test-concurrent/tlc2/tool/fp/generator/FingerPrintGenerator.java
+index aa0db19..efce069 100644
+--- a/tlatools/test-concurrent/tlc2/tool/fp/generator/FingerPrintGenerator.java
++++ b/tlatools/test-concurrent/tlc2/tool/fp/generator/FingerPrintGenerator.java
+@@ -53,11 +53,6 @@ public class FingerPrintGenerator implements Runnable {
+ 		// down execution.
+ 		while (puts + collisions < perThreadInsertions || fpSet.size() < totalInsertions) {
+ 			try {
+-				// make sure set still contains predecessor
+-				if (predecessor != 0L) {
+-					Assert.assertTrue(fpSet.contains(predecessor));
+-				}
+-
+ 				predecessor = rnd.nextLong();
+ 
+ 				// Periodically verify the FPSet's content. This causes a

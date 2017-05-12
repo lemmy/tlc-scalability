@@ -1,0 +1,36 @@
+JUnit version 4.12
+.Test started at Tue Oct 25 00:35:08 UTC 2016
+Insertions: 34,359,738,368 (approx: 262,144 GiB)
+Thread count: 32
+Maximum FPSet table count is: 137,438,953,472 (approx: 1,048,576 GiB)
+FPSet lock count is: 0
+FPSet bucket count is: 137438953472
+Testing tlc2.tool.fp.OffHeapDiskFPSet
+1477355785722 s; 6,914,350,437 insertions/min; 0.05 load factor
+1477355845722 s; 6,851,400,459 insertions/min; 0.1 load factor
+1477355965721 s; 26,778,649,174 insertions/min; 0.2 load factor
+1477356025721 s; 6,501,087,385 insertions/min; 0.24 load factor
+Total puts: 34359738368, total collisions: 0, total load factor: 0.25, duration: 316983 ms.
+1477356042708 s; 6,503,760,000 insertions/min; 0.25 load factor
+Test finished at Tue Oct 25 00:40:42 UTC 2016
+.Test started at Tue Oct 25 00:40:42 UTC 2016
+Insertions: 34,359,738,368 (approx: 262,144 GiB)
+Thread count: 32
+Test finished at Tue Oct 25 00:40:42 UTC 2016
+.Test started at Tue Oct 25 00:40:42 UTC 2016
+Insertions: 34,359,738,368 (approx: 262,144 GiB)
+Thread count: 32
+Test finished at Tue Oct 25 00:40:42 UTC 2016
+.Test started at Tue Oct 25 00:40:42 UTC 2016
+Insertions: 34,359,738,368 (approx: 262,144 GiB)
+Thread count: 32
+Test finished at Tue Oct 25 00:40:42 UTC 2016
+
+Time: 334.352
+
+OK (4 tests)
+
+Running test: FingerPrintGenerator
+page_defrag = always madvise [never]
+scaling_governor = powersave
+kernel.numa_balancing = 1

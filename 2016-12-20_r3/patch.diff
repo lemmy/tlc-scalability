@@ -1,0 +1,191 @@
+diff --git a/general/performance/measureFPSet.sh b/general/performance/measureFPSet.sh
+index 908efd8..ea1fd60 100755
+--- a/general/performance/measureFPSet.sh
++++ b/general/performance/measureFPSet.sh
+@@ -2,8 +2,8 @@
+ 
+ # Performance related properties
+ WORKERS=${5-"$(nproc --all)"}
+-HEAP_MEM=${6-"512g"}
+-DIRECT_MEM=${7-"512g"}
++HEAP_MEM=${6-"20g"}
++DIRECT_MEM=${7-"198g"}
+ FPSET_IMPL="tlc2.tool.fp.OffHeapDiskFPSet"
+ 
+ # TLC version
+@@ -21,32 +21,11 @@ trap "echo Exited!; exit;" SIGINT SIGTERM
+ ######################################
+ 
+ # Repeat N times to even out noise...
+-for i in {1..3}; do
++for i in {3..3}; do
+         # For varying worker (core) counts...
+         #for ((w=$WORKERS; w > 0;w=w/2)); do
+         #for w in 128 120 112 104 96 88 80 72 64 56 48 40 32 24 16 8 4 2 1; do
+-        for w in 128 64 32 16 8 4 2 1 24 40 48 56 82 80 88 96 104; do
+-
+-          ## MSB Output/log files
+-          MSB_JFR_OUTPUT_FILE="MSB_"$REV'_w'$(printf "%03d" $w)'_i'$i.jfr
+-          MSB_TIME_OUTPUT_FILE="MSB_"$REV-$(printf "%03d" $w).txt
+-          MSB_TLC_OUTPUT_FILE="MSB_"$REV-$i-$(printf "%03d" $w)-tlc.txt
+-
+-          /usr/bin/time --append --output=$MSB_TIME_OUTPUT_FILE \
+-          java \
+-           -XX:+UnlockCommercialFeatures \
+-           -XX:+UnlockDiagnosticVMOptions \
+-           -XX:+DebugNonSafepoints \
+-           -XX:+FlightRecorder \
+-           -XX:FlightRecorderOptions=defaultrecording=true,disk=true,repository=/tmp,dumponexit=true,dumponexitpath=$MSB_JFR_OUTPUT_FILE,maxage=12h,settings=$TLATOOLS_HOME/jfr/tlc.jfc \
+-           -javaagent:$TLATOOLS_HOME/jfr/jmx2jfr.jar=$TLATOOLS_HOME/jfr/jmxprobes.xml \
+-           -Xmx$HEAP_MEM -Xms$HEAP_MEM \
+-           -Dtlc2.tool.fp.MultiThreadedFPSetTest.numThreads=$w \
+-           -Dtlc2.tool.fp.MultiThreadedFPSetTest.excludes=_BatchedFingerPrintGenerator_LongVecFingerPrintGenerator_PartitionedFingerPrintGenerator \
+-           -Dtlc2.tool.fp.MultiThreadedFPSetTest.insertions=8589934592 \
+-           -Djava.io.tmpdir=/mnt/markus/tmp/ \
+-           -cp $TLATOOLS_HOME/class:$TLATOOLS_HOME/lib/* \
+-           org.junit.runner.JUnitCore tlc2.tool.fp.MultiThreadedMSBDiskFPSetTest 2>&1 | tee $MSB_TLC_OUTPUT_FILE;
++        for w in 32 28 24 20 16 12 8 4 2 1; do
+ 
+           ## OffHeap
+           JFR_OUTPUT_FILE="Off_"$REV'_w'$(printf "%03d" $w)'_i'$i.jfr
+@@ -62,9 +41,10 @@ for i in {1..3}; do
+            -XX:FlightRecorderOptions=defaultrecording=true,disk=true,repository=/tmp,dumponexit=true,dumponexitpath=$JFR_OUTPUT_FILE,maxage=12h,settings=$TLATOOLS_HOME/jfr/tlc.jfc \
+            -javaagent:$TLATOOLS_HOME/jfr/jmx2jfr.jar=$TLATOOLS_HOME/jfr/jmxprobes.xml \
+            -XX:MaxDirectMemorySize=$DIRECT_MEM \
++           -Djava.util.logging.config.file=$TLATOOLS_HOME/logging.properties \
+            -Dtlc2.tool.fp.MultiThreadedFPSetTest.numThreads=$w \
+            -Dtlc2.tool.fp.MultiThreadedFPSetTest.excludes=_BatchedFingerPrintGenerator_LongVecFingerPrintGenerator_PartitionedFingerPrintGenerator \
+-           -Dtlc2.tool.fp.MultiThreadedFPSetTest.insertions=34359738368 \
++           -Dtlc2.tool.fp.MultiThreadedFPSetTest.insertions=25769803776 \
+            -Djava.io.tmpdir=/mnt/markus/tmp/ \
+            -cp $TLATOOLS_HOME/class:$TLATOOLS_HOME/lib/* \
+            org.junit.runner.JUnitCore tlc2.tool.fp.MultiThreadedOffHeapDiskFPSetTest 2>&1 | tee $TLC_OUTPUT_FILE;
+@@ -72,6 +52,9 @@ for i in {1..3}; do
+           echo "page_defrag = $(cat /sys/kernel/mm/transparent_hugepage/defrag)" >> $TLC_OUTPUT_FILE
+           echo "scaling_governor = $(cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor)" >> $TLC_OUTPUT_FILE
+           sysctl kernel.numa_balancing >> $TLC_OUTPUT_FILE
++
++
++          rm -rf /mnt/markus/tmp/FP*/
+         done
+ done
+ 
+diff --git a/tlatools/logging.properties b/tlatools/logging.properties
+index d256cb5..4d29193 100644
+--- a/tlatools/logging.properties
++++ b/tlatools/logging.properties
+@@ -54,4 +54,5 @@ java.util.logging.ConsoleHandler.formatter = java.util.logging.SimpleFormatter
+ ############################################################
+ 
+ #tlc2.tool.level = ALL
++tlc2.tool.fp.level = ALL
+ #tlc2.tool.liveness.level = ALL
+diff --git a/tlatools/src/tlc2/tool/fp/OffHeapDiskFPSet.java b/tlatools/src/tlc2/tool/fp/OffHeapDiskFPSet.java
+index dd97f18..bbb7a5d 100644
+--- a/tlatools/src/tlc2/tool/fp/OffHeapDiskFPSet.java
++++ b/tlatools/src/tlc2/tool/fp/OffHeapDiskFPSet.java
+@@ -36,7 +36,7 @@ import util.Assert;
+ @SuppressWarnings({ "serial" })
+ public final class OffHeapDiskFPSet extends NonCheckpointableDiskFPSet implements FPSetStatistic {
+ 	
+-	private static final int PROBE_LIMIT = Integer.getInteger(OffHeapDiskFPSet.class.getName() + ".probeLimit", 128);
++	private static final int PROBE_LIMIT = Integer.getInteger(OffHeapDiskFPSet.class.getName() + ".probeLimit", 1024);
+ 	static final long EMPTY = 0L;
+ 	
+ 	private final LongAccumulator reprobe;
+@@ -87,6 +87,8 @@ public final class OffHeapDiskFPSet extends NonCheckpointableDiskFPSet implement
+ 		// the CyclicBarrier-Runnable later. Just set to prevent NPEs when
+ 		// eviction/flush is called before init.
+ 		this.flusher = new OffHeapMSBFlusher(array);
++		
++		LOGGER.log(Level.FINE, "Fully instantiated OffHeapDiskFPSet.");
+ 	}
+ 	
+ 	/* (non-Javadoc)
+@@ -143,7 +145,7 @@ public final class OffHeapDiskFPSet extends NonCheckpointableDiskFPSet implement
+ 				long l = System.currentTimeMillis() - timestamp;
+ 				flushTime += l;
+ 				LOGGER.log(Level.FINE,
+-						"Flushed disk {0} {1}. time, in {2} sec after {3} insertions, load factor {4} and reprobe of {5}.",
++						"Flushed disk {0} the {1}. time, in {2} sec after {3} insertions, load factor {4} and reprobe of {5}.",
+ 						new Object[] { ((DiskFPSetMXWrapper) diskFPSetMXWrapper).getObjectName(), getGrowDiskMark(), l,
+ 								insertions, lf, r });
+ 
+@@ -611,6 +613,7 @@ public final class OffHeapDiskFPSet extends NonCheckpointableDiskFPSet implement
+ 		 * @see tlc2.tool.fp.DiskFPSet.Flusher#prepareTable()
+ 		 */
+ 		protected void prepareTable() {
++			final long now = System.currentTimeMillis();
+ 			final CyclicBarrier phase = new CyclicBarrier(this.numThreads);
+ 			final Collection<Callable<Result>> tasks = new ArrayList<Callable<Result>>(numThreads);
+ 			for (int i = 0; i < numThreads; i++) {
+@@ -679,10 +682,14 @@ public final class OffHeapDiskFPSet extends NonCheckpointableDiskFPSet implement
+ 			assert checkSorted(a, indexer, r) == -1L : String.format(
+ 					"Array %s not fully sorted at index %s and reprobe %s.", a.toString(),
+ 					checkSorted(array, indexer, r), r);
++			
++			LOGGER.log(Level.FINE, "Sorted in-memory table with {0} workers and reprobe {1} in {2} ms.",
++					new Object[] { numThreads, r, (System.currentTimeMillis() - now) });
+ 		}
+ 
+ 		@Override
+ 		protected void mergeNewEntries(final RandomAccessFile[] inRAFs, final RandomAccessFile outRAF, final Iterator ignored, final int idx, final long cnt) throws IOException {
++			final long now = System.currentTimeMillis();
+ 			assert offsets.stream().mapToLong(new ToLongFunction<Future<Result>>() {
+ 				public long applyAsLong(Future<Result> future) {
+ 					try {
+@@ -783,6 +790,9 @@ public final class OffHeapDiskFPSet extends NonCheckpointableDiskFPSet implement
+ 
+ 			assert checkTable(a) : "Missed element during eviction.";
+ 			assert checkIndex(index) : "Inconsistent disk index.";
++			
++			LOGGER.log(Level.FINE, "Wrote table to disk with {0} workers in {1} ms.",
++					new Object[] { numThreads, (System.currentTimeMillis() - now) });
+ 		}
+ 
+ 		private class Result {
+diff --git a/tlatools/test-concurrent/tlc2/tool/fp/MultiThreadedFPSetTest.java b/tlatools/test-concurrent/tlc2/tool/fp/MultiThreadedFPSetTest.java
+index 3ae835c..b97c734 100644
+--- a/tlatools/test-concurrent/tlc2/tool/fp/MultiThreadedFPSetTest.java
++++ b/tlatools/test-concurrent/tlc2/tool/fp/MultiThreadedFPSetTest.java
+@@ -171,10 +171,6 @@ public abstract class MultiThreadedFPSetTest extends AbstractFPSetTest {
+ 		assertTrue(fpSet.size() >= INSERTIONS);
+ 		assertTrue(fpSet.size() <= INSERTIONS + NUM_THREADS);
+ 		
+-		// Check a DiskFPSet's invariant that after flush all fingerprints in
+-		// the file are a) monotonically increasing and b) there are no duplicates.
+-		assertTrue(fpSet.checkInvariant());
+-		
+ 		return fpSet;
+ 	}
+ }
+diff --git a/tlatools/test-concurrent/tlc2/tool/fp/generator/FingerPrintGenerator.java b/tlatools/test-concurrent/tlc2/tool/fp/generator/FingerPrintGenerator.java
+index aa0db19..edd5c03 100644
+--- a/tlatools/test-concurrent/tlc2/tool/fp/generator/FingerPrintGenerator.java
++++ b/tlatools/test-concurrent/tlc2/tool/fp/generator/FingerPrintGenerator.java
+@@ -53,24 +53,8 @@ public class FingerPrintGenerator implements Runnable {
+ 		// down execution.
+ 		while (puts + collisions < perThreadInsertions || fpSet.size() < totalInsertions) {
+ 			try {
+-				// make sure set still contains predecessor
+-				if (predecessor != 0L) {
+-					Assert.assertTrue(fpSet.contains(predecessor));
+-				}
+-
+ 				predecessor = rnd.nextLong();
+-
+-				// Periodically verify the FPSet's content. This causes a
+-				// drastic slow down.
+-//				if (fpSet.size() % 10000 == 0) {
+-//					final Random verify = new Random(seed);
+-//					long fp = verify.nextLong();
+-//					while (fp != predecessor) {
+-//						Assert.assertTrue(fpSet.contains(fp));
+-//						fp = verify.nextLong();
+-//					}
+-//				}
+-//				
++				
+ 				boolean put = fpSet.put(predecessor);
+ 				if (put == false) {
+ 					puts++;

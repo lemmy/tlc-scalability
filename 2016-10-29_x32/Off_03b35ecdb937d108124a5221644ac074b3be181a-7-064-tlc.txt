@@ -1,0 +1,82 @@
+JUnit version 4.12
+.Test started at Tue Oct 25 21:56:42 UTC 2016
+Insertions: 51,539,607,552 (approx: 393,216 GiB)
+Thread count: 64
+Maximum FPSet table count is: 68,719,476,736 (approx: 524,288 GiB)
+FPSet lock count is: 0
+FPSet bucket count is: 68719476736
+Testing tlc2.tool.fp.OffHeapDiskFPSet
+1477432667966 s; 13,430,599,256 insertions/min; 0.2 load factor
+1477432727966 s; 12,452,892,758 insertions/min; 0.38 load factor
+1477432787966 s; 11,254,620,807 insertions/min; 0.54 load factor
+1477432847967 s; 2,496,384,147 insertions/min; 0.58 load factor
+1477432967966 s; 0 insertions/min; 0.58 load factor
+1477433027966 s; 0 insertions/min; 0.58 load factor
+1477433087967 s; 0 insertions/min; 0.58 load factor
+1477433147966 s; 0 insertions/min; 0.58 load factor
+1477433207967 s; 0 insertions/min; 0.58 load factor
+1477433327966 s; 0 insertions/min; 0.58 load factor
+1477433387966 s; 0 insertions/min; 0.58 load factor
+1477433447966 s; 0 insertions/min; 0.58 load factor
+1477433507966 s; 0 insertions/min; 0.58 load factor
+1477433567966 s; 0 insertions/min; 0.58 load factor
+1477433627966 s; 0 insertions/min; 0.58 load factor
+1477433687967 s; 0 insertions/min; 0.58 load factor
+1477433747966 s; 0 insertions/min; 0.58 load factor
+1477433807967 s; 0 insertions/min; 0.58 load factor
+1477433867967 s; 0 insertions/min; 0.58 load factor
+1477433987966 s; 0 insertions/min; 0.58 load factor
+1477434047966 s; 0 insertions/min; 0.58 load factor
+1477434107966 s; 0 insertions/min; 0.58 load factor
+1477434167966 s; 0 insertions/min; 0.58 load factor
+1477434227967 s; 0 insertions/min; 0.58 load factor
+1477434287966 s; 0 insertions/min; 0.58 load factor
+1477434347967 s; 0 insertions/min; 0.58 load factor
+1477434467966 s; 0 insertions/min; 0.58 load factor
+1477434527967 s; 0 insertions/min; 0.58 load factor
+1477434647966 s; 0 insertions/min; 0.58 load factor
+1477434707966 s; 0 insertions/min; 0.58 load factor
+1477434767966 s; 0 insertions/min; 0.58 load factor
+1477434827966 s; 0 insertions/min; 0.58 load factor
+1477434887966 s; 0 insertions/min; 0.58 load factor
+1477434947966 s; 0 insertions/min; 0.58 load factor
+1477435007966 s; 0 insertions/min; 0.58 load factor
+1477435067966 s; 0 insertions/min; 0.58 load factor
+1477435127966 s; 0 insertions/min; 0.58 load factor
+1477435187966 s; 0 insertions/min; 0.58 load factor
+1477435247966 s; 0 insertions/min; 0.58 load factor
+1477435307966 s; 0 insertions/min; 0.58 load factor
+1477435367966 s; 0 insertions/min; 0.58 load factor
+1477435427966 s; 0 insertions/min; 0.58 load factor
+1477435487966 s; 0 insertions/min; 0.58 load factor
+1477435547966 s; 0 insertions/min; 0.58 load factor
+1477435607966 s; 0 insertions/min; 0.58 load factor
+1477435667966 s; 0 insertions/min; 0.58 load factor
+1477435727966 s; 0 insertions/min; 0.58 load factor
+1477435787966 s; 0 insertions/min; 0.58 load factor
+1477435847966 s; 0 insertions/min; 0.58 load factor
+1477435907966 s; 8,142,819,947 insertions/min; 0.12 load factor
+Total puts: 51539607552, total collisions: 0, total load factor: 0.173, duration: 3329943 ms.
+1477435937914 s; 928,620,000 insertions/min; 0.17 load factor
+Test finished at Tue Oct 25 22:52:17 UTC 2016
+.Test started at Tue Oct 25 22:52:17 UTC 2016
+Insertions: 51,539,607,552 (approx: 393,216 GiB)
+Thread count: 64
+Test finished at Tue Oct 25 22:52:17 UTC 2016
+.Test started at Tue Oct 25 22:52:17 UTC 2016
+Insertions: 51,539,607,552 (approx: 393,216 GiB)
+Thread count: 64
+Test finished at Tue Oct 25 22:52:17 UTC 2016
+.Test started at Tue Oct 25 22:52:17 UTC 2016
+Insertions: 51,539,607,552 (approx: 393,216 GiB)
+Thread count: 64
+Test finished at Tue Oct 25 22:52:17 UTC 2016
+
+Time: 3,335.687
+
+OK (4 tests)
+
+Running test: FingerPrintGenerator
+page_defrag = always madvise [never]
+scaling_governor = powersave
+kernel.numa_balancing = 1

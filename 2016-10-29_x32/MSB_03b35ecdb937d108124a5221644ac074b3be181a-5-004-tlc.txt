@@ -1,0 +1,56 @@
+JUnit version 4.12
+.Test started at Tue Oct 25 19:43:47 UTC 2016
+Insertions: 8,589,934,592 (approx: 65,536 GiB)
+Thread count: 4
+Maximum FPSet table count is: 34,359,738,368 (approx: 262,144 GiB)
+FPSet lock count is: 1024
+FPSet bucket count is: 2147483639
+Testing tlc2.tool.fp.MSBDiskFPSet
+1477424694415 s; 310,165,852 insertions/min; 0.01 load factor
+1477424754415 s; 308,142,073 insertions/min; 0.02 load factor
+1477424874414 s; 1,239,900,129 insertions/min; 0.04 load factor
+1477424934414 s; 303,460,999 insertions/min; 0.04 load factor
+1477424994414 s; 303,239,866 insertions/min; 0.05 load factor
+1477425054414 s; 305,356,630 insertions/min; 0.06 load factor
+1477425114414 s; 300,095,194 insertions/min; 0.07 load factor
+1477425174414 s; 304,112,435 insertions/min; 0.08 load factor
+1477425234415 s; 299,551,884 insertions/min; 0.09 load factor
+1477425354414 s; 1,172,745,853 insertions/min; 0.11 load factor
+1477425414414 s; 292,404,325 insertions/min; 0.11 load factor
+1477425474414 s; 288,879,703 insertions/min; 0.12 load factor
+1477425534414 s; 286,554,476 insertions/min; 0.13 load factor
+1477425594415 s; 282,023,407 insertions/min; 0.14 load factor
+1477425714415 s; 1,125,438,636 insertions/min; 0.16 load factor
+1477425834414 s; 1,120,114,419 insertions/min; 0.17 load factor
+1477425894414 s; 273,048,515 insertions/min; 0.18 load factor
+1477425954415 s; 276,925,329 insertions/min; 0.19 load factor
+1477426074414 s; 1,088,125,056 insertions/min; 0.2 load factor
+1477426134414 s; 268,867,077 insertions/min; 0.21 load factor
+1477426194414 s; 265,882,645 insertions/min; 0.22 load factor
+1477426254414 s; 263,488,111 insertions/min; 0.23 load factor
+1477426314415 s; 259,869,265 insertions/min; 0.23 load factor
+1477426434414 s; 1,011,424,755 insertions/min; 0.25 load factor
+Total puts: 8589934592, total collisions: 0, total load factor: 0.25, duration: 1808724 ms.
+1477426443143 s; 284,940,000 insertions/min; 0.25 load factor
+Test finished at Tue Oct 25 20:14:03 UTC 2016
+.Test started at Tue Oct 25 20:14:03 UTC 2016
+Insertions: 8,589,934,592 (approx: 65,536 GiB)
+Thread count: 4
+Test finished at Tue Oct 25 20:14:03 UTC 2016
+.Test started at Tue Oct 25 20:14:03 UTC 2016
+Insertions: 8,589,934,592 (approx: 65,536 GiB)
+Thread count: 4
+Test finished at Tue Oct 25 20:14:03 UTC 2016
+.Test started at Tue Oct 25 20:14:03 UTC 2016
+Insertions: 8,589,934,592 (approx: 65,536 GiB)
+Thread count: 4
+Test finished at Tue Oct 25 20:14:03 UTC 2016
+
+Time: 1,815.339
+
+OK (4 tests)
+
+Running test: FingerPrintGenerator
+page_defrag = always madvise [never]
+scaling_governor = powersave
+kernel.numa_balancing = 1
