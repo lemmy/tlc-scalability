@@ -15,7 +15,7 @@ Copyright(C) 2008 Fumiyoshi Kobayashi, Ueda Laboratory.
 */
 
 #ifndef  N
-#define  N  3
+#define  N  4
 #endif
 
 bit choosing[N];

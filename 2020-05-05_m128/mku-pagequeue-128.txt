@@ -1,0 +1,11 @@
+Command exited with non-zero status 130
+22.55user 45.85system 0:04.51elapsed 1515%CPU (0avgtext+0avgdata 65433756maxresident)k
+0inputs+2960outputs (0major+77947minor)pagefaults 0swaps
+36717.42user 538.00system 5:07.80elapsed 12103%CPU (0avgtext+0avgdata 79408964maxresident)k
+0inputs+160252280outputs (0major+459951minor)pagefaults 0swaps
+36643.12user 540.02system 5:08.04elapsed 12070%CPU (0avgtext+0avgdata 79434224maxresident)k
+0inputs+163763376outputs (0major+480332minor)pagefaults 0swaps
+35407.47user 587.60system 5:06.66elapsed 11737%CPU (0avgtext+0avgdata 83090200maxresident)k
+0inputs+134528312outputs (0major+819576minor)pagefaults 0swaps
+35359.49user 557.23system 5:06.67elapsed 11711%CPU (0avgtext+0avgdata 82979360maxresident)k
+0inputs+136797576outputs (0major+870291minor)pagefaults 0swaps

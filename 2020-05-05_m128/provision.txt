@@ -1,0 +1,13 @@
+root@frob3:~# mkdir /mnt/markus
+root@frob3:~# chown markus:markus /mnt/markus/
+root@frob3:~# apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0xB1998361219BD9C9
+root@frob3:~# apt-add-repository 'deb http://repos.azulsystems.com/ubuntu stable main'
+root@frob3:~# apt install zulu-14 mc ant maven -y
+
+sudo -u markus /usr/bin/git config --global user.email "tlaplus.net aT lemmster tod de"
+sudo -u markus /usr/bin/git config --global user.name "Markus Alexander Kuppe"
+
+
+markus@frob3:~$ cd /mnt/markus/
+markus@frob3:/mnt/markus$ git clone https://github.com/lemmy/tlc-scalability
+

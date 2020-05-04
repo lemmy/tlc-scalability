@@ -1,0 +1,51 @@
+Started recording 1. No limit specified, using maxsize=250MB as default.
+
+Use jcmd 23935 JFR.dump name=1 to copy recording data to file.
+TLC2 Version 2.15 of Day Month 20?? (rev: 89d72ba)
+Running breadth-first search Model-Checking with fp 123 and seed 7265671178671710063 with 40 workers on 128 cores with 27305MB heap and 65536MB offheap memory [pid: 23935] (Linux 5.3.0-1020-azure amd64, Azul Systems, Inc. 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+Parsing file /mnt/markus/tlc-scalability/2020-05-05_m128/MC.tla
+Parsing file /mnt/markus/tlc-scalability/2020-05-05_m128/Bakery.tla
+Parsing file /tmp/TLC.tla
+Parsing file /tmp/Naturals.tla
+Parsing file /tmp/Sequences.tla
+Parsing file /tmp/FiniteSets.tla
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module Bakery
+Semantic processing of module MC
+Starting... (2020-05-05 17:22:02)
+Loaded PageQueue (MemLimit=512, PageSize=4096)
+
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2020-05-05 17:22:04.
+Levels: [21, 21, 21, 20, 22, 22, 20, 22, 20, 22, 20, 21, 21, 21, 22, 21, 22, 20, 20, 21, 22, 21, 21, 21, 21, 20, 21, 21, 20, 22, 21, 21, 21, 21, 21, 20, 22, 21, 21, 22]
+Levels: [21, 21, 21, 20, 22, 22, 20, 22, 20, 22, 20, 21, 21, 21, 22, 21, 22, 20, 20, 21, 22, 21, 21, 21, 21, 20, 21, 21, 20, 22, 21, 21, 21, 21, 21, 20, 22, 21, 21, 22]
+Progress(22) at 2020-05-05 17:22:07: 10,272,129 states generated (10,272,129 s/min), 2,132,706 distinct states found (2,132,706 ds/min), 2,410,000 states left on queue.
+Levels: [21, 21, 21, 20, 22, 22, 20, 22, 20, 22, 20, 21, 21, 21, 22, 21, 22, 20, 20, 21, 22, 21, 21, 21, 21, 20, 21, 21, 20, 22, 21, 21, 21, 21, 21, 20, 22, 21, 21, 22]
+Levels: [29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29]
+Levels: [29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29]
+Progress(29) at 2020-05-05 17:23:07: 604,274,739 states generated (594,002,610 s/min), 92,659,998 distinct states found (90,527,292 ds/min), 8,127,000,000 states left on queue.
+Levels: [29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29]
+Levels: [30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30]
+Levels: [30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30]
+Progress(30) at 2020-05-05 17:24:07: 1,200,496,334 states generated (596,221,595 s/min), 175,599,926 distinct states found (82,939,928 ds/min), 13,817,000,000 states left on queue.
+Levels: [30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30]
+Levels: [32, 32, 32, 31, 32, 32, 32, 32, 32, 32, 32, 32, 31, 32, 32, 32, 32, 32, 31, 32, 31, 31, 31, 32, 32, 32, 32, 32, 31, 32, 32, 31, 32, 31, 31, 32, 32, 32, 32, 32]
+Levels: [32, 32, 32, 31, 32, 32, 32, 32, 32, 32, 32, 32, 31, 32, 32, 32, 32, 32, 31, 32, 31, 31, 31, 32, 32, 32, 32, 32, 31, 32, 32, 31, 32, 31, 31, 32, 32, 32, 32, 32]
+Progress(32) at 2020-05-05 17:25:07: 1,794,764,728 states generated (594,268,394 s/min), 256,189,926 distinct states found (80,590,000 ds/min), 18,489,000,000 states left on queue.
+Levels: [32, 32, 32, 31, 32, 32, 32, 32, 32, 32, 32, 32, 31, 32, 32, 32, 32, 32, 31, 32, 31, 31, 31, 32, 32, 32, 32, 32, 31, 32, 32, 31, 32, 31, 31, 32, 32, 32, 32, 32]
+Levels: [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32]
+Levels: [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32]
+Progress(32) at 2020-05-05 17:26:07: 2,382,505,053 states generated (587,740,325 s/min), 337,855,213 distinct states found (81,665,287 ds/min), 23,053,000,000 states left on queue.
+Levels: [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32]
+Model checking completed. No error has been found.
+  Estimates of the probability that TLC did not check all reachable states
+  because two distinct states had the same fingerprint:
+  calculated (optimistic):  val = .056
+2923068589 states generated, 411942632 distinct states found, 100612000000 states left on queue.
+Levels: [33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33]
+The depth of the complete state graph search is 33.
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 31 and the 95th percentile is 5).
+Finished in 304013ms at (2020-05-05 17:27:05)

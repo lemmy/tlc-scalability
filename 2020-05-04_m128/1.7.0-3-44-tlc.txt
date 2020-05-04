@@ -1,0 +1,36 @@
+Started recording 1. No limit specified, using maxsize=250MB as default.
+
+Use jcmd 61382 JFR.dump name=1 to copy recording data to file.
+TLC2 Version 2.15 of Day Month 20?? (rev: 4fb3d8d)
+Running breadth-first search Model-Checking with fp 75 and seed -1122292586696533770 with 44 workers on 128 cores with 27305MB heap and 8192MB offheap memory [pid: 61382] (Linux 5.3.0-1020-azure amd64, Azul Systems, Inc. 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+Parsing file /mnt/markus/tlc-scalability/2020-05-04_m128/MC.tla
+Parsing file /mnt/markus/tlc-scalability/2020-05-04_m128/Bakery.tla
+Parsing file /tmp/TLC.tla
+Parsing file /tmp/Naturals.tla
+Parsing file /tmp/Sequences.tla
+Parsing file /tmp/FiniteSets.tla
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module Bakery
+Semantic processing of module MC
+Starting... (2020-05-05 02:58:48)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2020-05-05 02:58:49.
+Progress(20) at 2020-05-05 02:58:52: 3,303,203 states generated (3,303,203 s/min), 725,134 distinct states found (725,134 ds/min), 377,743 states left on queue.
+Progress(26) at 2020-05-05 02:59:52: 165,138,250 states generated (161,835,047 s/min), 26,505,566 distinct states found (25,780,432 ds/min), 11,283,148 states left on queue.
+Progress(27) at 2020-05-05 03:00:52: 340,688,069 states generated (175,549,819 s/min), 50,650,355 distinct states found (24,144,789 ds/min), 18,836,795 states left on queue.
+Progress(28) at 2020-05-05 03:01:52: 514,903,159 states generated (174,215,090 s/min), 74,667,844 distinct states found (24,017,489 ds/min), 26,504,727 states left on queue.
+Progress(29) at 2020-05-05 03:02:52: 687,284,300 states generated (172,381,141 s/min), 98,375,506 distinct states found (23,707,662 ds/min), 33,587,178 states left on queue.
+Model checking completed. No error has been found.
+  Estimates of the probability that TLC did not check all reachable states
+  because two distinct states had the same fingerprint:
+  calculated (optimistic):  val = .0048
+  based on the actual fingerprints:  val = 5.9E-4
+856300711 states generated, 119936100 distinct states found, 39221329 states left on queue.
+The depth of the complete state graph search is 29.
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 31 and the 95th percentile is 5).
+Checkpointing of run states/20-05-05-02-58-47
+Checkpointing completed at (2020-05-05 03:03:52)
+Finished in 05min 04s at (2020-05-05 03:03:52)

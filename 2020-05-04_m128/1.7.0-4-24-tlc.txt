@@ -1,0 +1,22 @@
+Started recording 1. No limit specified, using maxsize=250MB as default.
+
+Use jcmd 91756 JFR.dump name=1 to copy recording data to file.
+TLC2 Version 2.15 of Day Month 20?? (rev: 4fb3d8d)
+Running breadth-first search Model-Checking with fp 99 and seed -4215871495255688182 with 24 workers on 128 cores with 27305MB heap and 65536MB offheap memory [pid: 91756] (Linux 5.3.0-1020-azure amd64, Azul Systems, Inc. 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+Parsing file /mnt/markus/tlc-scalability/2020-05-04_m128/MC.tla
+Parsing file /mnt/markus/tlc-scalability/2020-05-04_m128/Bakery.tla
+Parsing file /tmp/TLC.tla
+Parsing file /tmp/Naturals.tla
+Parsing file /tmp/Sequences.tla
+Parsing file /tmp/FiniteSets.tla
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module Bakery
+Semantic processing of module MC
+Starting... (2020-05-05 05:47:16)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2020-05-05 05:47:18.
+Progress(20) at 2020-05-05 05:47:21: 4,159,522 states generated (4,159,522 s/min), 889,834 distinct states found (889,834 ds/min), 432,122 states left on queue.
+Progress(26) at 2020-05-05 05:48:21: 157,561,657 states generated (153,402,135 s/min), 26,401,099 distinct states found (25,511,265 ds/min), 11,078,932 states left on queue.

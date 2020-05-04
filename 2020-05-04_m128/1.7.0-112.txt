@@ -1,0 +1,4 @@
+4556.03user 335.28system 5:05.53elapsed 1600%CPU (0avgtext+0avgdata 19317492maxresident)k
+0inputs+34342464outputs (0major+468730minor)pagefaults 0swaps
+4919.37user 430.73system 5:08.72elapsed 1732%CPU (0avgtext+0avgdata 76766936maxresident)k
+0inputs+34317160outputs (0major+570724minor)pagefaults 0swaps
