@@ -1,0 +1,47 @@
+Started recording 1. No limit specified, using maxsize=250MB as default.
+
+Use jcmd 5960 JFR.dump name=1 to copy recording data to file.
+TLC2 Version 2.15 of Day Month 20?? (rev: 89d72ba)
+Running breadth-first search Model-Checking with fp 116 and seed 7191328138258050967 with 8 workers on 8 cores with 17148MB heap and 32768MB offheap memory [pid: 5960] (Linux 4.19.84-microsoft-standard amd64, Ubuntu 11.0.7 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+Parsing file /home/markus/tlc-scalability/2020-05-05_z440/MC.tla
+Parsing file /home/markus/tlc-scalability/2020-05-05_z440/Bakery.tla
+Parsing file /tmp/TLC.tla
+Parsing file /tmp/Naturals.tla
+Parsing file /tmp/Sequences.tla
+Parsing file /tmp/FiniteSets.tla
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module Bakery
+Semantic processing of module MC
+Starting... (2020-05-05 21:39:28)
+Loaded PageQueue (MemLimit=618, PageSize=7868)
+
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2020-05-05 21:39:31.
+Levels: [18, 19, 18, 21, 20, 20, 19, 21]
+Levels: [18, 19, 18, 21, 20, 20, 19, 21]
+Progress(21) at 2020-05-05 21:39:34: 797,516 states generated (797,516 s/min), 168,739 distinct states found (168,739 ds/min), 90 states left on queue.
+Levels: [18, 19, 18, 21, 20, 20, 19, 21]
+Levels: [42, 42, 42, 42, 42, 42, 42, 42]
+Levels: [42, 42, 42, 42, 42, 42, 42, 42]
+Progress(42) at 2020-05-05 21:40:34: 129,233,520 states generated (128,436,004 s/min), 17,265,844 distinct states found (17,097,105 ds/min), 22,900,000 states left on queue.
+Levels: [42, 42, 42, 42, 42, 42, 42, 42]
+Levels: [49, 49, 49, 49, 49, 49, 49, 49]
+Levels: [49, 49, 49, 49, 49, 49, 49, 49]
+Progress(49) at 2020-05-05 21:41:34: 272,211,744 states generated (142,978,224 s/min), 33,391,220 distinct states found (16,125,376 ds/min), 29,600,000 states left on queue.
+Levels: [49, 49, 49, 49, 49, 49, 49, 49]
+Levels: [59, 59, 59, 59, 59, 59, 59, 59]
+Levels: [59, 59, 59, 59, 59, 59, 59, 59]
+Progress(59) at 2020-05-05 21:42:34: 421,781,017 states generated (149,569,273 s/min), 47,602,574 distinct states found (14,211,354 ds/min), 10,600,000 states left on queue.
+Levels: [59, 59, 59, 59, 59, 59, 59, 59]
+Model checking completed. No error has been found.
+  Estimates of the probability that TLC did not check all reachable states
+  because two distinct states had the same fingerprint:
+  calculated (optimistic):  val = .0011
+454836818 states generated, 49802844 distinct states found, 635900000 states left on queue.
+Levels: [66, 66, 66, 67, 66, 66, 66, 68]
+The depth of the complete state graph search is 68.
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 30 and the 95th percentile is 5).
+Finished in 202706ms at (2020-05-05 21:42:50)
