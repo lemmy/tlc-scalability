@@ -1,0 +1,35 @@
+Started recording 1. No limit specified, using maxsize=250MB as default.
+
+Use jcmd 14464 JFR.dump name=1 to copy recording data to file.
+TLC2 Version 2.15 of Day Month 20?? (rev: 2b49b3d)
+Running breadth-first search Model-Checking with fp 103 and seed 470379650518652457 with 6 workers on 8 cores with 17148MB heap and 32768MB offheap memory [pid: 14464] (Linux 4.19.84-microsoft-standard amd64, Ubuntu 11.0.7 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+Parsing file /home/markus/tlc-scalability/2020-05-14_z440/MC.tla
+Parsing file /home/markus/tlc-scalability/2020-05-14_z440/Bakery.tla
+Parsing file /tmp/TLC.tla
+Parsing file /tmp/Naturals.tla
+Parsing file /tmp/Sequences.tla
+Parsing file /tmp/FiniteSets.tla
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module Bakery
+Semantic processing of module MC
+Starting... (2020-05-15 07:33:14)
+Loaded PageQueue (MemLimit=524, PageSize=-1)
+
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2020-05-15 07:33:18.
+Progress(19) at 2020-05-15 07:33:21: 546,571 states generated (546,571 s/min), 116,649 distinct states found (116,649 ds/min), 60,000 states left on queue.
+Progress(40) at 2020-05-15 07:34:21: 113,474,351 states generated (112,927,780 s/min), 15,063,040 distinct states found (14,946,391 ds/min), 1,800,000 states left on queue.
+Progress(47) at 2020-05-15 07:35:21: 233,114,489 states generated (119,640,138 s/min), 29,032,253 distinct states found (13,969,213 ds/min), 2,400,000 states left on queue.
+Progress(53) at 2020-05-15 07:36:21: 358,768,323 states generated (125,653,834 s/min), 41,916,288 distinct states found (12,884,035 ds/min), 1,600,000 states left on queue.
+Model checking completed. No error has been found.
+  Estimates of the probability that TLC did not check all reachable states
+  because two distinct states had the same fingerprint:
+  calculated (optimistic):  val = .0011
+  based on the actual fingerprints:  val = 1.1E-5
+454836818 states generated, 49802844 distinct states found, 142900000 states left on queue.
+The depth of the complete state graph search is 68.
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 30 and the 95th percentile is 5).
+Finished in 04min 43s at (2020-05-15 07:37:57)
